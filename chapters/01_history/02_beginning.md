@@ -1,0 +1,19 @@
+## The Beginning and the War (1995-1999)
+
+*Brendan Eich* (1961) started working for *Netscape* in April *1995*. He was hired to create a scripting language to be embedded into the 2.0 release of Netscape's web browser, the Netscape Navigator. While Eich was originally asked to design this language based on Scheme, Netscape management quickly made it a high priority for the language to look like Java.
+
+It is rumored that Eich specified the whole language which was originally called *Mocha* in about 10 days. The language's syntax was similar to Java, but it incorporated Prototypal Inheritance like in Self and had first-class functions just as in Scheme. It was an interpreted language with a dynamic type system.
+
+Mocha was quickly renamed to *LiveScript* and was included in Netscape Navigator 2.0 which came out in September 1995. In December of the same year Netscape started a partnership with Sun with the goal that both companies would support one programming language for the web. This language was meant to be Java and probably Sun wanted Netscape to discontinue LiveScript in the long run but the companies agreed on a short term strategy: They began an effort to integrate JavaScript into Java and vice-versa with Java appealing to professional programmers and JavaScript being the lightweight little brother for quickly writing small scripts. Fortunately, things worked out very differently.
+
+The most important long term result of the agreement between Netscape and Sun though was that LiveScript was renamed to *JavaScript*. Though the two languages have little in common, the name JavaScript, now a trademark of Oracle, persists to this day and has caused confusion ever since. Despite the original intention, JavaScript is neither related to Java nor its little brother. 
+
+JavaScript gained traction right from the beginning and was quickly adopted by companies in order to write scripts for the web.
+
+Microsoft was Netscape's antagonist in what became the *browser war*. They also wanted to have a programming language inside their browser and because JavaScript was so promising, Microsoft reverse engineered JavaScript and included their own implementation of the language in Internet Explorer 3 in 1996. They called it JScript to avoid trademark issues and did a great job of recreating all of JavaScript's quirks and implementing them in JScript as well.
+
+Both Netscape and Microsoft also included support for JavaScript in their server environments, Netscape Enterprise Server 2.0 and IIS 3.0 respectively (both released in 1996).
+
+In order to protect the language from the influence of Microsoft, Netscape tried to standardize JavaScript. After being rejected by W3C and ISO, the language found its home at the European Computer Manufacturers Association (today called *ECMA International*) in November 1996. JavaScript is since specified as ECMAScript under the standard ECMA-262. The first edition of the spec was published in 1997, the second one year later, the third in 1999.
+
+The standardization process was problematic from the beginning. Netscape and Microsoft were both part of the commitee working on ECMAScript and they did not play well with each other. An important goal ever since, was to remove some of the original design flaws from the language, but Microsoft has always critically emphasized backward-compatibility and so a lot of bad stuff stayed in the language because of the fear of breaking existing code by removing language features. An important addition was made in Edition 2, with Arrays finding their way into the language. Sadly, this addition was not thought through and the arrays we have in JavaScript are still basically objects with some special properties. After the release of the third edition, work on the language slowed down and there was no new standard for the next ten years.
