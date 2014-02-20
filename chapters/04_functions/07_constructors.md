@@ -115,7 +115,7 @@ The `length` variable is accessible inside the constructor function even when it
 Some people attach variables they consider private to the object and prefix their name with an underscore to indicate that it is a private variable. It does not really make sense to use privacy by convention when there is also privacy by technology. When you see variables, starting with underscores, in someone else's code, respect their proclamation of privacy for these variables, but do not rely on it in your own code - use closure instead.
 
 ### BONUS: `create`
-Above, I proposed a function to be used instead of the `new` keyword. I find it convenient to use save this function as `Function.prototype.create`.
+Above, I proposed a function to be used instead of the `new` keyword. I find it convenient to save this function as `Function.prototype.create`.
 ```javascript
 Function.prototype.create = function () {
     var that = Object.create(this.prototype || { }),

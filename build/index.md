@@ -1,81 +1,87 @@
 
 <h1 id="title">teachingJS</h1>
 
-Copyright © 2013-2014 Peter Michael Steinberg
+The MIT License (MIT)
 
-All rights reserved.
+Copyright © 2014 Peter Steinberg
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Preface
 
 This is a living document.
 
 ### How I approached this book
-This book was created as a script for a workshop on JavaScript. I wrote it to gather my knowledge, to put it into words, to structure it, to illustrate it with examples. I assume the reader is familiar with programming in general and I sometimes compare JavaScript to Java, assuming this will be the most widely known language, but Java skills are not required. I sometimes also assume a basic knowledge of programming patterns or field specific terms. If you have never been programming before, this might not be a book for you.
+This book was created as a script for a workshop on JavaScript. I wrote it to gather my knowledge, to put it into words, to structure it, to illustrate it with examples. I assume the reader is familiar with programming in general and I sometimes compare JavaScript to Java, but Java skills are not required. I sometimes also assume a basic knowledge of programming patterns or field specific terms. If you have never been programming before, this might not be a book for you.
 
 I would love this book to be self-explainatory enough for it to be read without attending the related workshop, but as of now it isn't. I want it to be a reference containing all there is to know, but it is not complete yet. I want it to be structured in a way that encapsulates topics in their own self-contained chapters or subchapters and I also want it to read better than a boring reference, but it is not there yet. All of these goals may never be met completely, because it is impossible to cover every edge case of the language and because there will always have to be a compromise between readabilty and correctness or completeness.
 
 So as my work on this book progresses, my understanding of the language will change and even the language itself will change.
 
 ### How time approaches this book
-By the time of writing (early 2014), the most recent version of the language specification is ECMA262 Edition 5.1 (2011). Sometimes I point out changes over Edition 3 and I regularly include explanations on things that are going to be in Edition 6. But when there is no explicit information on the version of the language in which a certain feature exists or not, assume that I am talking about ES5.1. Most likely, you want to write code to be run inside a web browser. Fortunately, ES5 compatibility is more or less present in all current web browsers: Firefox 4+, Chrome 13+, Internet Explorer 10+, Safari 6+. ES6 support is not yet at a level at which you want to rely on ES6 features; give that some more years.
+By the time of writing (early 2014), the most recent version of the language specification is ECMA262 Edition 5.1 (2011). Sometimes I point out changes frmo Edition 3 and I regularly include explanations on things that are going to be in Edition 6. But when there is no explicit information on the version of the language in which a certain feature exists or not, assume that I am talking about ES5.1. Most likely, you want to write code to be run inside a web browser. Fortunately, ES5 compatibility is more or less present in all current web browsers: Firefox 4+, Chrome 13+, Internet Explorer 10+, Safari 6+. ES6 support is not yet at a level at which you want to rely on ES6 features; give that some more years.
 
 Every few months there is a new version of Firefox and Chrome and it will not take a long time until the notes on ES6 support regarding certain browsers in this book are outdated. In the meantime, the specification process for ES6 is still going on for who knows how long and things might change eventually. But this book is not considered "done": As things change, so will this book (hopefully).
 
 ### How you should approach this book
-Of course you can read this book however you like, but let me give you some information about how you get the most out of it. In trying to cover a topic in its completeness, I might go into some details you find unnecessary. Feel free to skip over anything you are not interested in or you what you think is confusing. You can also freely skip over any parts that I labeled more or less explicitly as being optional. You can always come back to those (advanced or just unimportant) paragraphs later and I tried to include a lot of cross-references to let you know where you can read up on a topic. This should motivate you to read just the chapters of the book you are interested in.
+Of course you can read this book however you like, but let me give you some information about how you get the most out of it. In trying to cover a topic in its completeness, I might introduce a level of detail that you find unnecessary. Feel free to skip over anything you are not interested in or what you think is confusing. You can also freely skip over any parts that I labeled more or less explicitly as being optional. You can always come back to those (advanced or just unimportant) paragraphs later and I tried to include a lot of cross-references to let you know where you can read up on a topic. This should motivate you to read just the chapters of the book you are interested in.
 
 That does not mean, that the way in which the chapters and subchapters are ordered is irrelevant.
 
 ### How this book approaches this book
 After this introduction to the text, there will be a chapter on the history of JavaScript. It may influence your understanding of the language to know where it came from, what its influences are and how it developed over time. The history covers the past, the present and the future.
 
-The introduction to the language itself will start with the fundamentals. First, there will be a short notice on how you can execute your own JavaScript code. Then the atoms and molecules of JavaScript are presented, the statements that compose a program, the operators that combine values to new values, the types of data you can manipulate in JavaScript and the weird mechanics of how JavaScript manipulates those data itself.
+The introduction to the language itself will start with the fundamentals. First, there will be a short part on how you can execute your own JavaScript code. Then the atoms and molecules of JavaScript are presented, the statements that compose a program, the operators that combine values to new values, the types of data you can manipulate in JavaScript and the weird mechanics of how JavaScript manipulates those data itself.
 
-A short primer on objects follows, explaining what they are and how to work with them. But the real power of objects will be released later in a chapter about inheritance. Inheritance is the way in which objects are related to each other and is a really important thing to talk about.
+What follows, is a short primer on objects, explaining what they are and how to work with them. But the real power of objects will be released later in a chapter about inheritance. Inheritance is the way in which objects are related to each other and is a really important thing to talk about.
 
 But inheritance in JavaScript does not work without functions, so we will introduce them before talking about inheritance. Functions are a very important and a very beautiful thing about JavaScript and the chapter that covers them should teach you everything you need to know.
 
 ### How others approach their books
 A lot of pages have been written on JavaScript and you should probably read some of them. When you search for a book on JavaScript, you will probably stumble upon one of these:
 
--   [Marijn Haverbeke - "Eloquent JavaScript"](http://eloquentjavascript.net/). This book will be especially valuable to people how want to learn JavaScript as their first programming language or are not kind of new to programming. The book is a quick and straightforward introduction to the language and working with the DOM.
--   [Cody Lindley - "JavaScript Enlightenment"](http://www.javascriptenlightenment.com/). This is not an introductory book that toys around with basic stuff, nor does it cover every corner of JavaScript. Its strength lies in an extensive look at objects, constructors and builtin wrapper objects.
--   [Douglas Crockford - "JavaScript - The Good Parts"](http://javascript.crockford.com/). What many consider the JavaScript bible offers a balanced level of detail and valueable information on how to leverage the language's full potential. This book teaches you how to write good code and how to avoid dangerous parts of JavaScript.
-- [David Herman - "Effective JavaScript"](http://effectivejs.com/). Being targeted at advanced JavaScript developers, this book has a ton of information on weird behavior of the language and edge cases you could have never have thought of. It consists of 68 items that dig into a lot of very concrete and some abstract situations and the advice contained in this book will make you a better JavaScript programmer.
+- [Marijn Haverbeke - "Eloquent JavaScript"](http://eloquentjavascript.net/). This book will be especially valuable to people how want to learn JavaScript without any experience or prior knowledge in programming. The book is a quick and straightforward introduction to the language and covers working with the DOM.
+- [Cody Lindley - "JavaScript Enlightenment"](http://www.javascriptenlightenment.com/). This is not an introductory book that toys around with basic stuff, nor does it cover every aspect of JavaScript. Its strength lies in an extensive look at objects, constructors and builtin wrapper objects.
+- [Douglas Crockford - "JavaScript - The Good Parts"](http://javascript.crockford.com/). What many consider the JavaScript bible offers a balanced level of detail and valueable information on how to leverage the language's full potential. This book teaches you how to write good code and how to avoid dangerous parts of JavaScript.
+- [David Herman - "Effective JavaScript"](http://effectivejs.com/). Being targeted at people who already know a bit of JavaScript, this book has a ton of information on weird behavior of the language and edge cases you could have never have thought of. It consists of 68 items that dig into a lot of very concrete and some abstract situations and the advice contained in this book will make you a better JavaScript programmer.
 
 # The History of JavaScript
 
-The prevailing concepts in a programming language always fit into a certain context. Usually this is about the influences on the creators of a programming language, be it former experience with other languages, personal career background or company management directions. A multitude of factors determines design goals of a language and whether those goals are met or not. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms it is necessary to put a language's development into context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
+The prevailing concepts in a programming language always fit into a certain context. Usually this is about the influences on the creators of a programming language, be it former experience with other languages, personal career background or company management directions. A multitude of factors determines design goals of a language and whether those goals are met or not. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms, it is necessary to put a language's development into context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
 
 ## Prehistoric Events (early 60s to late 80s)
 
-It's hard to tell, where the story ultimately begins. Maybe we would have to go back to the origins of mathematics more than 2500 years ago. But in order to limit our retrospective to more direct influences on the JavaScript programming language, we will look at two lines of action that brought significant features to the language.
+It's hard to tell, where the story ultimately begins. Maybe we would have to go back to the origins of mathematics thousands of years ago. But in order to limit our retrospective to more direct influences on the JavaScript programming language, we will look at two lines of action that brought significant features to the language.
 
-The story would then begin in 1958, but let us briefly jump 10 years fewer back: Norway 1967. At the Norway Computing Center Ole-Johan Dahl and Kristen Nygaard created what was the very first object oriented programming language: Simula. Simula greatly influenced the design of Stroustrup's C++ and with that basically every object oriented programming language to this day, although Simula itself is no longer used on a significant basis.
+Norway 1967. At the Norway Computing Center Ole-Johan Dahl and Kristen Nygaard created what was the very first object oriented programming language: *Simula*. Simula greatly influenced the design of Stroustrup's C++ and thus basically every object oriented programming language to this day.
 
 ### The Great-Grandfathers
-One of the great-grandfathers of JavaScript may be Alan Kay. Together with Dan Ingalls he worked at Xerox PARC in the 70s when they created a programming language called Smalltalk. The language took the concept of classes and class inheritance from Simula and combined that with an Actor Model implementation. This kind of message passing is today found in web browsers that implement an event firing system for documents and also in JavaScript you can let your objects communicate via events. Smalltalk was hugely influencial and was the language in which many object oriented design patterns (like MVC) were implemented for the first time. Smalltalk later also came with a sophisticated development environment that can be seen as the prototype for all modern IDEs. While in JavaScript functions are objects, which is sometimes confusing for newcomers, in Smalltalk basically everything is an object, including code blocks, primitives and classes themselves.
+But Even older than Simula is another very influencial language. John McCarthy created *Lisp* at MIT in 1958 making it one the first high-level programming languages. It introduced important concepts like higher-order functions and recursion. Lisp is based on the lambda calculus, a turing-complete computational model based on variable binding and substitution. All functional languages and functional features in other languages are strongly influenced by Lisp.
 
-Another great-grandfather of JavaScript is probably John McCarthy. He created Lisp at MIT in 1958 making it one the first high-level programming languages, but also introducing important concepts like higher-order functions and recursion. Lisp is based on the lambda calculus, a turing-complete computational model based on variable binding and substitution. All functional languages and functional features in other languages are strongly influenced by Lisp.
+Another one of the great-grandfathers of JavaScript may be Alan Kay. Together with Dan Ingalls he worked at Xerox PARC in the 70s when they created a programming language called *Smalltalk*. The language took the concept of classes and class inheritance from Simula and combined that with an Actor Model implementation. This kind of message passing is today found in web browsers that implement an event firing system for documents. Smalltalk was hugely influencial and was the language in which many object oriented design patterns (like MVC) were implemented for the first time. Smalltalk later also came with a sophisticated development environment that can be seen as the prototype for all modern IDEs. While in JavaScript functions are objects, which is sometimes confusing for newcomers, in Smalltalk basically everything is an object, including code blocks, primitives and even classes.
 
 ### The Grandfathers
-One of the two most important dialects of Lisp is Scheme, which was created by Guy Steele and Gerald Sussman in 1973. Scheme incorporates the Actor Model, uses lexical scoping and was syntactically very close to resembling lambda expressions. Scheme may always have been the little, minimalist, academic brother to Common Lisp, but it was used as the example language in SICP, which made it not only known to computer scientists in general but also to the inventor of JavaScript.
+One of the two most important dialects of Lisp is *Scheme*, which was created by Guy Steele and Gerald Sussman in 1973. Scheme incorporates the Actor Model, uses lexical scoping and was syntactically very close to resembling lambda expressions. Scheme may always have been the little, minimalist, academic brother to Common Lisp, but it was used as the example language in SICP, which made it not only known to computer scientists in general but also to the inventor of JavaScript.
 
-Then there is Self. Self was developed by David Ungar and Randall Smith. They also worked at Xerox PARC and as Smalltalk-80 increasingly gained traction in the industry, Ungar and Smith started Self as an experiment to eliminate classes. When applications, developed in Smalltalk, grew in size it became harder and harder to change the most fundamental classes of a program's inheritance hierarchy because that tended to break a lot of subclasses. In Self there are no longer classes, just objects. And these can directly inherit from one another. This approach of cloning one object and modifying it to create a new object is called Prototype-based programming and the inheritance model is called Prototypal Inheritance. This model is also present in JavaScript.
+Then there is *Self*. Self was developed by David Ungar and Randall Smith. They also worked at Xerox PARC and as Smalltalk-80 increasingly gained traction in the industry, Ungar and Smith started Self as an experiment to eliminate classes. When applications that were written in Smalltalk grew in size, it became harder and harder to change the most fundamental classes of a program's inheritance hierarchy because that tended to break a lot of subclasses. In Self there are no longer classes, just objects. And these can directly inherit from one another. This approach of cloning one object and modifying it to create a new object is called Prototype-based programming and the inheritance model is called Prototypal Inheritance. This model is also present in JavaScript.
 
 ## The Beginning and the War (1995-1999)
 
-*Brendan Eich* (1961) started working for *Netscape* in April *1995*. He was hired to create a scripting language to be embedded into the 2.0 release of Netscape's web browser, the Netscape Navigator. While Eich was originally asked to design this language based on Scheme, Netscape management quickly made it a high priority for the language to look like Java. It was aiming to be a simpler companion to Java which was the other candidate for being the programming language for the web at that time.
+*Brendan Eich* (1961) started working for *Netscape* in April *1995*. He was hired to create a scripting language to be embedded into the 2.0 release of Netscape's web browser, the Netscape Navigator. While Eich was originally asked to design this language based on Scheme, Netscape management quickly made it a high priority for the language to look like Java.
 
-It is rumored that Eich specified the whole language that was originally called *Mocha* in about 10 days. The language's syntax was similar to Java, but it incorporated Prototypal Inheritance like in Self and had first-class functions just as in Scheme. It was an interpreted language with a dynamic type system.
+It is rumored that Eich specified the whole language which was originally called *Mocha* in about 10 days. The language's syntax was similar to Java, but it incorporated Prototypal Inheritance like in Self and had first-class functions just as in Scheme. It was an interpreted language with a dynamic type system.
 
-Mocha was quickly renamed to LiveScript and was included in Netscape Navigator 2.0 which came out September 1995. In December of the same year Netscape started a partnership with Sun with the goal that both companies would support one programming language for the web. This language was meant to be Java and probably Sun wanted Netscape to discontinue LiveScript in the long run but the companies agreed on a short term strategy: They began an effort to integrate JavaScript into Java and vice-versa with Java appealing to professional programmers and JavaScript being the lightweight little brother for quickly writing small scripts. Fortunately, things worked out very differently.
+Mocha was quickly renamed to *LiveScript* and was included in Netscape Navigator 2.0 which came out in September 1995. In December of the same year Netscape started a partnership with Sun with the goal that both companies would support one programming language for the web. This language was meant to be Java and probably Sun wanted Netscape to discontinue LiveScript in the long run but the companies agreed on a short term strategy: They began an effort to integrate JavaScript into Java and vice-versa with Java appealing to professional programmers and JavaScript being the lightweight little brother for quickly writing small scripts. Fortunately, things worked out very differently.
 
-The most important long term result of the agreement between Netscape and Sun was that LiveScript was renamed to JavaScript. Though the two languages have little in common, the name JavaScript, now a trademark of Oracle, persists to this day and has caused confusion ever since. Despite the original intention, JavaScript is neither related to Java nor its little brother. 
+The most important long term result of the agreement between Netscape and Sun though was that LiveScript was renamed to *JavaScript*. Though the two languages have little in common, the name JavaScript, now a trademark of Oracle, persists to this day and has caused confusion ever since. Despite the original intention, JavaScript is neither related to Java nor its little brother. 
 
 JavaScript gained traction right from the beginning and was quickly adopted by companies in order to write scripts for the web.
 
-Microsoft was Netscape's antagonist in what became the *browser war*. They also wanted to have a programming language inside their browser and because JavaScript was so promising, Microsoft reverse engineered JavaScript and included their own implementation of the language in Internet Explorer 3 in 1996. They called it JScript to avoid trademark issues and did a great job of resembling all of JavaScript's quirks and implementing them in JScript as well.
+Microsoft was Netscape's antagonist in what became the *browser war*. They also wanted to have a programming language inside their browser and because JavaScript was so promising, Microsoft reverse engineered JavaScript and included their own implementation of the language in Internet Explorer 3 in 1996. They called it JScript to avoid trademark issues and did a great job of recreating all of JavaScript's quirks and implementing them in JScript as well.
 
 Both Netscape and Microsoft also included support for JavaScript in their server environments, Netscape Enterprise Server 2.0 and IIS 3.0 respectively (both released in 1996).
 
@@ -111,6 +117,8 @@ Strict Mode is supported by Firefox 4+, Chrome 13+, Internet Explorer 10+ and Sa
 Future versions of the JavaScript language extend on ES5.1 Strict Mode so I advise you to use Strict Mode whenever possible.
 
 ## Harmony (2012 and Next)
+
+[...]
 
 # 02 Fundamentals
 
@@ -276,7 +284,7 @@ You do not really need to create wrapper objects in order to access their method
 ```
 The builtin methods will be discussed in [chapter 6](#06.00.00).
 
-Generally, there is no need to use the wrapper functions. `Number` and `Boolean` do not provide useful methods and the methods of `String` can directly be used on string values, which will be temporarily converted to an object by the interpreter. There are also constructor functions for objects and arrays, but instead of writing `new Object()` or `new Array()` you should be using the literals `{}` and `[]` respectively.
+Generally, there is no need to use the wrapper functions. `Number` and `Boolean` do not provide useful methods and the methods of `String` can directly be used on string values, which will be temporarily converted to an object by the interpreter. There are also constructor functions for objects and arrays, but instead of writing `new Object()` or `new Array()` you should be using the literals `{}` and `[]` respectively. If you use a wrapper constructor without the `new` keyword, you will get a primitive value.
 
 ### Arrays
 There is no array type in JavaScript. Arrays are special objects that have numeric indices, a magic `length` property and their own literal. You can create an array using a pair of square brackets `[ ]`, containing zero or more comma-seperated values.
@@ -500,6 +508,8 @@ The `debugger` statement has no defined behavior but can be used by implementors
 Switch evaluates an expression and matches it against labels. To each label there is an associated statement and when the expression matches a label, the associated statement is executed. If no match is found, an optional `default` clause is executed. You can use `break` in a statement, to step out of the clause's execution and continue after the `switch` statement. After a labeled statement is executed, instead of the switch statement's execution being terminated, the following labeled statement inside the switch statement (if there is another labeled statement) is executed - this is called "cases falling through". You shoud absolutely prevent that from happening and so, while using `break` in clause is syntactically optional, it is semantically mandatory.
 
 Because of the questionable behavior of `switch`, it is best to avoid using it.
+
+NOTICE: The `switch` statement uses the [strict comparison operator](#XX.XX) internally.
 
 #### throw
 JavaScript has exception handling and `throw` is used to throw one. This will result in the immediate termination of the current execution context (function) giving control to the previous context until a `try ... catch` clause is found. Execution is then continued in the block following the `catch` statement and the value that was thrown is bound to the `catch` block's parameter. Any value can be thrown.
@@ -1038,6 +1048,51 @@ These are all the techniques to convert a string value to a number roughly sorte
 ### Identifiers
 Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character `_` and may not start with a digit.
 
+An identifier must not be one of the following reserved words:
+- `break`
+- `case`
+- `catch`
+- `class`
+- `const`
+- `continue`
+- `debugger`
+- `default`
+- `delete`
+- `do`
+- `else`
+- `enum`
+- `export`
+- `extends`
+- `false`
+- `finally`
+- `for`
+- `function`
+- `if`
+- `implements`
+- `import`
+- `instanceof`
+- `interface`
+- `let`
+- `new`
+- `package`
+- `private`
+- `protected`
+- `public`
+- `return`
+- `static`
+- `switch`
+- `super`
+- `this`
+- `throw`
+- `true`
+- `try`
+- `typeof`
+- `var`
+- `void`
+- `while`
+- `with`
+- `yield`
+
 ### Variable Declaration
 A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
 ```javascript
@@ -1225,7 +1280,7 @@ var f = function () {
 The function above will always return `undefined` and everything that comes after the `return` statement is never executed. So always keep in mind to put the expression following a `break`, `continue`, `return` or `throw` key on the same line.
 
 Another exception to the three rules above is, that ASI never intervenes inside the head of a `for` loop. A `for` statement requires to have two semicolons, seperating the initialization, condition and final expression and these semicolons will never be inserted automatically.
-```
+```javascript
 for (var i = 0
     i < n
     i += 1) {
@@ -2083,7 +2138,7 @@ Function.prototype.create = function () {
     return (typeof theOther === 'object' && theOther) || that;
 };
 ```
-Calling the `create` method on a constructor function results in the exact same constellation of objects and their connections as if the constructor was invoked with `new`. So, while it technically does not matter, the `create` method makes for a less confusing reading of code.
+Calling the `create` method on a constructor function results in almost the exact same constellation of objects and their connections as if the constructor was invoked with `new`. So, while it technically does not matter, the `create` method makes for a less confusing reading of code. We will come back to the `create` method in a moment.
 
 ### Using Constructors
 Instead of classes, we define functions, that can be used, as constructors:
@@ -2162,6 +2217,76 @@ memento.isLong(); // false
 The `length` variable is accessible inside the constructor function even when it has returned. But the variable is not added as a member to this or any object and is thus not visible from the outside. The `isLong` function can use the `length` variable because of closure and everytime, you call that method, it gives you the correct result. The scope, in which length exists, lives on, but is unnaccessible from code outside of the constructor. 
 
 Some people attach variables they consider private to the object and prefix their name with an underscore to indicate that it is a private variable. It does not really make sense to use privacy by convention when there is also privacy by technology. When you see variables, starting with underscores, in someone else's code, respect their proclamation of privacy for these variables, but do not rely on it in your own code - use closure instead.
+
+### BONUS: `create`
+Above, I proposed a function to be used instead of the `new` keyword. I find it convenient to use save this function as `Function.prototype.create`.
+```javascript
+Function.prototype.create = function () {
+    var that = Object.create(this.prototype || { }),
+        theOther = this.apply(that, arguments);
+    that.constructor = this;
+    return (typeof theOther === 'object' && theOther) || that;
+};
+```
+Because I personally dislike the use of `new` because it obscures what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
+```javascript
+var b0 = Boolean.create('true');
+b0.valueOf(); // TypeError: valueOf method called on incompatible Object
+
+var n0 = Number.create('1337');
++n0; // TypeError: valueOf method called on incompatible Object
+
+var d0 = Date.create();
+console.log(d0); // undefined
+typeof d0; // 'object'
+```
+The `Date` constructor is especially interesting: Its prototype is a `Date` object with the information `Invalid Date`. When the constructor is invoked (without `new`, but with `apply`), it returns a string representation of the current date. This string fails the condition in the return statement and thus `that` is returned which still holds the invalid date. So the new object is an object, but that is logged as `undefined` to the console.
+
+The above version of `create` does work with the `Array` and `RegExp` constructors, but the wrappers for primitive values and the `Date` constructor are not.
+
+While you should not really you the wrapper objects anyway, there is no way around a `Date` object. The best solution is probably, to catch this special case.
+```javascript
+Function.prototype.create = function () {
+    if (this === Date) {
+        return new (Function.prototype.bind.apply(this, Array.prototype.slice.call(arguments)));
+    }
+
+    var that = Object.create(this.prototype || { }),
+        theOther = this.apply(that, arguments);
+    that.constructor = this;
+    return (typeof theOther === 'object' && theOther) || that;
+};
+```
+The same trick sadly does not work for `Boolean`, `String`, `Number` and `Function`, but again, why would you use these functions anyway? To make our `create` function more robust, we can catch all the cases in which invoking it would not make too much sense.
+```javascript
+Function.prototype.create = (function () {
+
+    var incompatibleBuiltins = [
+        Boolean,
+        Function,
+        Number,
+        String
+    ];
+
+    return function () {
+        if (typeof this === 'function' && incompatibleBuiltins.indexOf(this) === -1) {
+            if (this === Date) {
+                return new (Function.prototype.bind.apply(this, Array.prototype.slice.call(arguments)));
+            }
+
+            var that = Object.create(this.prototype || { }),
+                theOther = this.apply(that, arguments);
+            that.constructor = this;
+            return (typeof theOther === 'object' && theOther) || that;
+        } else {
+            throw new TypeError('Cannot use Function.prototype.create on non-function or builtin constructor.');
+        }
+    };
+}());
+```
+As you can see, we use the builtin `TypeError` function with `new`. It generally works with `create`, but when it is thrown, it does not include information about the code that triggered the exception.
+
+Another issue difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
 
 ## BONUS: y-Combinator
 
@@ -2945,14 +3070,14 @@ console.log(planets); // [ 'Alderaan', 'Dagobah', 'Bespin' ]
 Notice that this method alters the array on which it is called on.
 
 #### `slice`
-This method returns a portion of an array and removes that portion. It returns a new array which is a shallow copy of a part of the original array, where the part to be sliced is determined by `slice`'s parameter. The first parameter specifies the index of the first element to be sliced and the second parameter specifies the index of the first element that is not sliced.
+This method returns a portion of an array. It returns a new array which is a shallow copy of a part of the original array, where the part to be sliced is determined by `slice`'s parameter. The first parameter specifies the index of the first element to be sliced and the second parameter specifies the index of the first element that is not sliced.
 ```javascript
 var fellowship = [ 'Legolas', 'Frodo', 'Sam', 'Merry', 'Pippi', 'Gimli'];
 var hobbits = fellowship.slice(1, 5);
 ```
 When the first argument is a negative number, the slicing offset will be calculated from the end of the array. The same goes for the second argument of slice and when both arguments are omitted, the whole array is returned.
 ```javascript
-var fellowship = [ 'Legolas', 'Frodo', 'Sam', 'Merry', 'Pippi', 'Gimli'];
+var fellowship = [ 'Legolas', 'Frodo', 'Sam', 'Merry', 'Pippi', 'Gimli' ];
 var dwarves = fellowship.slice(-1);
 ```
 
@@ -3038,6 +3163,186 @@ console.log(planets); // [ 'Hoth', 'Kashyyk', 'Korriban', 'Yavin' ]
 Notice that this method alters the array on which it is called on.
 
 ## Strings
+
+### `String` constructor
+There is a constructor function that creates string objects: `String`.
+```javascript
+console.log(typeof String); // 'function'
+var s = String.create('I find your lack of faith disturbing.');
+console.log(s); // [object String]
+console.log('' + s); // 'I find your lack of faith disturbing.'
+```
+There is probably no reason to use the `String` constructor to create a so-called wrapper object for a string value. The wrapper does provide useful methods for you to work with strings, but you can access them directly on primitive string values. The JavaScript interpreter will silently create a string object, invoke the method on it, return the result and discard the object immediately.
+
+The `String` has a `prototype` property which points to a string object from which all string objects inherit: `String.prototype`.
+
+### Methods
+The methods, available on `String.prototype` and thus also on every string object are the following:
+
+#### `charAt`
+This method returns the character at a specified index inside a string. Characters inside a string are index from `0` to `length - 1`.
+```javascript
+var s = 'Hello World!';
+console.log(s.charAt(2)); // 'l'
+console.log(s.charAt(8)); // 'r'
+```
+
+#### `charCodeAt`
+This method returns the Unicode representation of the character at a specified index inside a string.
+```javascript
+var s = 'Hello World!';
+console.log(s.charCodeAt(2)); // 108
+console.log(s.charAt(8)); // 114
+```
+
+#### `codePointAt` (ES6)
+
+#### `concat`
+This method combines an arbritrary number of strings into a new one. If arguments of other types are passed to `concat` they will be coerced to string.
+```javascript
+var greet = 'Hello ';
+var whom = 'World';
+console.log(greet.concat(whom)); // 'Hello World'
+```
+
+#### `contains` (ES6)
+
+#### `endsWith` (ES6)
+
+#### `indexOf`
+This method returns the index of the first occurrence of a string inside another string or `-1` if the search string is not contained inside the other string.
+```javascript
+var s = 'Hello World';
+console.log(s.indexOf('o W')); // 4
+console.log(s.indexOf('y')); // -1
+```
+`indexOf` takes an optional second parameter that specifies the location inside the string from which on the search shall start.
+```javascript
+console.log(s.indexOf('o')); // 4
+console.log(s.indexOf('o', 5)); // 7
+
+#### `lastIndexOf`
+This method works just like `indexOf` but searches from the end of a string instead of from the beginning.
+```javascript
+var s = 'Hello World';
+console.log(s.lastIndexOf('o')); // 7
+console.log(s.lastIndexOf('l')); // 9
+```
+The second parameter specifies the index at which the search shall start, but counted from the end.
+```javascript
+console.log(s.lastIndexOf('o', 0)); // -1
+console.log(s.lastIndexOf('o', 5)); // 4
+```
+
+#### `localeCompare`
+
+#### `match`
+The method runs the string against a regular expression and returns an array with all matches.
+```javascript
+var s = 'May the force be with you!';
+console.log(s.match(/force/)); // [ 'force' ]
+```
+Regular expression will be covered [in the next suchapter](#06.03.00).
+
+#### `repeat` (ES6)
+This method creates a new string by repeating the on that it is called on several times.
+```javascript
+var a = 'Aaaa';
+console.log(a.repeat(5)); // 'AaaaAaaaAaaaAaaaAaaa'
+```
+
+#### `replace`
+This method does string replacement by searching for a regex or substring and replacing all or the first match. The first parameter of `replace` can be a regex or a substring to search for, the second parameter is either a replacement string or a relpacement function.
+```javascript
+var s = 'May the force be with you!';
+console.log(s.replace('force', 'sauce')); // 'May the sauce be with you!'
+console.log(s.replace(/\s/g, '-')); // 'May-the-force-be-with-you!'
+console.log(s.replace(/[A-Za-z]/g, function (s) { return s.toUpperCase(); }));
+```
+
+#### `search`
+This method runs a string against a regular expression and returns the index of the first match or `-1` if there are no matches.
+```javascript
+var s = 'May the force be with you!';
+console.log(s.search(/force/)); // 8
+console.log(s.search(/skywalker/)); // -1
+```
+
+#### `slice`
+This method returns a portion of a string. The first parameter specifies the index of the first character to be sliced and the second parameter specifies the index of the first character that is not sliced.
+```javascript
+var s = 'It\'s a trap!';
+console.log(s.slice(7, 11));
+```
+When the first argument is a negative number, the slicing offset will be calculated from the end of the string. The same goes for the second argument of slice and when both arguments are omitted, the whole string is returned.
+```javascript
+var s = 'It\'s a trap!';
+console.log(s.slice(-5, -1));
+```
+
+#### `split`
+This method seperates a string into pieces by a seperator. The seperator can be specified as a string or a regular expression.
+```javascript
+var sentence = 'These are not the droids you are looking for.';
+var words = sentence.split(' ');
+console.log(words); // [ 'These', 'are', 'not', 'the', 'droids', 'you', 'are', 'looking', 'for.' ]
+```
+When the string is empty, `split` returns not an empty array but an array with one element, which is the empty string.
+
+#### `startsWith`
+
+#### `substr`
+This method returns a substring from the original string. The first parameter specifies the index of the first character to be included in the substring and the second parameter specifies the length of the substring.
+```javascript
+var s = 'One ring to rule them all';
+console.log(s.substr(4, 4)); // 'ring'
+console.log(s.substr(-3)); // 'all'
+```
+As you can see above, if the first parameter is negative, the offset is calculated from the end of the string. And if the second parameter is omitted, the substring will continue to the end of the original string.
+
+#### `substring`
+This method returns a substring from the original string. The first parameter specifies the index of the first character to be included in the substring and the second parameter specifies the index of the first character that is not longer part of the substring.
+```javascript
+var s = 'One ring to rule them all';
+console.log(s.substring(4, 8)); // 'ring'
+console.log(s.substring(-3)); // 'One ring to rule them all'
+```
+When an argument is negative, it is treated as if it were `0`, if the second argument is omitted, the substring will continue to the end of the original string.
+
+#### `toLowerCase`
+This method returns a string where all characters are converted to their lower-case version.
+```javascript
+var s = 'HELLO WORLD!';
+console.log(s.toLowerCase()); // 'hello world!'
+```
+There is also a locale sensitive version `toLocaleLowerCase` that may, in some character sets, return different results.
+
+#### `toString`
+This method returns a primitive string value from a string object. You should not use string objects explicitly, but this method may be useful when you want to create a string from any object without knowing whether it is a string object or not.
+```javascript
+var s = 'X-Wing';
+var o = new String('S-Wing');
+console.log(s.toString()); // 'X-Wing'
+console.log(o.toString()); // 'S-Wing'
+```
+
+#### `toUpperCase`
+This method returns a string where all characters are converted to their upper-case version.
+```javascript
+var s = 'It\'s a trap!';
+console.log(s.toUpperCase()); // 'IT\'S A TRAP'
+```
+There is also a locale sensitive version `toLocaleUpperCase` that may, in some character sets, return different results.
+
+#### `trim`
+This methods strips whitespace from the beginning and the end of a string and returns the result as a new string value. The original string is not altered.
+```javascript
+var s = '  Hello World      \t \n  ';
+console.log(s.trim()); // 'Hello World'
+```
+
+#### `valueOf`
+This method does the same thing as `toString`.
 
 ### Surrogate Pairs
 Be careful when dealing with Unicode characters that are outside of the so-called "Basic Multilingual Plane" (BMP) which consists of 65536 symbols (16bit) and covers most of the characters you need to write in a western language. There are sixteen more namespaces in Unicode (each containing 65536 characters) and JavaScript implementations internally represent characters from these namespaces as a combination of two 16bit values. These are called "surrogate pairs" and have an unfortunate side-effect: JavaScript's string-related functions as well as the magic `length` property consider a single symbol that is composed of a surrogate pair, to be two characters.
