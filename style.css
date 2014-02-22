@@ -60,7 +60,9 @@ em {
 
 h1 {
 	font-size: 3em;
-	margin: 3em 0 1.5em;
+	margin: 5em 0px 1.5em;
+	background-color: #ededed;
+	padding: 20px;
 }
 
 h2 {
@@ -108,6 +110,7 @@ p  {
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
+	text-align: justify;
 }
 
 p+p {
@@ -127,5 +130,5 @@ strong {
 
 #title {
 	font-size: 5em;
-	margin: 200px 0;
+	margin: 500px 0;
 }
