@@ -1,29 +1,115 @@
 
 <h1 id="title">teachingJS</h1>
 
-The MIT License (MIT)
-
 Copyright © 2014 Peter Steinberg
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## [Creative Commons Attribution 4.0 International Public License](http://creativecommons.org/licenses/by/4.0/)
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+### Section 1 – Definitions.
+
+1. *Adapted Material* means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+2. *Adapter's License* means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+3. *Copyright and Similar Rights* means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(2)(1)-(2) are not Copyright and Similar Rights.
+4. *Effective Technological Measures* means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+5. *Exceptions and Limitations* means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+6. *Licensed Material* means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
+7. *Licensed Rights* means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+8. *Licensor* means the individual(s) or entity(ies) granting rights under this Public License.
+9. *Share* means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
+10. *Sui Generis Database Rights* means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
+11. *You* means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+
+### Section 2 – Scope.
+
+1. *License grant.*
+    1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+        1. reproduce and Share the Licensed Material, in whole or in part; and
+        2. produce, reproduce, and Share Adapted Material.
+    2. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
+    3. Term. The term of this Public License is specified in Section 6(1).
+    4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(1)(4) never produces Adapted Material.
+    5. Downstream recipients.
+        1. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
+        2. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
+    6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(1)(1)(1)(1).
+
+2. *Other rights.*
+    1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+    2. Patent and trademark rights are not licensed under this Public License.
+    3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+
+### Section 3 – License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+
+1. *Attribution.*
+
+    1. If You Share the Licensed Material (including in modified form), You must:
+        1. retain the following if it is supplied by the Licensor with the Licensed Material:
+            1. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+            2. a copyright notice;
+            3. a notice that refers to this Public License;
+            4. a notice that refers to the disclaimer of warranties;
+            5. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+        2. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+        3. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+    2. You may satisfy the conditions in Section 3(1)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+    3. If requested by the Licensor, You must remove any of the information required by Section 3(1)(1)(1) to the extent reasonably practicable.
+    4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
+
+### Section 4 – Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+
+1. for the avoidance of doubt, Section 2(1)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;
+2. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
+3. You must comply with the conditions in Section 3(1) if You Share all or a substantial portion of the contents of the database.
+
+For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
+
+### Section 5 – Disclaimer of Warranties and Limitation of Liability.
+
+1. Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+2. To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+
+3. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+
+### Section 6 – Term and Termination.
+
+1. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
+
+2. Where Your right to use the Licensed Material has terminated under Section 6(1), it reinstates:
+    1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
+    2. upon express reinstatement by the Licensor.
+For the avoidance of doubt, this Section 6(2) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
+3. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+4. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+
+### Section 7 – Other Terms and Conditions.
+
+1. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
+2. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
+
+### Section 8 – Interpretation.
+
+1. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
+2. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
+3. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+4. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 
 ## Preface
 
-This is a living document.
-
 ### How I approached this book
-This book was created as a script for a workshop on JavaScript. I wrote it to gather my knowledge, to put it into words, to structure it, to illustrate it with examples. I assume the reader is familiar with programming in general and I sometimes compare JavaScript to Java, but Java skills are not required. I sometimes also assume a basic knowledge of programming patterns or field specific terms. If you have never been programming before, this might not be a book for you.
+This book was created as a script for a workshop on JavaScript. I wrote it to gather information about the language, to structure this information and to illustrate it with examples. I assumed the reader would be familiar with programming in general and I sometimes compare JavaScript to Java, but Java skills are not required in order to understand this book. I sometimes also assume a basic knowledge of programming patterns or field specific terms. If you have never been programming before, this might not be a book for you.
 
-I would love this book to be self-explainatory enough for it to be read without attending the related workshop, but as of now it isn't. I want it to be a reference containing all there is to know, but it is not complete yet. I want it to be structured in a way that encapsulates topics in their own self-contained chapters or subchapters and I also want it to read better than a boring reference, but it is not there yet. All of these goals may never be met completely, because it is impossible to cover every edge case of the language and because there will always have to be a compromise between readabilty and correctness or completeness.
+I want this to be a reference containing all there is to know about JavaScript, but it is far from complete. I want it to be structured in a way that encapsulates topics in their own self-contained chapters or subchapters, but I also want it to be more interesting than a boring reference. These goals may never be met completely, because it is impossible to cover every edge case of a programming language and because there will always have to be a compromise between readabilty and correctness or completeness.
 
-So as my work on this book progresses, my understanding of the language will change and even the language itself will change.
+But this is still work in progress so things might eventually get better. And as my work on this book progresses, my understanding of the language will change and even the language itself will change.
 
 ### How time approaches this book
-By the time of writing (early 2014), the most recent version of the language specification is ECMA262 Edition 5.1 (2011). Sometimes I point out changes frmo Edition 3 and I regularly include explanations on things that are going to be in Edition 6. But when there is no explicit information on the version of the language in which a certain feature exists or not, assume that I am talking about ES5.1. Most likely, you want to write code to be run inside a web browser. Fortunately, ES5 compatibility is more or less present in all current web browsers: Firefox 4+, Chrome 13+, Internet Explorer 10+, Safari 6+. ES6 support is not yet at a level at which you want to rely on ES6 features; give that some more years.
+Today, the most recent version of the language specification is ECMA262 Edition 5.1 (2011). Sometimes I point out changes from Edition 3 and I regularly include explanations on things that are going to be in Edition 6. But when there is no explicit information on the version of the language in which a certain feature exists or not, assume that I am talking about ES5.1. Most likely, you want to write code to be run inside a web browser. Fortunately, ES5 compatibility is more or less present in all current web browsers: Firefox 4+, Chrome 13+, Internet Explorer 10+, Safari 6+. ES6 support is mostly preliminary and depending on ES6 features in not advised.
 
 Every few months there is a new version of Firefox and Chrome and it will not take a long time until the notes on ES6 support regarding certain browsers in this book are outdated. In the meantime, the specification process for ES6 is still going on for who knows how long and things might change eventually. But this book is not considered "done": As things change, so will this book (hopefully).
 
@@ -33,9 +119,9 @@ Of course you can read this book however you like, but let me give you some info
 That does not mean, that the way in which the chapters and subchapters are ordered is irrelevant.
 
 ### How this book approaches this book
-After this introduction to the text, there will be a chapter on the history of JavaScript. It may influence your understanding of the language to know where it came from, what its influences are and how it developed over time. The history covers the past, the present and the future.
+After this preface, there will be a chapter on the history of JavaScript. It may influence your understanding of the language to know where it came from, what its influences are and how it developed over time. The history covers the past, the present and the future.
 
-The introduction to the language itself will start with the fundamentals. First, there will be a short part on how you can execute your own JavaScript code. Then the atoms and molecules of JavaScript are presented, the statements that compose a program, the operators that combine values to new values, the types of data you can manipulate in JavaScript and the weird mechanics of how JavaScript manipulates those data itself.
+The introduction to the language itself will start with the fundamentals. First, there will be a short part on how you can execute your own JavaScript code. Then the atoms and molecules of JavaScript are presented, the statements that compose a program, the operators that combine values to new values, the types of data you can manipulate in JavaScript and the weird mechanics of how JavaScript manipulates data itself.
 
 What follows, is a short primer on objects, explaining what they are and how to work with them. But the real power of objects will be released later in a chapter about inheritance. Inheritance is the way in which objects are related to each other and is a really important thing to talk about.
 
@@ -44,14 +130,14 @@ But inheritance in JavaScript does not work without functions, so we will introd
 ### How others approach their books
 A lot of pages have been written on JavaScript and you should probably read some of them. When you search for a book on JavaScript, you will probably stumble upon one of these:
 
-- [Marijn Haverbeke - "Eloquent JavaScript"](http://eloquentjavascript.net/). This book will be especially valuable to people how want to learn JavaScript without any experience or prior knowledge in programming. The book is a quick and straightforward introduction to the language and covers working with the DOM.
-- [Cody Lindley - "JavaScript Enlightenment"](http://www.javascriptenlightenment.com/). This is not an introductory book that toys around with basic stuff, nor does it cover every aspect of JavaScript. Its strength lies in an extensive look at objects, constructors and builtin wrapper objects.
-- [Douglas Crockford - "JavaScript - The Good Parts"](http://javascript.crockford.com/). What many consider the JavaScript bible offers a balanced level of detail and valueable information on how to leverage the language's full potential. This book teaches you how to write good code and how to avoid dangerous parts of JavaScript.
-- [David Herman - "Effective JavaScript"](http://effectivejs.com/). Being targeted at people who already know a bit of JavaScript, this book has a ton of information on weird behavior of the language and edge cases you could have never have thought of. It consists of 68 items that dig into a lot of very concrete and some abstract situations and the advice contained in this book will make you a better JavaScript programmer.
+- [Marijn Haverbeke - "Eloquent JavaScript"](http://eloquentjavascript.net/). This book will be especially valuable to people how want to learn JavaScript without much experience in programming. The book is a quick and straightforward introduction to the language itself as well as working with the DOM.
+- [Cody Lindley - "JavaScript Enlightenment"](http://www.javascriptenlightenment.com/). This is not an introductory book that toys around with basic stuff, nor does it cover every aspect of JavaScript. Its strength lies in an extensive look at objects, constructors and builtin wrappers.
+- [Douglas Crockford - "JavaScript - The Good Parts"](http://javascript.crockford.com/). Considered by many to be the bible of JavaScript, "JavaScript - The Good Parts" offers a balanced level of detail and valueable information on how to leverage the language's full potential. This book teaches you how to write good code and how to avoid dangerous parts of JavaScript.
+- [David Herman - "Effective JavaScript"](http://effectivejs.com/). Targeted at people who already know some JavaScript, this book has a lot of information on weird behavior of the language and edge cases you would have never thought of. It consists of 68 items that dig into a lot of very concrete situations and the advice contained in this book will definitely make you a better JavaScript programmer.
 
 # The History of JavaScript
 
-The prevailing concepts in a programming language always fit into a certain context. Usually this is about the influences on the creators of a programming language, be it former experience with other languages, personal career background or company management directions. A multitude of factors determines design goals of a language and whether those goals are met or not. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms, it is necessary to put a language's development into context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
+The prevailing concepts in a programming language always fit into a certain context. Usually this is about influences on the creators of a programming language, be it former experience with other languages, personal career background or company management directions. A multitude of factors determines design goals of a language and whether those goals are met or not. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms, it is necessary to put a language's development into context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
 
 ## Prehistoric Events (early 60s to late 80s)
 
@@ -2219,7 +2305,7 @@ The `length` variable is accessible inside the constructor function even when it
 Some people attach variables they consider private to the object and prefix their name with an underscore to indicate that it is a private variable. It does not really make sense to use privacy by convention when there is also privacy by technology. When you see variables, starting with underscores, in someone else's code, respect their proclamation of privacy for these variables, but do not rely on it in your own code - use closure instead.
 
 ### BONUS: `create`
-Above, I proposed a function to be used instead of the `new` keyword. I find it convenient to use save this function as `Function.prototype.create`.
+Above, I proposed a function to be used instead of the `new` keyword. I find it convenient to save this function as `Function.prototype.create`.
 ```javascript
 Function.prototype.create = function () {
     var that = Object.create(this.prototype || { }),
@@ -3590,5 +3676,3 @@ Object.prototype.toJSON = function () {
 
 #### `Object.prototype.valueOf()`
 This function tries to return a primitive value representing the object that the function is called on.
-
-## BONUS: JSON (JavaScript Object Notation)
