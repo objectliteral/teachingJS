@@ -5,6 +5,11 @@ Arrays also have their own literal notation in JavaScript and you can create a n
 ```javascript
 var a = [ 'first', 'second', 'third' ];
 ```
+The `a` variable now contains an array with three elements: the strings `'first'`, `'second'` and `'third'`. You can access the array elements using the bracket notation:
+```javascript
+console.log(a[0]); // 'first'
+```
+The dot notation will not work for array elements as numbers are not valid identifiers in JavaScript and the dot notation only works with identifiers.
 
 ### Lineage
 All arrays inherit from `Object.prototype`, but their constructor is `Array` so they also inherit from `Array.prototype`. The `typeof` operator reports arrays as objects.
@@ -35,7 +40,7 @@ console.log(a.length); // 6
 ```
 
 ### `length`
-Arrays have a `length` property which is an integer value that always one greater than the highest index of a property.
+Arrays have a `length` property which is an integer value that is always one greater than the greatest element index.
 ```javascript
 var a = [ 'Thorin', 'Bombur', 'Balin', 'Bifur', 'Bombur' ];
 console.log(a.length); // 5
@@ -136,7 +141,7 @@ Array.prototype.filter = function (fn, thisArg) {
 ```
 
 #### `find` (ES6)
-This method invokes a callback function for each of an array's elements and returns the first value for which the callback returns a truthy value and `undefined` if none of the array's elements passed the test.
+This method invokes a callback function for each of an array's elements and returns the first value for which the callback returns a truthy value or `undefined` if none of the array's elements passed the test.
 ```javascript
 var numbers = [ 1, 67, 2.3, -856 ];
 var isFractional = function (el) {
@@ -209,20 +214,23 @@ var dwarves = [ 'Oin', 'Gloin', 'Fili', 'Kili' ];
 console.log(dwarves.indexOf('Fili')); // 2
 console.log(dwarves.indexOf('Gimli')); // -1
 ```
+You can also specify a second parameter that contains the index from which the search shall start.
+```javascript
+var dwarves = [ 'Oin', 'Gloin', 'Fili', 'Kili' ];
+console.log(dwarves.indexOf('Fili', 3)); // -1
+```
 `indexOf` is new as of ES5, but a polyfill could look like this:
 ```javascript
-Array.prototype.indexOf = function (fn, thisArg) {
-    var i = 0,
-        l = this.length,
-        res;
+Array.prototype.indexOf = function (el, from) {
+    var i = +from || 0,
+        l = this.length;
 
     if (!Array.isArray(this)) {
         throw new TypeError();
     }
 
     for (i; i < l; i += 1) {
-        res = fn.call(thisArg, this[i], i, this);
-        if (res) {
+        if (el === this[i]) {
             return i;
         }
     }
