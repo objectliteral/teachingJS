@@ -82,6 +82,15 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#arrays">Arrays</a></li>
 <li><a href="#regexp">RegExp</a></li>
 </ul></li>
+<li><a href="#variables">Variables</a><ul>
+<li><a href="#identifiers">Identifiers</a></li>
+<li><a href="#variable-declaration">Variable Declaration</a></li>
+<li><a href="#hoisting">Hoisting</a></li>
+<li><a href="#variable-assignment">Variable Assignment</a></li>
+<li><a href="#constant-declaration">Constant Declaration</a></li>
+<li><a href="#declaration-with-let-es6">Declaration with <code>let</code> (ES6)</a></li>
+<li><a href="#call-by-value-call-by-reference">Call-by-value / Call-by-reference</a></li>
+</ul></li>
 <li><a href="#statements">Statements</a><ul>
 <li><a href="#declarations">Declarations</a></li>
 <li><a href="#structuring-statements">Structuring statements</a></li>
@@ -101,15 +110,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li><a href="#truthiness-and-falsiness">Truthiness and Falsiness</a></li>
 <li><a href="#abstract-comparison-operator">Abstract comparison operator</a></li>
 <li><a href="#number-coercion">Number coercion</a></li>
-</ul></li>
-<li><a href="#variables">Variables</a><ul>
-<li><a href="#identifiers">Identifiers</a></li>
-<li><a href="#variable-declaration">Variable Declaration</a></li>
-<li><a href="#hoisting">Hoisting</a></li>
-<li><a href="#variable-assignment">Variable Assignment</a></li>
-<li><a href="#constant-declaration">Constant Declaration</a></li>
-<li><a href="#declaration-with-let-es6">Declaration with <code>let</code> (ES6)</a></li>
-<li><a href="#call-by-value-call-by-reference">Call-by-value / Call-by-reference</a></li>
 </ul></li>
 <li><a href="#bonus-automatic-semicolon-insert-asi">BONUS: Automatic Semicolon Insert (ASI)</a></li>
 </ul></li>
@@ -379,7 +379,9 @@ teachingJS
 <p>Strict Mode is supported by Firefox 4+, Chrome 13+, Internet Explorer 10+ and Safari 6+. These browsers will recognize the <code>'use strict';</code> statement and treat your code as strict code. Environments that do not support Strict Mode will simply ignore the <code>'use strict';</code> statement because it is a regular string expression with no effect. There is also a function form for Strict Mode: You include the <code>'use strict';</code> statement as the first statement in a function body and then this function will be executed in strict mode. It is generally not possible to toggle browser consoles into Strict Mode.</p>
 <p>Future versions of the JavaScript language extend on ES5.1 Strict Mode so I advise you to use Strict Mode whenever possible.</p>
 <h2 id="harmony-2012-and-next"><a href="#harmony-2012-and-next">Harmony (2012 and Next)</a></h2>
-<p>[…]</p>
+<p>The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are already very likely to be part of the next standard edition. The general goals of the next version of the language are the following: - Adding features that support building large and complex applications, - making the language a better compile target, - stripping away troublesome language elements, - keeping semantic additions to a minimum, - making the language even easier to write and reduce code length. ES6 introduces classes and a builtin module syntax in order to make writing large applications easier. It builds on top of ES5 Strict mode which removes some weird statements and behavior. And it includes things like destructuring and default parameters that don’t add new behavior to the language but allow you to write much more short and concise code.</p>
+<p>While it is not advised to use ES6 features at this moment, I mention some of them throughout this book. If you want to find out more about ES6 support in current implements, (kangax’s compatibility table)[http://kangax.github.io/es5-compat-table/es6/] is the place to go.</p>
+<p>That should be it for a short peek into what’s coming in the future. Some concrete features will be mentioned throughout the rest of the book.</p>
 <h1 id="fundamentals"><a href="#fundamentals">02 Fundamentals</a></h1>
 <p>In order to learn how to write JavaScript programs we will introduce the building blocks of the language one-by-one. We will not write useful code right away but start with covering the fundamental aspects of the language that set the basis for everything you will learn later on and provide you with enough knowledge to feel like you can estimate the extent of the langauge. I chose this approach over a more practical one so that we can cover all the topics in a complete and self-contained fashion. Working a lot with practical examples is great, but it can easily lead to an unstructured text where pieces of information regarding a specific topic are scattered all over the place rather than being fully explained in their own chapter.</p>
 <p>As a consequence of this approach, the following chapter might seem daunting at times, but it contains a lot of useful information. It coveres: - JavaScript’s types, - the statements you can use to build your program, - all the operators that are in the language to compute new values from existing ones, - information about how the language converts values of one type into another type and - it shows you how variables are declared.</p>
@@ -526,6 +528,79 @@ b = <span class="kw">undefined</span>;
 <p>In JavaScript there are builtin regular expressions and they also have their own literal. You can create a regular expression object by simply enclosing a regex inside slashes <code>/</code>.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> email = <span class="ot">/</span><span class="bn">[A-Za-z.-_]</span><span class="fl">+</span><span class="ot">@</span><span class="bn">[A-Za-z0-9]</span><span class="fl">{2,}\.</span><span class="bn">[A-Za-z]</span><span class="fl">{2,3}</span><span class="ot">/</span></code></pre>
 <p>Regular Expressions will be discussed in more detail in <a href="#06.00.00">chapter 6</a></p>
+<h2 id="variables"><a href="#variables">Variables</a></h2>
+<h3 id="identifiers"><a href="#identifiers">Identifiers</a></h3>
+<p>Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character <code>_</code> and may not start with a digit.</p>
+<p>An identifier must not be one of the following reserved words: - <code>break</code> - <code>case</code> - <code>catch</code> - <code>class</code> - <code>const</code> - <code>continue</code> - <code>debugger</code> - <code>default</code> - <code>delete</code> - <code>do</code> - <code>else</code> - <code>enum</code> - <code>export</code> - <code>extends</code> - <code>false</code> - <code>finally</code> - <code>for</code> - <code>function</code> - <code>if</code> - <code>implements</code> - <code>import</code> - <code>instanceof</code> - <code>interface</code> - <code>let</code> - <code>new</code> - <code>package</code> - <code>private</code> - <code>protected</code> - <code>public</code> - <code>return</code> - <code>static</code> - <code>switch</code> - <code>super</code> - <code>this</code> - <code>throw</code> - <code>true</code> - <code>try</code> - <code>typeof</code> - <code>var</code> - <code>void</code> - <code>while</code> - <code>with</code> - <code>yield</code></p>
+<h3 id="variable-declaration"><a href="#variable-declaration">Variable Declaration</a></h3>
+<p>A variable declaration consists of the <code>var</code> keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator <code>=</code> and an expression. Declaring and instantly assigning a value is called <code>definition</code>. Multiple declarations and and definitions can be chained together by using the comma operator <code>,</code>. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> x = <span class="dv">3</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(x); <span class="co">// 3</span>
+x = <span class="st">&#39;a string value&#39;</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(x); <span class="co">// &#39;a string value&#39;</span>
+
+<span class="kw">var</span> y = <span class="st">&#39;Why not?&#39;</span>, z, answer = <span class="dv">42</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(y); <span class="co">// &#39;Why not?&#39;</span>
+<span class="ot">console</span>.<span class="fu">log</span>(u); <span class="co">// undefined</span></code></pre>
+<p>The <code>var</code> keyword creates a variable in the local scope of the function. Read more about scope in <a href="#04.03.00">04.03</a></p>
+<h3 id="hoisting"><a href="#hoisting">Hoisting</a></h3>
+<p>JavaScript uses a concept called “hoisting” that moves every variable declaration to the top of the function, while its definition is not.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> f = <span class="kw">function</span> (d, c) {
+    <span class="fu">c</span>(d);
+    <span class="kw">var</span> a = c;
+};
+<span class="co">// becomes:</span>
+<span class="kw">var</span> f = <span class="kw">function</span> (d, c) {
+    <span class="kw">var</span> a;
+    <span class="fu">c</span>(d);
+    a = c;
+};</code></pre>
+<p>The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration not the definition is hoisted and declared variables are initialized with the <code>undefined</code> value, that may cause trouble.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> f = <span class="kw">function</span> () {
+    <span class="ot">console</span>.<span class="fu">log</span>(r2);
+    <span class="kw">var</span> r2 = <span class="st">&#39;d2&#39;</span>;
+    <span class="ot">console</span>.<span class="fu">log</span>(r2);
+    <span class="ot">console</span>.<span class="fu">log</span>(c3);
+};
+<span class="fu">f</span>();
+<span class="co">// undefined</span>
+<span class="co">// &#39;d2&#39;</span>
+<span class="co">// ReferenceError: c3 is not defined</span></code></pre>
+<p>The declaration of <code>r2</code> is hoisted to the top of the function and the variable is initialized with <code>undefined</code>. In contrast, accessing <code>c3</code> will result in an error, since <code>c3</code> was not declared at all.</p>
+<h3 id="variable-assignment"><a href="#variable-assignment">Variable Assignment</a></h3>
+<p>It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in <a href="#04.03.00">04.03</a>).</p>
+<h3 id="constant-declaration"><a href="#constant-declaration">Constant Declaration</a></h3>
+<p>Another way to create containers for values is by using constants. The <code>const</code> keyword behaves syntacially like the <code>var</code> keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">const</span> PI = <span class="fl">3.141592653589793</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(PI); <span class="co">// 3.141592653589793</span>
+PI = <span class="dv">3</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(PI); <span class="co">// 3.141592653589793</span></code></pre>
+<p>If you declare a constant without immediately assigning it a value, that creates a constant with the value of <code>undefined</code>, which can not be changed, so you practically have to assign a value right away.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">const</span> NOVALUE;
+NOVALUE = <span class="st">&#39;value&#39;</span>;
+<span class="ot">console</span>.<span class="fu">log</span>(NOVALUE); <span class="co">// undefined</span></code></pre>
+<p>It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.</p>
+<p>Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.</p>
+<h3 id="declaration-with-let-es6"><a href="#declaration-with-let-es6">Declaration with <code>let</code> (ES6)</a></h3>
+<p>Similar to <code>const</code> and <code>var</code>, <code>let</code> declares a variable with optional immediate assignment of a value. The difference being, that <code>let</code> is block scoped, while <code>var</code> is function scoped. More on scope in <a href="#04.03.00">04.03</a>. <code>let</code> can be used in different flavors (syntaxes). The first one is called <code>let</code> definition and looks just like the <code>var</code> or <code>const</code> syntax.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">let</span> answer = <span class="dv">42</span>;</code></pre>
+<p>The second and third are similar. The <code>let</code> keyword is followed by a set of parentheses which contain one or more variable assignments. The third part of the construct is an expression (finishing up the <code>let</code> expression) or a statement (concluding the <code>let</code> statement).</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> name = <span class="st">&#39;Luke&#39;</span>;
+<span class="kw">let</span> (name = <span class="st">&#39;Anakin&#39;</span>) <span class="ot">console</span>.<span class="fu">log</span>(name); <span class="co">// &#39;Anakin&#39;</span>
+<span class="ot">console</span>.<span class="fu">log</span>(name); <span class="co">// &#39;Luke&#39;</span></code></pre>
+<p>Since a block is a statement you can execute a piece of code with access to “private” variables.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> getSecret;
+<span class="kw">let</span> (
+    secret = <span class="dv">723590</span>
+) {
+    getSecret = <span class="kw">function</span> () {
+        <span class="kw">return</span> secret;
+    };
+};
+<span class="ot">console</span>.<span class="fu">log</span>(<span class="fu">getSecret</span>()); <span class="co">// 723590</span>
+<span class="ot">console</span>.<span class="fu">log</span>(secret); <span class="co">// ReferenceError: secret is not defined</span></code></pre>
+<h3 id="call-by-value-call-by-reference"><a href="#call-by-value-call-by-reference">Call-by-value / Call-by-reference</a></h3>
+<p>The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.</p>
 <h2 id="statements"><a href="#statements">Statements</a></h2>
 <p>Let us look at the building blocks of a JavaScript (or actually any) program: Statements. A JavaScript program consists of zero or more statements. A statement usually involves using a keyword and some special syntax.</p>
 <p>This sub-chapter will introduce all the statements in JavaScript and explain them briefly. Some of them are more important than others, some are dangerous and some are weird. Some of them should not be used at all. Finally, there are some of them, which are being introduced to the language in its next version (ES6, more on that in <a href="#XX.XX">XX.XX</a>).</p>
@@ -1193,79 +1268,6 @@ parseInt(&#39;42&#39;) // 42
 &#39;42&#39;^0 // 42
 ~~&#39;42&#39; // 42</code></pre>
 <p>These are all the techniques to convert a string value to a number roughly sorted by performance from slow (top) to fast (bottom) (based on these <a href="http://jsperf.com/string-to-number-conversion-perf">these</a> <a href="http://jsperf.com/best-of-string-to-number-conversion/4">three</a> <a href="http://jsperf.com/string-to-number-conversion-test">jsperf</a> benchmarks and some more). The above methods are interchangeable for strings containing integers. If the string contains decimal numbers, <code>parseInt</code> and the bitwise operators will cut of the fractional part and return just the integer part of the number while the arithmetic operators and <code>parseFloat</code> return the correct decimal number. <code>null</code> is converted to <code>0</code> by all of the above except for <code>parseFloat</code> and <code>parseInt</code> which produce <code>NaN</code>. <code>undefined</code> is converted to <code>NaN</code> by all of them except for the bitwise operators which produce <code>0</code>. The same goes for the empty array. An array with one numeric value is converted to that numeric value by all of the above. Arrays with multiple numeric values are converted to <code>0</code> by the bitwise operators, to the first number in the array by <code>parseInt</code> and <code>parseFloat</code> and to <code>NaN</code> by the arithmethic operators. I will not talk about objects or arrays with non-numeric values or whatsoever but probably you got the point, being that you should be careful with numeric conversions. They never throw an error. Avoid converting anything else but strings that contain numbers. If the string contains only non-numeric characters, it gets converted to <code>NaN</code> except for the bitwise operators that will create <code>0</code>. If the string contains digits and other characters, the arithmetic operators return <code>NaN</code>, the bitwise operators return <code>0</code> and <code>parseFloat</code> and <code>parseInt</code> try to parse everything before the first non-numeric character and ignore the rest (again: without an error or anything).</p>
-<h2 id="variables"><a href="#variables">Variables</a></h2>
-<h3 id="identifiers"><a href="#identifiers">Identifiers</a></h3>
-<p>Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character <code>_</code> and may not start with a digit.</p>
-<p>An identifier must not be one of the following reserved words: - <code>break</code> - <code>case</code> - <code>catch</code> - <code>class</code> - <code>const</code> - <code>continue</code> - <code>debugger</code> - <code>default</code> - <code>delete</code> - <code>do</code> - <code>else</code> - <code>enum</code> - <code>export</code> - <code>extends</code> - <code>false</code> - <code>finally</code> - <code>for</code> - <code>function</code> - <code>if</code> - <code>implements</code> - <code>import</code> - <code>instanceof</code> - <code>interface</code> - <code>let</code> - <code>new</code> - <code>package</code> - <code>private</code> - <code>protected</code> - <code>public</code> - <code>return</code> - <code>static</code> - <code>switch</code> - <code>super</code> - <code>this</code> - <code>throw</code> - <code>true</code> - <code>try</code> - <code>typeof</code> - <code>var</code> - <code>void</code> - <code>while</code> - <code>with</code> - <code>yield</code></p>
-<h3 id="variable-declaration"><a href="#variable-declaration">Variable Declaration</a></h3>
-<p>A variable declaration consists of the <code>var</code> keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator <code>=</code> and an expression. Declaring and instantly assigning a value is called <code>definition</code>. Multiple declarations and and definitions can be chained together by using the comma operator <code>,</code>. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> x = <span class="dv">3</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(x); <span class="co">// 3</span>
-x = <span class="st">&#39;a string value&#39;</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(x); <span class="co">// &#39;a string value&#39;</span>
-
-<span class="kw">var</span> y = <span class="st">&#39;Why not?&#39;</span>, z, answer = <span class="dv">42</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(y); <span class="co">// &#39;Why not?&#39;</span>
-<span class="ot">console</span>.<span class="fu">log</span>(u); <span class="co">// undefined</span></code></pre>
-<p>The <code>var</code> keyword creates a variable in the local scope of the function. Read more about scope in <a href="#04.03.00">04.03</a></p>
-<h3 id="hoisting"><a href="#hoisting">Hoisting</a></h3>
-<p>JavaScript uses a concept called “hoisting” that moves every variable declaration to the top of the function, while its definition is not.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> f = <span class="kw">function</span> (d, c) {
-    <span class="fu">c</span>(d);
-    <span class="kw">var</span> a = c;
-};
-<span class="co">// becomes:</span>
-<span class="kw">var</span> f = <span class="kw">function</span> (d, c) {
-    <span class="kw">var</span> a;
-    <span class="fu">c</span>(d);
-    a = c;
-};</code></pre>
-<p>The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration not the definition is hoisted and declared variables are initialized with the <code>undefined</code> value, that may cause trouble.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> f = <span class="kw">function</span> () {
-    <span class="ot">console</span>.<span class="fu">log</span>(r2);
-    <span class="kw">var</span> r2 = <span class="st">&#39;d2&#39;</span>;
-    <span class="ot">console</span>.<span class="fu">log</span>(r2);
-    <span class="ot">console</span>.<span class="fu">log</span>(c3);
-};
-<span class="fu">f</span>();
-<span class="co">// undefined</span>
-<span class="co">// &#39;d2&#39;</span>
-<span class="co">// ReferenceError: c3 is not defined</span></code></pre>
-<p>The declaration of <code>r2</code> is hoisted to the top of the function and the variable is initialized with <code>undefined</code>. In contrast, accessing <code>c3</code> will result in an error, since <code>c3</code> was not declared at all.</p>
-<h3 id="variable-assignment"><a href="#variable-assignment">Variable Assignment</a></h3>
-<p>It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in <a href="#04.03.00">04.03</a>).</p>
-<h3 id="constant-declaration"><a href="#constant-declaration">Constant Declaration</a></h3>
-<p>Another way to create containers for values is by using constants. The <code>const</code> keyword behaves syntacially like the <code>var</code> keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">const</span> PI = <span class="fl">3.141592653589793</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(PI); <span class="co">// 3.141592653589793</span>
-PI = <span class="dv">3</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(PI); <span class="co">// 3.141592653589793</span></code></pre>
-<p>If you declare a constant without immediately assigning it a value, that creates a constant with the value of <code>undefined</code>, which can not be changed, so you practically have to assign a value right away.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">const</span> NOVALUE;
-NOVALUE = <span class="st">&#39;value&#39;</span>;
-<span class="ot">console</span>.<span class="fu">log</span>(NOVALUE); <span class="co">// undefined</span></code></pre>
-<p>It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.</p>
-<p>Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.</p>
-<h3 id="declaration-with-let-es6"><a href="#declaration-with-let-es6">Declaration with <code>let</code> (ES6)</a></h3>
-<p>Similar to <code>const</code> and <code>var</code>, <code>let</code> declares a variable with optional immediate assignment of a value. The difference being, that <code>let</code> is block scoped, while <code>var</code> is function scoped. More on scope in <a href="#04.03.00">04.03</a>. <code>let</code> can be used in different flavors (syntaxes). The first one is called <code>let</code> definition and looks just like the <code>var</code> or <code>const</code> syntax.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">let</span> answer = <span class="dv">42</span>;</code></pre>
-<p>The second and third are similar. The <code>let</code> keyword is followed by a set of parentheses which contain one or more variable assignments. The third part of the construct is an expression (finishing up the <code>let</code> expression) or a statement (concluding the <code>let</code> statement).</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> name = <span class="st">&#39;Luke&#39;</span>;
-<span class="kw">let</span> (name = <span class="st">&#39;Anakin&#39;</span>) <span class="ot">console</span>.<span class="fu">log</span>(name); <span class="co">// &#39;Anakin&#39;</span>
-<span class="ot">console</span>.<span class="fu">log</span>(name); <span class="co">// &#39;Luke&#39;</span></code></pre>
-<p>Since a block is a statement you can execute a piece of code with access to “private” variables.</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> getSecret;
-<span class="kw">let</span> (
-    secret = <span class="dv">723590</span>
-) {
-    getSecret = <span class="kw">function</span> () {
-        <span class="kw">return</span> secret;
-    };
-};
-<span class="ot">console</span>.<span class="fu">log</span>(<span class="fu">getSecret</span>()); <span class="co">// 723590</span>
-<span class="ot">console</span>.<span class="fu">log</span>(secret); <span class="co">// ReferenceError: secret is not defined</span></code></pre>
-<h3 id="call-by-value-call-by-reference"><a href="#call-by-value-call-by-reference">Call-by-value / Call-by-reference</a></h3>
-<p>The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.</p>
 <h2 id="bonus-automatic-semicolon-insert-asi"><a href="#bonus-automatic-semicolon-insert-asi">BONUS: Automatic Semicolon Insert (ASI)</a></h2>
 <p>There are certain types of statesments in JavaScript that need be postfixed by a semicolon <code>;</code>. These statements are:</p>
 <ul>
@@ -1988,7 +1990,7 @@ counterB.getCount(); // 0</code></pre>
     <span class="ot">that</span>.<span class="fu">constructor</span> = <span class="kw">this</span>;
     <span class="kw">return</span> (<span class="kw">typeof</span> theOther === <span class="st">&#39;object&#39;</span> &amp;&amp; theOther) || that;
 };</code></pre>
-<p>Because I personally dislike the use of <code>new</code> because it obscures what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the <code>create</code> method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like <code>Boolean</code>, <code>String</code> or <code>Date</code>. That is because the objects, created by these constructors, are internally being differentiated from standard “Object” objects.</p>
+<p>Because I personally dislike the use of <code>new</code> for obscuring what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the <code>create</code> method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like <code>Boolean</code>, <code>String</code> or <code>Date</code>. That is because the objects, created by these constructors, are internally being differentiated from standard “Object” objects.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> b0 = <span class="ot">Boolean</span>.<span class="fu">create</span>(<span class="st">&#39;true&#39;</span>);
 <span class="ot">b0</span>.<span class="fu">valueOf</span>(); <span class="co">// TypeError: valueOf method called on incompatible Object</span>
 
@@ -1998,9 +2000,9 @@ counterB.getCount(); // 0</code></pre>
 <span class="kw">var</span> d0 = <span class="ot">Date</span>.<span class="fu">create</span>();
 <span class="ot">console</span>.<span class="fu">log</span>(d0); <span class="co">// undefined</span>
 <span class="kw">typeof</span> d0; <span class="co">// &#39;object&#39;</span></code></pre>
-<p>The <code>Date</code> constructor is especially interesting: Its prototype is a <code>Date</code> object with the information <code>Invalid Date</code>. When the constructor is invoked (without <code>new</code>, but with <code>apply</code>), it returns a string representation of the current date. This string fails the condition in the return statement and thus <code>that</code> is returned which still holds the invalid date. So the new object is an object, but that is logged as <code>undefined</code> to the console.</p>
+<p>The <code>Date</code> constructor is especially interesting: Its prototype is a <code>Date</code> object with the information <code>Invalid Date</code>. When the constructor is invoked (without <code>new</code>, but with <code>apply</code>), it returns a string representation of the current date. This string fails the condition in the return statement and thus <code>that</code> is returned which still holds the invalid date. So the new object is an object, but it logs <code>undefined</code> to the console.</p>
 <p>The above version of <code>create</code> does work with the <code>Array</code> and <code>RegExp</code> constructors, but the wrappers for primitive values and the <code>Date</code> constructor are not.</p>
-<p>While you should not really you the wrapper objects anyway, there is no way around a <code>Date</code> object. The best solution is probably, to catch this special case.</p>
+<p>While you should not really use the wrapper objects anyway, there is no way around a <code>Date</code> object. The best solution is probably, to catch this special case.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">Function</span>.<span class="ot">prototype</span>.<span class="fu">create</span> = <span class="kw">function</span> () {
     <span class="kw">if</span> (<span class="kw">this</span> === Date) {
         <span class="kw">return</span> <span class="kw">new</span> (<span class="ot">Function</span>.<span class="ot">prototype</span>.<span class="ot">bind</span>.<span class="fu">apply</span>(<span class="kw">this</span>, <span class="ot">Array</span>.<span class="ot">prototype</span>.<span class="ot">slice</span>.<span class="fu">call</span>(arguments)));
@@ -2037,7 +2039,7 @@ counterB.getCount(); // 0</code></pre>
     };
 }());</code></pre>
 <p>As you can see, we use the builtin <code>TypeError</code> function with <code>new</code>. It generally works with <code>create</code>, but when it is thrown, it does not include information about the code that triggered the exception.</p>
-<p>Another issue difference between <code>new</code> and <code>create</code> is, that <code>new</code> does not attach a <code>constructor</code> property to the object that is created.</p>
+<p>Another difference between <code>new</code> and <code>create</code> is, that <code>new</code> does not attach a <code>constructor</code> property to the object that is created.</p>
 <h2 id="bonus-y-combinator"><a href="#bonus-y-combinator">BONUS: y-Combinator</a></h2>
 <p>Let’s do something fun: We leverage the power of JavaScript’s first class functions to create a well-known programming construct - the y-Combinator.</p>
 <p>The following exercise is meant to demonstrate to power of functions and how well JavaScript supports the functional programming paradigm. The practical use of the y-Combinator in JavaScript is questionable, so if you are in a hurry, just skip over this sub-chapter.</p>
@@ -2368,6 +2370,9 @@ counterB.getCount(); // 0</code></pre>
 <p>Arrays in JavaScript are different to arrays in other languages. The very first edition of the language didn’t have arrays at all and when they were added in later, they were implemented as some kind of special objects. Its really best to think of them as objects with numeric property names, called “indices”, and a magic <code>length</code> property.</p>
 <p>Arrays also have their own literal notation in JavaScript and you can create a new array like this:</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> a = [ <span class="st">&#39;first&#39;</span>, <span class="st">&#39;second&#39;</span>, <span class="st">&#39;third&#39;</span> ];</code></pre>
+<p>The <code>a</code> variable now contains an array with three elements: the strings <code>'first'</code>, <code>'second'</code> and <code>'third'</code>. You can access the array elements using the bracket notation:</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">console</span>.<span class="fu">log</span>(a[<span class="dv">0</span>]); <span class="co">// &#39;first&#39;</span></code></pre>
+<p>The dot notation will not work for array elements as numbers are not valid identifiers in JavaScript and the dot notation only works with identifiers.</p>
 <h3 id="lineage"><a href="#lineage">Lineage</a></h3>
 <p>All arrays inherit from <code>Object.prototype</code>, but their constructor is <code>Array</code> so they also inherit from <code>Array.prototype</code>. The <code>typeof</code> operator reports arrays as objects.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">console</span>.<span class="fu">log</span>(<span class="kw">typeof</span> []); <span class="co">// &#39;object&#39;</span>
@@ -2387,7 +2392,7 @@ counterB.getCount(); // 0</code></pre>
 a[<span class="dv">5</span>] = <span class="st">&#39;fifth&#39;</span>;
 <span class="ot">console</span>.<span class="fu">log</span>(<span class="ot">a</span>.<span class="fu">length</span>); <span class="co">// 6</span></code></pre>
 <h3 id="length"><a href="#length"><code>length</code></a></h3>
-<p>Arrays have a <code>length</code> property which is an integer value that always one greater than the highest index of a property.</p>
+<p>Arrays have a <code>length</code> property which is an integer value that is always one greater than the greatest element index.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> a = [ <span class="st">&#39;Thorin&#39;</span>, <span class="st">&#39;Bombur&#39;</span>, <span class="st">&#39;Balin&#39;</span>, <span class="st">&#39;Bifur&#39;</span>, <span class="st">&#39;Bombur&#39;</span> ];
 <span class="ot">console</span>.<span class="fu">log</span>(<span class="ot">a</span>.<span class="fu">length</span>); <span class="co">// 5</span></code></pre>
 <p>By setting the <code>length</code> property to a value, less than the number of elements in the array, all elements with an index greater than or equal to the new length are being deleted.</p>
@@ -2467,7 +2472,7 @@ a[<span class="dv">5</span>] = <span class="st">&#39;fifth&#39;</span>;
 
 };</code></pre>
 <h4 id="find-es6"><a href="#find-es6"><code>find</code> (ES6)</a></h4>
-<p>This method invokes a callback function for each of an array’s elements and returns the first value for which the callback returns a truthy value and <code>undefined</code> if none of the array’s elements passed the test.</p>
+<p>This method invokes a callback function for each of an array’s elements and returns the first value for which the callback returns a truthy value or <code>undefined</code> if none of the array’s elements passed the test.</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> numbers = [ <span class="dv">1</span>, <span class="dv">67</span>, <span class="fl">2.3</span>, -<span class="dv">856</span> ];
 <span class="kw">var</span> isFractional = <span class="kw">function</span> (el) {
     <span class="kw">return</span> el !== (el|<span class="dv">0</span>);
@@ -2526,19 +2531,20 @@ a[<span class="dv">5</span>] = <span class="st">&#39;fifth&#39;</span>;
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> dwarves = [ <span class="st">&#39;Oin&#39;</span>, <span class="st">&#39;Gloin&#39;</span>, <span class="st">&#39;Fili&#39;</span>, <span class="st">&#39;Kili&#39;</span> ];
 <span class="ot">console</span>.<span class="fu">log</span>(<span class="ot">dwarves</span>.<span class="fu">indexOf</span>(<span class="st">&#39;Fili&#39;</span>)); <span class="co">// 2</span>
 <span class="ot">console</span>.<span class="fu">log</span>(<span class="ot">dwarves</span>.<span class="fu">indexOf</span>(<span class="st">&#39;Gimli&#39;</span>)); <span class="co">// -1</span></code></pre>
+<p>You can also specify a second parameter that contains the index from which the search shall start.</p>
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">var</span> dwarves = [ <span class="st">&#39;Oin&#39;</span>, <span class="st">&#39;Gloin&#39;</span>, <span class="st">&#39;Fili&#39;</span>, <span class="st">&#39;Kili&#39;</span> ];
+<span class="ot">console</span>.<span class="fu">log</span>(<span class="ot">dwarves</span>.<span class="fu">indexOf</span>(<span class="st">&#39;Fili&#39;</span>, <span class="dv">3</span>)); <span class="co">// -1</span></code></pre>
 <p><code>indexOf</code> is new as of ES5, but a polyfill could look like this:</p>
-<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">Array</span>.<span class="ot">prototype</span>.<span class="fu">indexOf</span> = <span class="kw">function</span> (fn, thisArg) {
-    <span class="kw">var</span> i = <span class="dv">0</span>,
-        l = <span class="kw">this</span>.<span class="fu">length</span>,
-        res;
+<pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="ot">Array</span>.<span class="ot">prototype</span>.<span class="fu">indexOf</span> = <span class="kw">function</span> (el, from) {
+    <span class="kw">var</span> i = +from || <span class="dv">0</span>,
+        l = <span class="kw">this</span>.<span class="fu">length</span>;
 
     <span class="kw">if</span> (!<span class="ot">Array</span>.<span class="fu">isArray</span>(<span class="kw">this</span>)) {
         <span class="kw">throw</span> <span class="kw">new</span> <span class="fu">TypeError</span>();
     }
 
     <span class="kw">for</span> (i; i &lt; l; i += <span class="dv">1</span>) {
-        res = <span class="ot">fn</span>.<span class="fu">call</span>(thisArg, <span class="kw">this</span>[i], i, <span class="kw">this</span>);
-        <span class="kw">if</span> (res) {
+        <span class="kw">if</span> (el === <span class="kw">this</span>[i]) {
             <span class="kw">return</span> i;
         }
     }

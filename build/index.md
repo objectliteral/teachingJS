@@ -204,7 +204,17 @@ Future versions of the JavaScript language extend on ES5.1 Strict Mode so I advi
 
 ## Harmony (2012 and Next)
 
-[...]
+The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are already very likely to be part of the next standard edition. The general goals of the next version of the language are the following:
+- Adding features that support building large and complex applications,
+- making the language a better compile target,
+- stripping away troublesome language elements,
+- keeping semantic additions to a minimum,
+- making the language even easier to write and reduce code length.
+ES6 introduces classes and a builtin module syntax in order to make writing large applications easier. It builds on top of ES5 Strict mode which removes some weird statements and behavior. And it includes things like destructuring and default parameters that don't add new behavior to the language but allow you to write much more short and concise code.
+
+While it is not advised to use ES6 features at this moment, I mention some of them throughout this book. If you want to find out more about ES6 support in current implements, (kangax's compatibility table)[http://kangax.github.io/es5-compat-table/es6/] is the place to go.
+
+That should be it for a short peek into what's coming in the future. Some concrete features will be mentioned throughout the rest of the book.
 
 # 02 Fundamentals
 
@@ -385,6 +395,148 @@ In JavaScript there are builtin regular expressions and they also have their own
 var email = /[A-Za-z.-_]+@[A-Za-z0-9]{2,}\.[A-Za-z]{2,3}/
 ```
 Regular Expressions will be discussed in more detail in [chapter 6](#06.00.00)
+
+## Variables
+
+### Identifiers
+Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character `_` and may not start with a digit.
+
+An identifier must not be one of the following reserved words:
+- `break`
+- `case`
+- `catch`
+- `class`
+- `const`
+- `continue`
+- `debugger`
+- `default`
+- `delete`
+- `do`
+- `else`
+- `enum`
+- `export`
+- `extends`
+- `false`
+- `finally`
+- `for`
+- `function`
+- `if`
+- `implements`
+- `import`
+- `instanceof`
+- `interface`
+- `let`
+- `new`
+- `package`
+- `private`
+- `protected`
+- `public`
+- `return`
+- `static`
+- `switch`
+- `super`
+- `this`
+- `throw`
+- `true`
+- `try`
+- `typeof`
+- `var`
+- `void`
+- `while`
+- `with`
+- `yield`
+
+### Variable Declaration
+A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
+```javascript
+var x = 3;
+console.log(x); // 3
+x = 'a string value';
+console.log(x); // 'a string value'
+
+var y = 'Why not?', z, answer = 42;
+console.log(y); // 'Why not?'
+console.log(u); // undefined
+```
+The `var` keyword creates a variable in the local scope of the function. Read more about scope in [04.03](#04.03.00)
+
+### Hoisting
+JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while its definition is not.
+```javascript
+var f = function (d, c) {
+    c(d);
+    var a = c;
+};
+// becomes:
+var f = function (d, c) {
+    var a;
+    c(d);
+    a = c;
+};
+```
+The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration  not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
+```javascript
+var f = function () {
+    console.log(r2);
+    var r2 = 'd2';
+    console.log(r2);
+    console.log(c3);
+};
+f();
+// undefined
+// 'd2'
+// ReferenceError: c3 is not defined
+```
+The declaration of `r2` is hoisted to the top of the function and the variable is initialized with `undefined`. In contrast, accessing `c3` will result in an error, since `c3` was not declared at all.
+
+### Variable Assignment
+It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in [04.03](#04.03.00)).
+
+### Constant Declaration
+Another way to create containers for values is by using constants. The `const` keyword behaves syntacially like the `var` keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.
+```javascript
+const PI = 3.141592653589793;
+console.log(PI); // 3.141592653589793
+PI = 3;
+console.log(PI); // 3.141592653589793
+```
+If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. 
+```javascript
+const NOVALUE;
+NOVALUE = 'value';
+console.log(NOVALUE); // undefined
+```
+It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.
+
+Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.
+
+### Declaration with `let` (ES6)
+Similar to `const` and `var`, `let` declares a variable with optional immediate assignment of a value. The difference being, that `let` is block scoped, while `var` is function scoped. More on scope in [04.03](#04.03.00). `let` can be used in different flavors (syntaxes). The first one is called `let` definition and looks just like the `var` or `const` syntax.
+```javascript
+let answer = 42;
+```
+The second and third are similar. The `let` keyword is followed by a set of parentheses which contain one or more variable assignments. The third part of the construct is an expression (finishing up the `let` expression) or a statement (concluding the `let` statement).
+```javascript
+var name = 'Luke';
+let (name = 'Anakin') console.log(name); // 'Anakin'
+console.log(name); // 'Luke'
+```
+Since a block is a statement you can execute a piece of code with access to "private" variables.
+```javascript
+var getSecret;
+let (
+    secret = 723590
+) {
+    getSecret = function () {
+        return secret;
+    };
+};
+console.log(getSecret()); // 723590
+console.log(secret); // ReferenceError: secret is not defined
+```
+
+### Call-by-value / Call-by-reference
+The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.
 
 ## Statements
 
@@ -1128,148 +1280,6 @@ parseInt('42') // 42
 ~~'42' // 42
 ```
 These are all the techniques to convert a string value to a number roughly sorted by performance from slow (top) to fast (bottom) (based on these [these](http://jsperf.com/string-to-number-conversion-perf) [three](http://jsperf.com/best-of-string-to-number-conversion/4) [jsperf](http://jsperf.com/string-to-number-conversion-test) benchmarks and some more). The above methods are interchangeable for strings containing integers. If the string contains decimal numbers, `parseInt` and the bitwise operators will cut of the fractional part and return just the integer part of the number while the arithmetic operators and `parseFloat` return the correct decimal number. `null` is converted to `0` by all of the above except for `parseFloat` and `parseInt` which produce `NaN`. `undefined` is converted to `NaN` by all of them except for the bitwise operators which produce `0`. The same goes for the empty array. An array with one numeric value is converted to that numeric value by all of the above. Arrays with multiple numeric values are converted to `0` by the bitwise operators, to the first number in the array by `parseInt` and `parseFloat` and to `NaN` by the arithmethic operators. I will not talk about objects or arrays with non-numeric values or whatsoever but probably you got the point, being that you should be careful with numeric conversions. They never throw an error. Avoid converting anything else but strings that contain numbers. If the string contains only non-numeric characters, it gets converted to `NaN` except for the bitwise operators that will create `0`. If the string contains digits and other characters, the arithmetic operators return `NaN`, the bitwise operators return `0` and `parseFloat` and `parseInt` try to parse everything before the first non-numeric character and ignore the rest (again: without an error or anything).
-
-## Variables
-
-### Identifiers
-Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character `_` and may not start with a digit.
-
-An identifier must not be one of the following reserved words:
-- `break`
-- `case`
-- `catch`
-- `class`
-- `const`
-- `continue`
-- `debugger`
-- `default`
-- `delete`
-- `do`
-- `else`
-- `enum`
-- `export`
-- `extends`
-- `false`
-- `finally`
-- `for`
-- `function`
-- `if`
-- `implements`
-- `import`
-- `instanceof`
-- `interface`
-- `let`
-- `new`
-- `package`
-- `private`
-- `protected`
-- `public`
-- `return`
-- `static`
-- `switch`
-- `super`
-- `this`
-- `throw`
-- `true`
-- `try`
-- `typeof`
-- `var`
-- `void`
-- `while`
-- `with`
-- `yield`
-
-### Variable Declaration
-A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
-```javascript
-var x = 3;
-console.log(x); // 3
-x = 'a string value';
-console.log(x); // 'a string value'
-
-var y = 'Why not?', z, answer = 42;
-console.log(y); // 'Why not?'
-console.log(u); // undefined
-```
-The `var` keyword creates a variable in the local scope of the function. Read more about scope in [04.03](#04.03.00)
-
-### Hoisting
-JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while its definition is not.
-```javascript
-var f = function (d, c) {
-    c(d);
-    var a = c;
-};
-// becomes:
-var f = function (d, c) {
-    var a;
-    c(d);
-    a = c;
-};
-```
-The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration  not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
-```javascript
-var f = function () {
-    console.log(r2);
-    var r2 = 'd2';
-    console.log(r2);
-    console.log(c3);
-};
-f();
-// undefined
-// 'd2'
-// ReferenceError: c3 is not defined
-```
-The declaration of `r2` is hoisted to the top of the function and the variable is initialized with `undefined`. In contrast, accessing `c3` will result in an error, since `c3` was not declared at all.
-
-### Variable Assignment
-It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in [04.03](#04.03.00)).
-
-### Constant Declaration
-Another way to create containers for values is by using constants. The `const` keyword behaves syntacially like the `var` keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.
-```javascript
-const PI = 3.141592653589793;
-console.log(PI); // 3.141592653589793
-PI = 3;
-console.log(PI); // 3.141592653589793
-```
-If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. 
-```javascript
-const NOVALUE;
-NOVALUE = 'value';
-console.log(NOVALUE); // undefined
-```
-It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.
-
-Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.
-
-### Declaration with `let` (ES6)
-Similar to `const` and `var`, `let` declares a variable with optional immediate assignment of a value. The difference being, that `let` is block scoped, while `var` is function scoped. More on scope in [04.03](#04.03.00). `let` can be used in different flavors (syntaxes). The first one is called `let` definition and looks just like the `var` or `const` syntax.
-```javascript
-let answer = 42;
-```
-The second and third are similar. The `let` keyword is followed by a set of parentheses which contain one or more variable assignments. The third part of the construct is an expression (finishing up the `let` expression) or a statement (concluding the `let` statement).
-```javascript
-var name = 'Luke';
-let (name = 'Anakin') console.log(name); // 'Anakin'
-console.log(name); // 'Luke'
-```
-Since a block is a statement you can execute a piece of code with access to "private" variables.
-```javascript
-var getSecret;
-let (
-    secret = 723590
-) {
-    getSecret = function () {
-        return secret;
-    };
-};
-console.log(getSecret()); // 723590
-console.log(secret); // ReferenceError: secret is not defined
-```
-
-### Call-by-value / Call-by-reference
-The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.
 
 ## BONUS: Automatic Semicolon Insert (ASI)
 There are certain types of statesments in JavaScript that need be postfixed by a semicolon `;`. These statements are:
@@ -2314,7 +2324,7 @@ Function.prototype.create = function () {
     return (typeof theOther === 'object' && theOther) || that;
 };
 ```
-Because I personally dislike the use of `new` because it obscures what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
+Because I personally dislike the use of `new` for obscuring what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
 ```javascript
 var b0 = Boolean.create('true');
 b0.valueOf(); // TypeError: valueOf method called on incompatible Object
@@ -2326,11 +2336,11 @@ var d0 = Date.create();
 console.log(d0); // undefined
 typeof d0; // 'object'
 ```
-The `Date` constructor is especially interesting: Its prototype is a `Date` object with the information `Invalid Date`. When the constructor is invoked (without `new`, but with `apply`), it returns a string representation of the current date. This string fails the condition in the return statement and thus `that` is returned which still holds the invalid date. So the new object is an object, but that is logged as `undefined` to the console.
+The `Date` constructor is especially interesting: Its prototype is a `Date` object with the information `Invalid Date`. When the constructor is invoked (without `new`, but with `apply`), it returns a string representation of the current date. This string fails the condition in the return statement and thus `that` is returned which still holds the invalid date. So the new object is an object, but it logs `undefined` to the console.
 
 The above version of `create` does work with the `Array` and `RegExp` constructors, but the wrappers for primitive values and the `Date` constructor are not.
 
-While you should not really you the wrapper objects anyway, there is no way around a `Date` object. The best solution is probably, to catch this special case.
+While you should not really use the wrapper objects anyway, there is no way around a `Date` object. The best solution is probably, to catch this special case.
 ```javascript
 Function.prototype.create = function () {
     if (this === Date) {
@@ -2372,7 +2382,7 @@ Function.prototype.create = (function () {
 ```
 As you can see, we use the builtin `TypeError` function with `new`. It generally works with `create`, but when it is thrown, it does not include information about the code that triggered the exception.
 
-Another issue difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
+Another difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
 
 ## BONUS: y-Combinator
 
@@ -2835,6 +2845,11 @@ Arrays also have their own literal notation in JavaScript and you can create a n
 ```javascript
 var a = [ 'first', 'second', 'third' ];
 ```
+The `a` variable now contains an array with three elements: the strings `'first'`, `'second'` and `'third'`. You can access the array elements using the bracket notation:
+```javascript
+console.log(a[0]); // 'first'
+```
+The dot notation will not work for array elements as numbers are not valid identifiers in JavaScript and the dot notation only works with identifiers.
 
 ### Lineage
 All arrays inherit from `Object.prototype`, but their constructor is `Array` so they also inherit from `Array.prototype`. The `typeof` operator reports arrays as objects.
@@ -2865,7 +2880,7 @@ console.log(a.length); // 6
 ```
 
 ### `length`
-Arrays have a `length` property which is an integer value that always one greater than the highest index of a property.
+Arrays have a `length` property which is an integer value that is always one greater than the greatest element index.
 ```javascript
 var a = [ 'Thorin', 'Bombur', 'Balin', 'Bifur', 'Bombur' ];
 console.log(a.length); // 5
@@ -2966,7 +2981,7 @@ Array.prototype.filter = function (fn, thisArg) {
 ```
 
 #### `find` (ES6)
-This method invokes a callback function for each of an array's elements and returns the first value for which the callback returns a truthy value and `undefined` if none of the array's elements passed the test.
+This method invokes a callback function for each of an array's elements and returns the first value for which the callback returns a truthy value or `undefined` if none of the array's elements passed the test.
 ```javascript
 var numbers = [ 1, 67, 2.3, -856 ];
 var isFractional = function (el) {
@@ -3039,20 +3054,23 @@ var dwarves = [ 'Oin', 'Gloin', 'Fili', 'Kili' ];
 console.log(dwarves.indexOf('Fili')); // 2
 console.log(dwarves.indexOf('Gimli')); // -1
 ```
+You can also specify a second parameter that contains the index from which the search shall start.
+```javascript
+var dwarves = [ 'Oin', 'Gloin', 'Fili', 'Kili' ];
+console.log(dwarves.indexOf('Fili', 3)); // -1
+```
 `indexOf` is new as of ES5, but a polyfill could look like this:
 ```javascript
-Array.prototype.indexOf = function (fn, thisArg) {
-    var i = 0,
-        l = this.length,
-        res;
+Array.prototype.indexOf = function (el, from) {
+    var i = +from || 0,
+        l = this.length;
 
     if (!Array.isArray(this)) {
         throw new TypeError();
     }
 
     for (i; i < l; i += 1) {
-        res = fn.call(thisArg, this[i], i, this);
-        if (res) {
+        if (el === this[i]) {
             return i;
         }
     }
