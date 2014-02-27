@@ -7,7 +7,10 @@ This repository contains an short introductory book on the JavaScript programmin
 - References are broken.
 
 ### Building
-Using the `Makefile` you can build an HTML page from the markdown source. You need to have `make` and `pandoc` installed. The `build` directory contains builds from the latest snapshot of the book (including untracked files). PDF-builds are coming soon.
+The `build` directory contains builds from the latest snapshot of the book (sometimes including untracked files). PDF-builds are coming soon. There is no need for you to build the book yourself, but if you want to:
+
+- *Linux/Mac OS*: Using the `Makefile` you can build an HTML page from the markdown source. You need to have `make` and `pandoc` installed. 
+- *Windows*: Safest bet is to go with [`cygwin`](http://cygwin.com/), `awk`, `make` and [`pandoc`](http://johnmacfarlane.net/pandoc/).
 
 
 Copyright © 2014 Peter Steinberg
