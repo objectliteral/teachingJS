@@ -124,7 +124,7 @@ Function.prototype.create = function () {
     return (typeof theOther === 'object' && theOther) || that;
 };
 ```
-Because I personally dislike the use of `new` because it obscures what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
+Because I personally dislike the use of `new` for obscuring what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
 ```javascript
 var b0 = Boolean.create('true');
 b0.valueOf(); // TypeError: valueOf method called on incompatible Object
@@ -136,11 +136,11 @@ var d0 = Date.create();
 console.log(d0); // undefined
 typeof d0; // 'object'
 ```
-The `Date` constructor is especially interesting: Its prototype is a `Date` object with the information `Invalid Date`. When the constructor is invoked (without `new`, but with `apply`), it returns a string representation of the current date. This string fails the condition in the return statement and thus `that` is returned which still holds the invalid date. So the new object is an object, but that is logged as `undefined` to the console.
+The `Date` constructor is especially interesting: Its prototype is a `Date` object with the information `Invalid Date`. When the constructor is invoked (without `new`, but with `apply`), it returns a string representation of the current date. This string fails the condition in the return statement and thus `that` is returned which still holds the invalid date. So the new object is an object, but it logs `undefined` to the console.
 
 The above version of `create` does work with the `Array` and `RegExp` constructors, but the wrappers for primitive values and the `Date` constructor are not.
 
-While you should not really you the wrapper objects anyway, there is no way around a `Date` object. The best solution is probably, to catch this special case.
+While you should not really use the wrapper objects anyway, there is no way around a `Date` object. The best solution is probably, to catch this special case.
 ```javascript
 Function.prototype.create = function () {
     if (this === Date) {
@@ -182,4 +182,4 @@ Function.prototype.create = (function () {
 ```
 As you can see, we use the builtin `TypeError` function with `new`. It generally works with `create`, but when it is thrown, it does not include information about the code that triggered the exception.
 
-Another issue difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
+Another difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
