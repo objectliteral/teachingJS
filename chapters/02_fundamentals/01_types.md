@@ -113,6 +113,6 @@ Arrays will be discussed in more detail in [chapter 6](#06.01.00).
 ### RegExp
 In JavaScript there are builtin regular expressions and they also have their own literal. You can create a regular expression object by simply enclosing a regex inside slashes `/`.
 ```javascript
-var email = /[A-Za-z.-_]+@[A-Za-z0-9]{2,}\.[A-Za-z]{2,3}/
+var email = /[A-Za-z.-_]+@[A-Za-z0-9]{2,}\.[A-Za-z]{2,3}/;
 ```
 Regular Expressions will be discussed in more detail in [chapter 6](#06.00.00)

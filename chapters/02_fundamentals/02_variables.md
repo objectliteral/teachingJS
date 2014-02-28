@@ -1,7 +1,7 @@
 ## Variables
 
 ### Identifiers
-Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character `_` and may not start with a digit.
+Variable names have to comply to simple naming restrictions. The name of a variable (or constant) is called an identifier. Identifiers may only be composed of letters, digits, the dollar sign character `$` and the underscore character `_`. Identifiers must not start with a digit.
 
 An identifier must not be one of the following reserved words:
 - `break`
@@ -49,7 +49,7 @@ An identifier must not be one of the following reserved words:
 - `yield`
 
 ### Variable Declaration
-A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
+A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
 ```javascript
 var x = 3;
 console.log(x); // 3
@@ -102,7 +102,7 @@ console.log(PI); // 3.141592653589793
 PI = 3;
 console.log(PI); // 3.141592653589793
 ```
-If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. 
+If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. Notice that constant declarations are not hoisted!
 ```javascript
 const NOVALUE;
 NOVALUE = 'value';
