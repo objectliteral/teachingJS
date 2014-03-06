@@ -101,24 +101,24 @@ For the avoidance of doubt, this Section 6(2) does not affect any right the Lice
 
 ## Preface
 
-### How I approached this book
+### This book and I
 This book was created as a script for a workshop on JavaScript. I wrote it to gather information about the language, to structure this information and to illustrate it with examples. I assumed the reader would be familiar with programming in general and I sometimes compare JavaScript to Java, but Java skills are not required in order to understand this book. I sometimes also assume a basic knowledge of programming patterns or field specific terms. If you have never been programming before, this might not be a book for you.
 
 I want this to be a reference containing all there is to know about JavaScript, but it is far from complete. I want it to be structured in a way that encapsulates topics in their own self-contained chapters or subchapters, but I also want it to be more interesting than a boring reference. These goals may never be met completely, because it is impossible to cover every edge case of a programming language and because there will always have to be a compromise between readabilty and correctness or completeness.
 
 But this is still work in progress so things might eventually get better. And as my work on this book progresses, my understanding of the language will change and even the language itself will change.
 
-### How time approaches this book
+### Time and this book
 Today, the most recent version of the language specification is ECMA262 Edition 5.1 (2011). Sometimes I point out changes from Edition 3 and I regularly include explanations on things that are going to be in Edition 6. But when there is no explicit information on the version of the language in which a certain feature exists or not, assume that I am talking about ES5.1. Most likely, you want to write code to be run inside a web browser. Fortunately, ES5 compatibility is more or less present in all current web browsers: Firefox 4+, Chrome 13+, Internet Explorer 10+, Safari 6+. ES6 support is mostly preliminary and depending on ES6 features in not advised.
 
 Every few months there is a new version of Firefox and Chrome and it will not take a long time until the notes on ES6 support regarding certain browsers in this book are outdated. In the meantime, the specification process for ES6 is still going on for who knows how long and things might change eventually. But this book is not considered "done": As things change, so will this book (hopefully).
 
-### How you should approach this book
+### You and this book
 Of course you can read this book however you like, but let me give you some information about how you get the most out of it. In trying to cover a topic in its completeness, I might introduce a level of detail that you find unnecessary. Feel free to skip over anything you are not interested in or what you think is confusing. You can also freely skip over any parts that I labeled more or less explicitly as being optional. You can always come back to those (advanced or just unimportant) paragraphs later and I tried to include a lot of cross-references to let you know where you can read up on a topic. This should motivate you to read just the chapters of the book you are interested in.
 
 That does not mean, that the way in which the chapters and subchapters are ordered is irrelevant.
 
-### How this book approaches this book
+### This book
 After this preface, there will be a chapter on the history of JavaScript. It may influence your understanding of the language to know where it came from, what its influences are and how it developed over time. The history covers the past, the present and the future.
 
 The introduction to the language itself will start with the fundamentals. First, there will be a short part on how you can execute your own JavaScript code. Then the atoms and molecules of JavaScript are presented, the statements that compose a program, the operators that combine values to new values, the types of data you can manipulate in JavaScript and the weird mechanics of how JavaScript manipulates data itself.
@@ -127,7 +127,7 @@ What follows, is a short primer on objects, explaining what they are and how to 
 
 But inheritance in JavaScript does not work without functions, so we will introduce them before talking about inheritance. Functions are a very important and a very beautiful thing about JavaScript and the chapter that covers them should teach you everything you need to know.
 
-### How others approach their books
+### Others and their books
 A lot of pages have been written on JavaScript and you should probably read some of them. When you search for a book on JavaScript, you will probably stumble upon one of these:
 
 - [Marijn Haverbeke - "Eloquent JavaScript"](http://eloquentjavascript.net/). This book will be especially valuable to people how want to learn JavaScript without much experience in programming. The book is a quick and straightforward introduction to the language itself as well as working with the DOM.
@@ -392,14 +392,14 @@ Arrays will be discussed in more detail in [chapter 6](#06.01.00).
 ### RegExp
 In JavaScript there are builtin regular expressions and they also have their own literal. You can create a regular expression object by simply enclosing a regex inside slashes `/`.
 ```javascript
-var email = /[A-Za-z.-_]+@[A-Za-z0-9]{2,}\.[A-Za-z]{2,3}/
+var email = /[A-Za-z.-_]+@[A-Za-z0-9]{2,}\.[A-Za-z]{2,3}/;
 ```
 Regular Expressions will be discussed in more detail in [chapter 6](#06.00.00)
 
 ## Variables
 
 ### Identifiers
-Variable names have to comply to simple naming restrictions. The name of a variable (or constant) no matter, what it contains is called an identifier. Identifiers may only be composed of letters, digits and the underscore character `_` and may not start with a digit.
+Variable names have to comply to simple naming restrictions. The name of a variable (or constant) is called an identifier. Identifiers may only be composed of letters, digits, the dollar sign character `$` and the underscore character `_`. Identifiers must not start with a digit.
 
 An identifier must not be one of the following reserved words:
 - `break`
@@ -447,7 +447,7 @@ An identifier must not be one of the following reserved words:
 - `yield`
 
 ### Variable Declaration
-A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by a space, the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
+A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
 ```javascript
 var x = 3;
 console.log(x); // 3
@@ -500,7 +500,7 @@ console.log(PI); // 3.141592653589793
 PI = 3;
 console.log(PI); // 3.141592653589793
 ```
-If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. 
+If you declare a constant without immediately assigning it a value, that creates a constant with the value of `undefined`, which can not be changed, so you practically have to assign a value right away. Notice that constant declarations are not hoisted!
 ```javascript
 const NOVALUE;
 NOVALUE = 'value';
@@ -595,9 +595,9 @@ Some of the following definitions will mention a statement, that conditionally o
 #### if ... else
 An `if` statement describes a condition that is an expression getting evaluated to either true or false. If it is `true` the statement following the condition is executed. If it is `false` an optional second statement is executed that is preceded by the `else` keyword. It is also possible to use `else if` to chain more alternative conditions together.
 ```javascript
-if (a === b) {
+if (condition0) {
     // do something
-} else if (a === c) {
+} else if (condition1) {
     // do something else
 } else {
     // or at least do this
@@ -662,7 +662,7 @@ for (var i in [ 9, 8, 7 ]) {
 ```
 This is one reason, why using `for ... in` loops is not recommended for iterating over arrays. Another one is, that when using `for ... in`, the order, in which the properties are visited, is not guaranteed. When iterating over arrays you want to visit the array's elements in the correct order most of the time, so you should not use `for ... in` with arrays. Use a `for` loop with a numeric counter instead.
 
-NOTICE: When altering the object that is being iterated over from inside the loop, you will experience inconsistent behavior. Do not alter any of the objects properties except the currently visited one!
+Warning: When altering the object that is being iterated over from inside the loop, you will experience inconsistent behavior. Do not alter any of the objects properties except the currently visited one!
 
 ##### for ... of (ES6)
 The `for ... of` statement is similar the `for ... in` with the major differences being, that the loop variable is not assigned the property name of the currently visited property but its value, and that the iteration happens in the correct order for numeric indices.
@@ -686,11 +686,20 @@ var add = function (x, y) {
 };
 ```
 
-NOTICE: There must not be a line break between the `return` keyword and the expression of the return value, because Automatic Semicolon Insertion will step in an the return value will be `undefined`;
+Warning: There must not be a line break between the `return` keyword and the expression of the return value, because Automatic Semicolon Insertion will step in an the return value will be `undefined`;
 
 ### Less important or dangerous statements
 
 #### Loops and loop related statements
+
+##### label
+A label can be used to name loops and blocks. These names are used by break, continue and switch statements, but have no other meaning. See [02.01.01](#02.01.01) and [02.01.02](#02.01.02) for examples.
+Blocks can also have labels:
+```javascript
+test : {
+    console.log('hi');
+}
+```
 
 ##### break
 The `break` statement interrupts the execution of the current loop, switch statement or any labeled statement and resumes program execution at the next statement of the one that was terminated.
@@ -727,30 +736,33 @@ do {
 } while (i < n);
 ```
 
-##### for each ... of
-If you ever see someone mention a `for each ... of` statement, just ignore him. This statement was meant to perform iteration over object properties, but it has been removed from the language and most implementations.
-
-##### label
-A label can be used to name loops and blocks. These names are used by break, continue and switch statements, but have no other meaning. See [02.01.01](#02.01.01) and [02.01.02](#02.01.02) for examples.
-Blocks can also have labels:
-```javascript
-test : {
-    console.log('hi');
-}
-```
+##### for each ... in
+If you ever see someone mention a `for each ... in` statement, just ignore him. This statement was meant to perform iteration over object properties, but it has been removed from the language and most implementations.
 
 #### debugger
 The `debugger` statement has no defined behavior but can be used by implementors to provide some kind of debugging means.
 
 #### switch
-Switch evaluates an expression and matches it against labels. To each label there is an associated statement and when the expression matches a label, the associated statement is executed. If no match is found, an optional `default` clause is executed. You can use `break` in a statement, to step out of the clause's execution and continue after the `switch` statement. After a labeled statement is executed, instead of the switch statement's execution being terminated, the following labeled statement inside the switch statement (if there is another labeled statement) is executed - this is called "cases falling through". You shoud absolutely prevent that from happening and so, while using `break` in clause is syntactically optional, it is semantically mandatory.
+Switch evaluates an expression and matches it against labels. To each label there is an associated statement and when the expression matches a label, the associated statement is executed. If no match is found, an optional `default` clause is executed. You can use `break` in a statement, to step out of the clause's execution and continue after the `switch` statement. After a labeled statement is executed, instead of the switch statement's execution being terminated, the following labeled statement inside the switch statement (if there is another labeled statement) is executed - this is called "cases falling through". You shoud absolutely prevent that from happening and so, while using `break` in clauses is syntactically optional, it is semantically mandatory.
+
+```javascript
+switch (name) {
+    case 'Bob' :
+        console.log('Good day, Sir!');
+        break;
+    case 'Alice' :
+        console.log('Mylady!');
+        break;
+    default : console.log('Do I know you?');
+}
+```
 
 Because of the questionable behavior of `switch`, it is best to avoid using it.
 
-NOTICE: The `switch` statement uses the [strict comparison operator](#XX.XX) internally.
+Note: The `switch` statement uses the [strict comparison operator](#XX.XX) internally.
 
 #### throw
-JavaScript has exception handling and `throw` is used to throw one. This will result in the immediate termination of the current execution context (function) giving control to the previous context until a `try ... catch` clause is found. Execution is then continued in the block following the `catch` statement and the value that was thrown is bound to the `catch` block's parameter. Any value can be thrown.
+JavaScript has exceptions and `throw` is used to throw one. This will result in the immediate termination of the current execution context (function) giving control to the previous context until a `try ... catch` clause is found. Execution is then continued in the block following the `catch` statement and the value that was thrown is bound to the `catch` block's parameter. Any value can be thrown.
 ```javascript
 throw "Houston, we got a problem.";
 ```
@@ -793,6 +805,8 @@ if (obj.a === undefined) {
 ```
 This code is far too hard to understand and very hard to predict. For the sake of your code's clarity, do not use `with`.
 
+`with` also comes with a performance penalty for all variables that are not properties of the object. That is because the interpreter will try to find them on the object and on every object, the first one inherits from. For high inheritance hierarchies that is a lot of lookups that will fail anyway.
+
 #### yield (ES6)
 [...]
 
@@ -807,7 +821,7 @@ The Plus operator behaves differently based on what types its operands are.
 
 If both operands are of type `Number`, `+` will create a new number value, which will be equal to the sum of the operands. If one or both of the operands are boolean values, `true` gets converted to `1`, `false` gets converted to `0` and a new number value is created, equaling the sum of the operands.
 
-NOTICE: Unfortunately the IEEE Standard, used for JavaScript's Number type, has difficulties with some operations on decimal digits. That leads to unreliable behavior like `0.1 + 0.2` being equal to `0.30000000000000004`. You should take special care, when doing sensitive calculations with non-integer numbers.
+WARNING: Unfortunately the IEEE Standard, used for JavaScript's Number type, has difficulties with some operations on decimal digits. That leads to unreliable behavior like `0.1 + 0.2` being equal to `0.30000000000000004`. You should take special care, when doing sensitive calculations with non-integer numbers.
 
 If one or both of the operands are of type String or Object, `+` will treat both as strings and concatenate them to a new one. If both operands are strings, a new string is created, that is the concatenation of the operands.
 ```
@@ -924,7 +938,7 @@ The shift operators in JavaScript are the left shift `<<`, the sign-propagating 
 
 #### `===` / `!==`
 These equality and inequality operators compare the operands with which they are used. If the right hand side and left hand side operands are of the same type and have the same value, the equality operator produces the value `true` and the inequality operator produces the value `false`. If the compared operands have either different types or contain different values, the equality operator produces `false` and the inequality operator produces `true`.
-```
+```javascript
 'a' === 'a' // true
 2 !== 2 // false
 'e' !== 'a' // true
@@ -932,7 +946,7 @@ These equality and inequality operators compare the operands with which they are
 ```
 When used with two objects that are not references to the same object, the equality operator always produces false.
 
-NOTICE: It appears, that the `NaN` value is not equal to itself:
+WARNING: It appears, that the `NaN` value is not equal to itself:
 ```
 NaN === NaN // false
 NaN == NaN // false
@@ -1399,7 +1413,7 @@ An object in JavaScript is a set of key-value-paris. The keys have to be strings
 ### Object literals
 
 To create an object, the most convenient way is the object literal `{ }`. Curly braces not only describe blocks ([XX.XX](#XX.XX)) but also objects. Inside the curly braces, you can specify zero or more comma-seperated key-value-pairs. The key can be a string and if it is also a valid identifier, it can also be written without quotation marks while still being treated as a string. The value can be any expression, like a number or string literal, a function expression, a conditional expression or another object.
-```
+```javascript
 var jedi = {
     name : 'Luke Skywalker',
     yearOfBirth : -19,
@@ -1414,7 +1428,7 @@ When the key is written as a string literal, it is allowed to be an arbitrary st
 
 ### Constructor
 You can also create a new object by using a constructor function. Constructor functions or constructors are functions that create and return a new object. We will deal a lot with constructors in chapter 5. There are builtin constructors in JavaScript to create new empty objects or any of the primitive values.
-```
+```javascript
 var o0 = new Object();
 var b0 = new Boolean("true");
 ```
@@ -1427,7 +1441,7 @@ An object, created by `new Object()` or an empty object literal `{}`, which are 
 ### Property Access
 
 There are two ways to access an object property: The dot notation and the subscript notation. The dot notation uses the the object value and the property's name, separated by a dot `.`. The subscript notation consists of an object value, followed by a pair of square brackets enclosing a string that has the value of the property's name.
-```
+```javascript
 obj.prop;
 obj['prop'];
 ```
@@ -1435,6 +1449,10 @@ The dot notation is easier to write, but since the subscript notation uses a str
 
 ### Updating properties
 You can set any object property to any value. You access it like described above and simply assign it a value. There are no restrictions on type.
+```javascript
+luke.yob = -19;
+luke['trainers'] = [ 'Obi-Wan', 'Yoda' ];
+```
 
 ### Deleting properties
 JavaScript has a `delete` operator that deletes a given property from an object. This is the prefered way of deleting object properties as opposed to simply setting their value to `undefined`. If you do the latter, the object will still contain the property, just with the value of `undefined`, and it will show up in `for in` loops and in `Object.keys`
@@ -1451,12 +1469,13 @@ A consequence of this prototype chain property lookup is, that you can append pr
 
 # 04 Functions
 
+[...]
 
 ## Definition
 
 When a function definition is evaluated by the compiler, a new object is created, that inherits from `Function.prototype`. A function can be defined in three ways.
 
-### function expression (function literal)
+### Function Expression (function literal)
 
 A function expression can be used anywhere where an expression is expected. It produces a new value representing the function and when you do not get hold of it, it is gone. The standard way to define a simple function is this:
 ```javascript
@@ -1505,7 +1524,7 @@ Even worse, it creates two distinct function objects (thus allocating twice as m
 
 In modern browsers, both of the above issues no longer exists and you can use NFEs to your liking.
 
-### Function constructor
+### Function Constructor
 
 Functions are objects and objects can be created by constructors. In JavaScript there is even a constructor for functions. You can use it to define new functions.
 
@@ -1519,7 +1538,7 @@ Functions defined by a function constructor do not inherit any scope other than 
 
 A function constructor's function body string is parsed every time it is evaluated, which makes this approach slower than using function expressions or function declarations.
 
-### function declaration (function statement)
+### Function Declaration (function statement)
 
 A function declaration looks very similar to a function expression.
 ```javascript
@@ -1534,7 +1553,7 @@ Some people use the term "function statement" when they mean "function declarati
 Function declarations are hoisted to the top of the enclosing function by the interpreter with the consequence that you can use them before they are defined. (Which shows that function declarations are not statements, since these are always executed in order). Do not take advantage of this behavior, but rather put function declarations on top of the enclosing function for improved readability.
 ```javascript
 console.log(theText); // 'You must use the force!'
-function theText () { retun 'You must use the force!'; }
+function theText () { return 'You must use the force!'; }
 ```
 
 Function declarations are not allowed inside of non-function blocks. Most implementations do allow them but behave inconsistently. Example:
@@ -1696,7 +1715,7 @@ var obj = {
 };
 obj.outer(); // true
 ```
-The interpreter binds an individual value to every function invocation even if that value does not make sense. Because the implicit binding of the global object to `this` it is very easy to accidentally add properties to the global object. This is generally not good and especially when unintended. In ES5 strict mode, `this` is bound to the `undefined` value in functions that are being invoked via function invocation. This is not great, but better than the previous solution. (More on strict mode in XX.XX).
+The interpreter binds an individual value to every function invocation even if that value does not make sense. Because the implicit binding of the global object to `this` it is very easy to accidentally add properties to the global object. This is generally not good and especially when unintended. In ES5 strict mode, `this` is bound to the `undefined` value in functions that are being invoked via function invocation. This is not great, but better than the previous solution. (More on strict mode in [01.03](#strict-mode)).
 ```javascript
 var getUndef = function () {
     'use strict';
@@ -1706,7 +1725,7 @@ getUndef() === undefined; // true
 ```
 
 ### Constructor invocation
-This invocation mechanism makes use of the `new` keyword. If a method invocation or function invocation is prefixed with `new`, that tells the compiler to treat the function being called as a constructor. What constructors really are will be our topic very soon, but let's look at how they are called. All you need to know now is that constructors are functions. They are not inherently special but become special because of the way they are invoked: Using `new`.
+This invocation mechanism makes use of the `new` keyword. If a method invocation or function invocation is prefixed with `new`, that function is being treated as a constructor. What constructors really are will be our topic very soon, but let's look at how they are called. All you need to know now is that constructors are functions. They are not inherently special but become special because of the way they are invoked: Using `new`.
 
 The `new` operator does some magic, but step-by-step we will uncover its secrets. There are mainly three things, `new` does:
 1. Creating a new object,
