@@ -75,7 +75,7 @@ var obj = {
 };
 obj.outer(); // true
 ```
-The interpreter binds an individual value to every function invocation even if that value does not make sense. Because the implicit binding of the global object to `this` it is very easy to accidentally add properties to the global object. This is generally not good and especially when unintended. In ES5 strict mode, `this` is bound to the `undefined` value in functions that are being invoked via function invocation. This is not great, but better than the previous solution. (More on strict mode in XX.XX).
+The interpreter binds an individual value to every function invocation even if that value does not make sense. Because the implicit binding of the global object to `this` it is very easy to accidentally add properties to the global object. This is generally not good and especially when unintended. In ES5 strict mode, `this` is bound to the `undefined` value in functions that are being invoked via function invocation. This is not great, but better than the previous solution. (More on strict mode in [01.03](#strict-mode)).
 ```javascript
 var getUndef = function () {
     'use strict';
@@ -85,7 +85,7 @@ getUndef() === undefined; // true
 ```
 
 ### Constructor invocation
-This invocation mechanism makes use of the `new` keyword. If a method invocation or function invocation is prefixed with `new`, that tells the compiler to treat the function being called as a constructor. What constructors really are will be our topic very soon, but let's look at how they are called. All you need to know now is that constructors are functions. They are not inherently special but become special because of the way they are invoked: Using `new`.
+This invocation mechanism makes use of the `new` keyword. If a method invocation or function invocation is prefixed with `new`, that function is being treated as a constructor. What constructors really are will be our topic very soon, but let's look at how they are called. All you need to know now is that constructors are functions. They are not inherently special but become special because of the way they are invoked: Using `new`.
 
 The `new` operator does some magic, but step-by-step we will uncover its secrets. There are mainly three things, `new` does:
 1. Creating a new object,

@@ -2,7 +2,7 @@
 
 When a function definition is evaluated by the compiler, a new object is created, that inherits from `Function.prototype`. A function can be defined in three ways.
 
-### function expression (function literal)
+### Function Expression (function literal)
 
 A function expression can be used anywhere where an expression is expected. It produces a new value representing the function and when you do not get hold of it, it is gone. The standard way to define a simple function is this:
 ```javascript
@@ -51,7 +51,7 @@ Even worse, it creates two distinct function objects (thus allocating twice as m
 
 In modern browsers, both of the above issues no longer exists and you can use NFEs to your liking.
 
-### Function constructor
+### Function Constructor
 
 Functions are objects and objects can be created by constructors. In JavaScript there is even a constructor for functions. You can use it to define new functions.
 
@@ -65,7 +65,7 @@ Functions defined by a function constructor do not inherit any scope other than 
 
 A function constructor's function body string is parsed every time it is evaluated, which makes this approach slower than using function expressions or function declarations.
 
-### function declaration (function statement)
+### Function Declaration (function statement)
 
 A function declaration looks very similar to a function expression.
 ```javascript
@@ -80,7 +80,7 @@ Some people use the term "function statement" when they mean "function declarati
 Function declarations are hoisted to the top of the enclosing function by the interpreter with the consequence that you can use them before they are defined. (Which shows that function declarations are not statements, since these are always executed in order). Do not take advantage of this behavior, but rather put function declarations on top of the enclosing function for improved readability.
 ```javascript
 console.log(theText); // 'You must use the force!'
-function theText () { retun 'You must use the force!'; }
+function theText () { return 'You must use the force!'; }
 ```
 
 Function declarations are not allowed inside of non-function blocks. Most implementations do allow them but behave inconsistently. Example:

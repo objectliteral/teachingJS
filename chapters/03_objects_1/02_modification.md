@@ -3,7 +3,7 @@
 ### Property Access
 
 There are two ways to access an object property: The dot notation and the subscript notation. The dot notation uses the the object value and the property's name, separated by a dot `.`. The subscript notation consists of an object value, followed by a pair of square brackets enclosing a string that has the value of the property's name.
-```
+```javascript
 obj.prop;
 obj['prop'];
 ```
@@ -11,6 +11,10 @@ The dot notation is easier to write, but since the subscript notation uses a str
 
 ### Updating properties
 You can set any object property to any value. You access it like described above and simply assign it a value. There are no restrictions on type.
+```javascript
+luke.yob = -19;
+luke['trainers'] = [ 'Obi-Wan', 'Yoda' ];
+```
 
 ### Deleting properties
 JavaScript has a `delete` operator that deletes a given property from an object. This is the prefered way of deleting object properties as opposed to simply setting their value to `undefined`. If you do the latter, the object will still contain the property, just with the value of `undefined`, and it will show up in `for in` loops and in `Object.keys`

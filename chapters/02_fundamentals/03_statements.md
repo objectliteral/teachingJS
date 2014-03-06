@@ -55,9 +55,9 @@ Some of the following definitions will mention a statement, that conditionally o
 #### if ... else
 An `if` statement describes a condition that is an expression getting evaluated to either true or false. If it is `true` the statement following the condition is executed. If it is `false` an optional second statement is executed that is preceded by the `else` keyword. It is also possible to use `else if` to chain more alternative conditions together.
 ```javascript
-if (a === b) {
+if (condition0) {
     // do something
-} else if (a === c) {
+} else if (condition1) {
     // do something else
 } else {
     // or at least do this
@@ -122,7 +122,7 @@ for (var i in [ 9, 8, 7 ]) {
 ```
 This is one reason, why using `for ... in` loops is not recommended for iterating over arrays. Another one is, that when using `for ... in`, the order, in which the properties are visited, is not guaranteed. When iterating over arrays you want to visit the array's elements in the correct order most of the time, so you should not use `for ... in` with arrays. Use a `for` loop with a numeric counter instead.
 
-NOTICE: When altering the object that is being iterated over from inside the loop, you will experience inconsistent behavior. Do not alter any of the objects properties except the currently visited one!
+Warning: When altering the object that is being iterated over from inside the loop, you will experience inconsistent behavior. Do not alter any of the objects properties except the currently visited one!
 
 ##### for ... of (ES6)
 The `for ... of` statement is similar the `for ... in` with the major differences being, that the loop variable is not assigned the property name of the currently visited property but its value, and that the iteration happens in the correct order for numeric indices.
@@ -146,11 +146,20 @@ var add = function (x, y) {
 };
 ```
 
-NOTICE: There must not be a line break between the `return` keyword and the expression of the return value, because Automatic Semicolon Insertion will step in an the return value will be `undefined`;
+Warning: There must not be a line break between the `return` keyword and the expression of the return value, because Automatic Semicolon Insertion will step in an the return value will be `undefined`;
 
 ### Less important or dangerous statements
 
 #### Loops and loop related statements
+
+##### label
+A label can be used to name loops and blocks. These names are used by break, continue and switch statements, but have no other meaning. See [02.01.01](#02.01.01) and [02.01.02](#02.01.02) for examples.
+Blocks can also have labels:
+```javascript
+test : {
+    console.log('hi');
+}
+```
 
 ##### break
 The `break` statement interrupts the execution of the current loop, switch statement or any labeled statement and resumes program execution at the next statement of the one that was terminated.
@@ -187,30 +196,33 @@ do {
 } while (i < n);
 ```
 
-##### for each ... of
-If you ever see someone mention a `for each ... of` statement, just ignore him. This statement was meant to perform iteration over object properties, but it has been removed from the language and most implementations.
-
-##### label
-A label can be used to name loops and blocks. These names are used by break, continue and switch statements, but have no other meaning. See [02.01.01](#02.01.01) and [02.01.02](#02.01.02) for examples.
-Blocks can also have labels:
-```javascript
-test : {
-    console.log('hi');
-}
-```
+##### for each ... in
+If you ever see someone mention a `for each ... in` statement, just ignore him. This statement was meant to perform iteration over object properties, but it has been removed from the language and most implementations.
 
 #### debugger
 The `debugger` statement has no defined behavior but can be used by implementors to provide some kind of debugging means.
 
 #### switch
-Switch evaluates an expression and matches it against labels. To each label there is an associated statement and when the expression matches a label, the associated statement is executed. If no match is found, an optional `default` clause is executed. You can use `break` in a statement, to step out of the clause's execution and continue after the `switch` statement. After a labeled statement is executed, instead of the switch statement's execution being terminated, the following labeled statement inside the switch statement (if there is another labeled statement) is executed - this is called "cases falling through". You shoud absolutely prevent that from happening and so, while using `break` in clause is syntactically optional, it is semantically mandatory.
+Switch evaluates an expression and matches it against labels. To each label there is an associated statement and when the expression matches a label, the associated statement is executed. If no match is found, an optional `default` clause is executed. You can use `break` in a statement, to step out of the clause's execution and continue after the `switch` statement. After a labeled statement is executed, instead of the switch statement's execution being terminated, the following labeled statement inside the switch statement (if there is another labeled statement) is executed - this is called "cases falling through". You shoud absolutely prevent that from happening and so, while using `break` in clauses is syntactically optional, it is semantically mandatory.
+
+```javascript
+switch (name) {
+    case 'Bob' :
+        console.log('Good day, Sir!');
+        break;
+    case 'Alice' :
+        console.log('Mylady!');
+        break;
+    default : console.log('Do I know you?');
+}
+```
 
 Because of the questionable behavior of `switch`, it is best to avoid using it.
 
-NOTICE: The `switch` statement uses the [strict comparison operator](#XX.XX) internally.
+Note: The `switch` statement uses the [strict comparison operator](#XX.XX) internally.
 
 #### throw
-JavaScript has exception handling and `throw` is used to throw one. This will result in the immediate termination of the current execution context (function) giving control to the previous context until a `try ... catch` clause is found. Execution is then continued in the block following the `catch` statement and the value that was thrown is bound to the `catch` block's parameter. Any value can be thrown.
+JavaScript has exceptions and `throw` is used to throw one. This will result in the immediate termination of the current execution context (function) giving control to the previous context until a `try ... catch` clause is found. Execution is then continued in the block following the `catch` statement and the value that was thrown is bound to the `catch` block's parameter. Any value can be thrown.
 ```javascript
 throw "Houston, we got a problem.";
 ```
@@ -252,6 +264,8 @@ if (obj.a === undefined) {
 }
 ```
 This code is far too hard to understand and very hard to predict. For the sake of your code's clarity, do not use `with`.
+
+`with` also comes with a performance penalty for all variables that are not properties of the object. That is because the interpreter will try to find them on the object and on every object, the first one inherits from. For high inheritance hierarchies that is a lot of lookups that will fail anyway.
 
 #### yield (ES6)
 [...]

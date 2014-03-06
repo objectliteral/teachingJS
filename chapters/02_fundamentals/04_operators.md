@@ -9,7 +9,7 @@ The Plus operator behaves differently based on what types its operands are.
 
 If both operands are of type `Number`, `+` will create a new number value, which will be equal to the sum of the operands. If one or both of the operands are boolean values, `true` gets converted to `1`, `false` gets converted to `0` and a new number value is created, equaling the sum of the operands.
 
-NOTICE: Unfortunately the IEEE Standard, used for JavaScript's Number type, has difficulties with some operations on decimal digits. That leads to unreliable behavior like `0.1 + 0.2` being equal to `0.30000000000000004`. You should take special care, when doing sensitive calculations with non-integer numbers.
+WARNING: Unfortunately the IEEE Standard, used for JavaScript's Number type, has difficulties with some operations on decimal digits. That leads to unreliable behavior like `0.1 + 0.2` being equal to `0.30000000000000004`. You should take special care, when doing sensitive calculations with non-integer numbers.
 
 If one or both of the operands are of type String or Object, `+` will treat both as strings and concatenate them to a new one. If both operands are strings, a new string is created, that is the concatenation of the operands.
 ```
@@ -126,7 +126,7 @@ The shift operators in JavaScript are the left shift `<<`, the sign-propagating 
 
 #### `===` / `!==`
 These equality and inequality operators compare the operands with which they are used. If the right hand side and left hand side operands are of the same type and have the same value, the equality operator produces the value `true` and the inequality operator produces the value `false`. If the compared operands have either different types or contain different values, the equality operator produces `false` and the inequality operator produces `true`.
-```
+```javascript
 'a' === 'a' // true
 2 !== 2 // false
 'e' !== 'a' // true
@@ -134,7 +134,7 @@ These equality and inequality operators compare the operands with which they are
 ```
 When used with two objects that are not references to the same object, the equality operator always produces false.
 
-NOTICE: It appears, that the `NaN` value is not equal to itself:
+WARNING: It appears, that the `NaN` value is not equal to itself:
 ```
 NaN === NaN // false
 NaN == NaN // false
