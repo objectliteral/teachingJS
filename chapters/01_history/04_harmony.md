@@ -1,6 +1,6 @@
 ## Harmony (2012 and Next)
 
-The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are already very likely to be part of the next standard edition. The general goals of the next version of the language are the following:
+The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are very likely to be part of the next standard edition. The general goals of the next version of the language are the following:
 - Adding features that support building large and complex applications,
 - making the language a better compile target,
 - stripping away troublesome language elements,
