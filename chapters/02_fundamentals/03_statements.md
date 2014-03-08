@@ -2,9 +2,7 @@
 
 Let us look at the building blocks of a JavaScript (or actually any) program: Statements. A JavaScript program consists of zero or more statements. A statement usually involves using a keyword and some special syntax.
 
-This sub-chapter will introduce all the statements in JavaScript and explain them briefly. Some of them are more important than others, some are dangerous and some are weird. Some of them should not be used at all. Finally, there are some of them, which are being introduced to the language in its next version (ES6, more on that in [XX.XX](#XX.XX)).
-
-Following is a description of all statements in JavaScript.
+This sub-chapter will introduce all the statements in JavaScript and explain them briefly. Some of them are more important than others, some are dangerous and some are weird. Some of them should not be used at all. Finally, there are some of them, which are being introduced to the language in its next version.
 
 ### Declarations
 
@@ -34,11 +32,11 @@ Similar to `const` and `var`, `let` declares a variable with optional immediate 
 ```javascript
 let answer = 42;
 ```
-There are some special flavored syntaxes for `let` which will be discussed in subchapter 02.05.
+There are some special flavored syntaxes for `let` which have been discussed in subchapter [02.05]().
 
 ### Structuring statements
 
-While it is possible to write code that consists of a linear series of statements that are executed one-by-one, you usually want to structure your program and use conditional or repeated execution of certain parts. The following statements help you with that. These statements are mostly straightforward and behave just like you would expect them to do (which is kind of a rare thing in JavaScript).
+While it is possible to write code that consists of a linear series of statements that are executed one-by-one and in order, you usually want to structure your program and use conditional or repeated execution of certain parts. The following statements help you with that. These statements are mostly straightforward and behave just like you would expect them to do (which is kind of a rare thing in JavaScript).
 
 #### block
 Just pro forma: A Block is a list of zero or more statements, surrounded by curly braces. Statements inside a block are executed in order unless this execution order is altered by a statement.

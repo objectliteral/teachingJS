@@ -49,7 +49,7 @@ An identifier must not be one of the following reserved words:
 - `yield`
 
 ### Variable Declaration
-A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
+A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called "variable definition". Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
 ```javascript
 var x = 3;
 console.log(x); // 3
@@ -58,12 +58,12 @@ console.log(x); // 'a string value'
 
 var y = 'Why not?', z, answer = 42;
 console.log(y); // 'Why not?'
-console.log(u); // undefined
+console.log(z); // undefined
 ```
 The `var` keyword creates a variable in the local scope of the function. Read more about scope in [04.03](#04.03.00)
 
 ### Hoisting
-JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while its definition is not.
+JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while assignments of values stay where they are.
 ```javascript
 var f = function (d, c) {
     c(d);
@@ -76,7 +76,7 @@ var f = function (d, c) {
     a = c;
 };
 ```
-The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration  not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
+The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration and not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
 ```javascript
 var f = function () {
     console.log(r2);
@@ -92,7 +92,7 @@ f();
 The declaration of `r2` is hoisted to the top of the function and the variable is initialized with `undefined`. In contrast, accessing `c3` will result in an error, since `c3` was not declared at all.
 
 ### Variable Assignment
-It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in [04.03](#04.03.00)).
+It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and to always avoid globals. (Read more on scope in [04.03](#04.03.00)).
 
 ### Constant Declaration
 Another way to create containers for values is by using constants. The `const` keyword behaves syntacially like the `var` keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.
@@ -108,7 +108,7 @@ const NOVALUE;
 NOVALUE = 'value';
 console.log(NOVALUE); // undefined
 ```
-It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.
+It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue about the fact that the value cannot be changed.
 
 Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.
 
@@ -138,4 +138,4 @@ console.log(secret); // ReferenceError: secret is not defined
 ```
 
 ### Call-by-value / Call-by-reference
-The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.
+The way in which variables are passed as function arguments is really simple: All primitive values are passed by value, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.

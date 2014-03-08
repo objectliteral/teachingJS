@@ -1,8 +1,8 @@
 ## Types and Literals
 
-Types are sets of rules that apply to programming constructs such as variables, expressions or return values. They can help prevent bugs because they enable a compiler to perform consistency checks. In languages like C and Java types restrict variables to only contain values of a certain type. While JavaScript as well has types, it is rather lax about it. For instance it does not make any restrictions to variables or function invocations which is why JavaScript is often mistakenly referred to as a type-agnostic language. It is not.
+Types are sets of rules that apply to programming constructs such as variables, expressions or return values. They can help prevent bugs because they enable a compiler to perform consistency checks. In languages like C and Java types restrict variables to only contain values of a certain type. While JavaScript as well has types, it is rather lax about it. For instance it does not make any restrictions to variables or function invocations which is why JavaScript is sometimes mistakenly referred to as a type-agnostic language, which it is not.
 
-When types are not enforced on variables or function parameters, what reason is there to have types after all? Some operations only make sense when applied to operands of a certain type. For example it is obvious to see how to numbers can be added, but what should happen, when to objects are added? When you use a value of the wrong type with a JavaScript operator, the interpreter will automatically convert it to a type for that the operation is defined. JavaScript does a lot of work for you when it comes to types, so it is not surprising that it doesn't always get it right. Talking about types in JavaScript always means talking about the language's quirks.
+When types are not enforced on variables or function parameters, what reason is there to have types after all? Some operations only make sense when applied to operands of a certain type. For example it is obvious to see how two numbers can be added, but what should happen, when two objects are added? When you use a value of the wrong type with a JavaScript operator, the interpreter will automatically convert it to a type for that the operation is defined. JavaScript does a lot of work for you when it comes to types, so it is not surprising that it doesn't always get it right. Talking about types in JavaScript always means talking about the language's quirks.
 
 Below is a brief introduction to the 6 types that are in the language. Throughout this whole chapter we will talk a lot about types in conjunction with operators and how types are converted to one another.
 
@@ -31,9 +31,9 @@ var wrong = false;
 ```
 
 ### String
-A value of the String type is a sequence of zero or more Unicode characters. There is no character type in JavaScript, single characters are simply Strings with a length of 1.
+A value of the String type is a sequence of zero or more Unicode characters. There is no character type in JavaScript, single characters are simply strings with a length of 1.
 
-In order to use string in your code, you can also rely on a literal. Conveniently the string literal is a pair of `"` double quotes or `'` single quotes. These two mean absolutely the same: They create a string value with the contents of the text, enclosed in the quotation marks.
+In order to use a string in your code, you can also rely on a literal. Conveniently the string literal is a pair of `"` double quotes or `'` single quotes. These two mean absolutely the same: They create a string value with the contents of the text, enclosed in the quotation marks.
 ```javascript
 var hi = "Hello";
 var earth = 'World';
@@ -55,7 +55,7 @@ escape sequence     | description
 
 
 ### Number
-In contrast to many other languages, JavaScript only has one type for numbers: Number. This type contains all 64bit values as specified in the IEEE 754 standard, which covers the same precision as "Double" values in other languages. One special value, defined by the IEEE specification is `NaN` which stands for "Not a Number" and is meant to be placed everywhere, where a sane computation would not have any result, like when the conversion of a value to a number fails, or where the result is not a real number, like when calculating the sqare root of -1. The result of a computation involving `NaN` is always `NaN`. Two additional special values for the Number type in JavaScript are `Infinity` and `-Infinity`, representing an over- or underflow of the set of numbers that is covered by 64bit values.
+In contrast to many other languages, JavaScript only has one type for numbers: Number. This type contains all 64bit values as specified in the IEEE 754 standard, which covers the same precision as "Double" values in other languages. One special value, defined by the IEEE specification is `NaN` which stands for "Not a Number" and is meant to be placed everywhere, where a sane computation would not have any result, like when the conversion of a value to a number fails, or when the result of an operation is not a real number, like when calculating the sqare root of -1. The result of a computation involving `NaN` is always `NaN`. Two additional special values for the Number type in JavaScript are `Infinity` and `-Infinity`, representing an over- or underflow of the set of numbers that is covered by 64bit values.
 
 NOTICE: When dividing a number by zero, the result will be `Infinity` or `-Inifinity` based on the number's sign. `NaN` is the result of dividing zero by zero.
 
