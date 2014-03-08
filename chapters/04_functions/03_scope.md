@@ -25,7 +25,7 @@ console.log(window.a); // 'a'
 console.log(window.b); // 'b'
 console.log(c); // 'c'
 ```
-Notice that `window` is the name of the global object in web browsers; in nodejs the global object can be referred to as `root` or `GLOBAL`. Cluttering the global scope is not recommended. Especially when your applications grow larger or your code runs alongside third party code, it is a serious issue that name collisions of variables can occur. There is no error when you accidentally write to a global variable so you have to be cautious all the time.
+Notice that `window` is the name of the global object in web browsers; in nodejs the global object can be referred to as `root`, `GLOBAL` `global`. Cluttering the global scope is not recommended. Especially when your applications grow larger or your code runs alongside third party code, it is a serious issue that name collisions of variables can occur. There is no error when you accidentally write to a global variable so you have to be cautious all the time.
 
 
 Like many other popular languages, JavaScript uses lexical scoping, meaning, that scope inheritance is statically defined. Everything inside a function that is nested inside of another function has access not only the scope of the inner one but also the one of the outer one. 

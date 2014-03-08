@@ -44,12 +44,9 @@ The values in the `arguments` object are coupled with the function's local param
 This binding does not work for parameters that were not passed to the function call (some older versions of Chrome did create the binding in those cases too, but that was not standard-compliant and got fixed). The coupling is only valid for parameters that were actually passed to the function.
 ```javascript
 (function (a) {
-
     console.log(a);
-
     arguments[0] = 'Batman';
     console.log(a);
-
 }());
 
 // undefined
@@ -92,7 +89,4 @@ The current draft of ES6 proposes an alternative to `arguments` for dealing with
 
 // [70, 60]
 ```
-At the time of writing, the above code will only work in Firefox (according to kangax also in IE10+ but that does not seem to work), but as more ES6 features are implemented, rest parameters are likely to find their way into all implementations.
-
-### BONUS: Destructuring
-
+At the time of writing, the above code will only work in Firefox 24+, but as more ES6 features are implemented, rest parameters are likely to find their way into all implementations.
