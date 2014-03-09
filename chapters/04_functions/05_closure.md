@@ -68,14 +68,14 @@ var vaultmaker = function () {
         values = [];
 
     return {
-        seal: function(secret) {
+        seal: function (secret) {
             var key = {},
                 l = keys.length;
             keys[l] = key;
             values[l] = secret;
             return key;
         },
-        unseal: function(key) {
+        unseal: function (key) {
             for (var i = 0; i < keys.length;
                 i = i + 1) {
                 if (keys[i] === key) {

@@ -79,7 +79,7 @@ Some people use the term "function statement" when they mean "function declarati
 
 Function declarations are hoisted to the top of the enclosing function by the interpreter with the consequence that you can use them before they are defined. (Which shows that function declarations are not statements, since these are always executed in order). Do not take advantage of this behavior, but rather put function declarations on top of the enclosing function for improved readability.
 ```javascript
-console.log(theText); // 'You must use the force!'
+console.log(theText()); // 'You must use the force!'
 function theText () { return 'You must use the force!'; }
 ```
 
@@ -107,13 +107,13 @@ The Function constructor approach may be the closest to JavaScript's internal wo
 I want to illustrate the difference between the function expression and the function declaration with an example.
 ```javascript
 function add (x, y) {
-    return x+y;
+    return x + y;
 }
 ```
 This function declaration does basically the same like the following function expression:
 ```javascript
 var add = function (x, y) {
-    return x+y;
+    return x + y;
 };
 ```
 The function statement creates a local variable with its name and assigns it a function. The only difference is, that the function defined with a declaration can be used before its appearance in the source code.
@@ -121,7 +121,7 @@ The function statement creates a local variable with its name and assigns it a f
 The following will produce a `SyntaxError`:
 ```javascript
 function (x, y) {
-    return x+y;
+    return x + y;
 }
 ```
 because the interpreter assumes a function declaration, which has to have a name.
@@ -129,7 +129,7 @@ because the interpreter assumes a function declaration, which has to have a name
 The following will not produce a `SyntaxError`, but if you try to access `add` afterwards, you will get a `ReferenceError`:
 ```javascript
 (function add (x, y) {
-    return x+y;
+    return x + y;
 })
 ```
 That is because the parentheses make the compiler believe that it is dealing with a function expression. And the name you give a function in a function expression is not automatically used as a variable name for the function.
@@ -141,7 +141,6 @@ On a side note, the following pattern should be mentioned:
 ```javascript
 (function () {
     console.log('ready!');
-    // ...or whatsoever
 }());
 ```
 
@@ -149,16 +148,14 @@ This is called a immediately invoked function expression, but it is often referr
 
 It is recommended to use the outer parentheses even in places, where the function expression could not be confused with a function declaration, because they make for better readability. So instead of
 ```javascript
-var res = function () { 
+var res = function () {
     console.log('ready!');
-    // ...or whatsoever
 }();
 ```
 use
 ```javascript
 var res = (function () {
     console.log('ready!');
-    // ...or whatsoever
 }());
 ```
 While syntactically and semantically correct, omitting those parentheses easily leads to confusion about the intention of the code. The first one looks more like a function definition, while you quickly get used to recognizing the second as an IIFE.
