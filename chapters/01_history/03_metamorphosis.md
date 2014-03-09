@@ -17,12 +17,17 @@ The struggle was overcome and ECMAScript 5th Edition was published in 2009. Some
 ### Strict Mode
 ES5 also includes what is called the *"Strict Mode"*. Strict mode defines a subset of JavaScript that disallows some of the potentially harmful features. If you don't understand the following list, don't be afraid: You probably will, after reading this book. Strict mode adds a handful of `SyntaxError`s that get thrown when you do weird stuff with `eval` and `arguments`. It forbids the use of `arguments.callee` and `arguments.caller`, octal number literals, `with` and it makes the default binding of `this` be `undefined` instead of the global object.
 
-How to enable Strict Mode? You simply have to include a string as the first statement in your file.
+How to enable Strict Mode? You simply have to include a string as the first statement in your function. That makes this function and all functions defined within it be executed in strict mode.
 ```javascript
-'use strict';
+(function () {
+    'use strict';
 
-// ... your application code
+    // ... your application code
+
+}());
 ```
+There is also a file-wide form of strict mode, where `use strict;` is the first statement in your code.
+
 Strict Mode is supported by Firefox 4+, Chrome 13+, Internet Explorer 10+ and Safari 6+. These browsers will recognize the `'use strict';` statement and treat your code as strict code. Environments that do not support Strict Mode will simply ignore the `'use strict';` statement because it is a regular string expression with no effect. There is also a function form for Strict Mode: You include the `'use strict';` statement as the first statement in a function body and then this function will be executed in strict mode. It is generally not possible to toggle browser consoles into Strict Mode.
 
 Future versions of the JavaScript language extend on ES5.1 Strict Mode so I advise you to use Strict Mode whenever possible.
