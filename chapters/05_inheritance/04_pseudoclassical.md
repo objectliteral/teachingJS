@@ -53,7 +53,7 @@ var Child = function Child (age) {
 That does exactly the same, as the definition of `Child` above, but looks a bit more pleasant. Still, this is not a style of code that you want to be writing a lot and we have no possibility of letting our methods work with private instance variables.
 
 ### Advancing
-If we come up with more methods to help us creating objects, maybe it would not be ideal to add them all to `Function.prototype` because not every function is supposed to be used as a constructor. So we could create a `makeConstructor` function that helps us with creating constructors and dealing with inheritance. You would always have to use this function to create a new constructor, but then you could be writing things like:
+If we come up with more methods to help create objects, maybe it would not be ideal to add them all to `Function.prototype` ,because not every function is supposed to be used as a constructor. So we could create a `makeConstructor` function that helps us with creating constructors and dealing with inheritance. You would always have to use this function to create a new constructor, but then you could be writing things like:
 ```javascript
 var Child = makeConstructor(Person, function Child (age) {
     this.age = age;
@@ -83,7 +83,7 @@ var makeConstructor = function makeConstructor (Parent, def) {
     };
 };
 ```
-This `makeConstructor` function creates constructors that do not want to be called with `new`/`create`, but it builds the same situation and object lineage as the simple version and hands all of the constructor arguments over to the super constructor. As you can see there are a lot of things going onm here. 
+This `makeConstructor` function creates constructors that do not want to be called with `new`/`create`, but it builds the same situation and object lineage as the simple version and hands all of the constructor arguments over to the super constructor. As you can see there are a lot of things going on here. 
 TODO: EXPLAIN THOSE THINGS
 
-Modifying the `makeConstructor` function again in order to have its return value also be callable with `new`/`create`, is left to the interested reader.
+Modifying the `makeConstructor` function again in order to have its return value also be callable with `new`/`create`, is a task for the interested reader.

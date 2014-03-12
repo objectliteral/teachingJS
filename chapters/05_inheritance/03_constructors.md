@@ -1,6 +1,6 @@
 ## Constructors
 
-In JavaScript, objects inherit directly from other objects. We talked about the hidden reference that every object has to its prototype and we have manipulated it: By using `Object.create`. But we have not explained, how that function does its magic, because that involves constructors. Despite JavaScript's strongly object oriented understanding of inheritance, there is no way of manipulating the prototype chain, without using constructor functions. Hence constructors sit in between the objects and are the ones taking care of inheritance.
+In JavaScript, objects inherit directly from other objects. We talked about the hidden reference that every object has to its prototype and we have manipulated it: By using `Object.create`. But we have not explained, how that function does its magic, because that involves constructors. Despite JavaScript's strongly object oriented understanding of inheritance, there is no way of manipulating the prototype chain, without using constructor functions.
 
 Apart from the hidden link to its prototype, every object in JavaScript has another special property: `constructor`. Actually it is not that special, in that it is not hidden, it is writeable and we will have to set it manually sometimes. An object's `constructor` property is meant to hold a reference to the function that created the object. If we use the `new` operator on a function, it sets the `constructor` property of the new object automatically to the function that was invoked. 
 

@@ -33,12 +33,12 @@ The good thing about this pattern is, that it syntactically mimics the way, inhe
 
 Of course the same principle applies to methods as they are just function values assigned as members to an object. But the important thing is, what happens to `this`, when a method is executed. To investigate, we will extend on our example from above:
 ```javascript
-movie.length = 154;
-anotherMovie.length = 99;
-movie.isLong = function () { return this.length > 120; };
+movie.runtime = 154;
+anotherMovie.runtime = 99;
+movie.isLong = function () { return this.runtime > 120; };
 ```
-Not only can we dynamically add properties to our objects, but changes to an object's prototype are also immediately visible, since an object has a reference (not a copy) to its prototype. That is, why we can now call the `isLong` function on the `anotherMovie` object. But more important is, what it does: The `this` variable is bound when the function is executed. And as we learnt in [04.02.01](#04.02.01), `this` is bound to the object on that the function is called. That makes it possible for all objects, inheriting from `movie` to share the `isLong` function, while it still works perfectly.
+Not only can we dynamically add properties to our objects, but changes to an object's prototype are also immediately visible, since an object has a reference (not a copy) to its prototype. That is the reason, we can now call the `isLong` function on the `anotherMovie` object. But more important is, what it does: The `this` variable is bound when the function is executed. And as we learnt in [04.02.01](#04.02.01), `this` is bound to the object on that the function is called. That makes it possible for all objects, inheriting from `movie` to share the `isLong` function, while it still works perfectly.
 ```javascript
 anotherMovie.isLong(); // false
 ```
-As before, the JavaScript interpreter can't find a `isLong` property on `anotherMovie` and starts to go through the prototype chain in order to find it. When it is called, the specifier `anotherMovie.` makes the function's `this` variable be bound to `anotherMovie` so that `this.length` points to the `length` property of `anotherMovie`.
+As before, the JavaScript interpreter can't find an `isLong` property on `anotherMovie` and starts to go through the prototype chain in order to find it. When it is called, the specifier `anotherMovie.` makes the function's `this` variable be bound to `anotherMovie` so that `this.runtime` points to the `runtime` property of `anotherMovie`.
