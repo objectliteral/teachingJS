@@ -1,1 +1,1 @@
-<h1 id="title">teachingJS</h1>
+*teachingJS*
