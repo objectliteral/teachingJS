@@ -51,39 +51,3 @@ var Child = function Child (age) {
 });
 ```
 That does exactly the same, as the definition of `Child` above, but looks a bit more pleasant. Still, this is not a style of code that you want to be writing a lot and we have no possibility of letting our methods work with private instance variables.
-
-### Advancing
-If we come up with more methods to help create objects, maybe it would not be ideal to add them all to `Function.prototype` ,because not every function is supposed to be used as a constructor. So we could create a `makeConstructor` function that helps us with creating constructors and dealing with inheritance. You would always have to use this function to create a new constructor, but then you could be writing things like:
-```javascript
-var Child = makeConstructor(Person, function Child (age) {
-    this.age = age;
-    this.isChild = function () {
-        return this.age < 10;
-    };
-});
-```
-If that feels good to you, you can implement a `makeConstructor` function accordingly to our `inherit` method:
-```javascript
-var makeConstructor = function (Parent, def) {
-    def.prototype = Parent.create();
-    return def;
-};
-```
-This has (just like the `inherit` method) the disadvantage of not being able to pass arguments to the super constructor. Everytime an object is created the super constructor is called in order to create the prototype. And while the child constructor can be aware of its parent via `this.constructor`, the lineage is established outside of the constructor, which makes calling a super function kind of unreliable. Thus it may be a good idea, to pass all of the arguments of a constructor call automatically to its parent's constructor. Implementing this behavior is trivial as long as you are okay with ending up with a slightly different object situation than before. If you want to create the exact same layout things get a bit more complicated:
-```javascript
-var makeConstructor = function makeConstructor (Parent, def) {
-    return function () {
-        var prototype = Parent.create.apply(Parent, arguments),
-            that = Object.create(prototype),
-            theOther;
-        def.prototype = prototype;
-        theOther = def.apply(that, arguments);
-        that.constructor = def;
-        return (typeof theOther === 'object' && theOther) || that;
-    };
-};
-```
-This `makeConstructor` function creates constructors that do not want to be called with `new`/`create`, but it builds the same situation and object lineage as the simple version and hands all of the constructor arguments over to the super constructor. As you can see there are a lot of things going on here. 
-TODO: EXPLAIN THOSE THINGS
-
-Modifying the `makeConstructor` function again in order to have its return value also be callable with `new`/`create`, is a task for the interested reader.
