@@ -1,103 +1,9 @@
 
-<h1 id="title">teachingJS</h1>
+*teachingJS*
 
 Copyright © 2014 Peter Steinberg
 
-## [Creative Commons Attribution 4.0 International Public License](http://creativecommons.org/licenses/by/4.0/)
-
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
-
-### Section 1 – Definitions.
-
-1. *Adapted Material* means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
-2. *Adapter's License* means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
-3. *Copyright and Similar Rights* means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(2)(1)-(2) are not Copyright and Similar Rights.
-4. *Effective Technological Measures* means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
-5. *Exceptions and Limitations* means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
-6. *Licensed Material* means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
-7. *Licensed Rights* means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
-8. *Licensor* means the individual(s) or entity(ies) granting rights under this Public License.
-9. *Share* means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
-10. *Sui Generis Database Rights* means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
-11. *You* means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
-
-### Section 2 – Scope.
-
-1. *License grant.*
-    1. Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
-        1. reproduce and Share the Licensed Material, in whole or in part; and
-        2. produce, reproduce, and Share Adapted Material.
-    2. Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
-    3. Term. The term of this Public License is specified in Section 6(1).
-    4. Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(1)(4) never produces Adapted Material.
-    5. Downstream recipients.
-        1. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
-        2. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
-    6. No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(1)(1)(1)(1).
-
-2. *Other rights.*
-    1. Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
-    2. Patent and trademark rights are not licensed under this Public License.
-    3. To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
-
-### Section 3 – License Conditions.
-
-Your exercise of the Licensed Rights is expressly made subject to the following conditions.
-
-1. *Attribution.*
-
-    1. If You Share the Licensed Material (including in modified form), You must:
-        1. retain the following if it is supplied by the Licensor with the Licensed Material:
-            1. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
-            2. a copyright notice;
-            3. a notice that refers to this Public License;
-            4. a notice that refers to the disclaimer of warranties;
-            5. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-        2. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
-        3. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
-    2. You may satisfy the conditions in Section 3(1)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
-    3. If requested by the Licensor, You must remove any of the information required by Section 3(1)(1)(1) to the extent reasonably practicable.
-    4. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
-
-### Section 4 – Sui Generis Database Rights.
-
-Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
-
-1. for the avoidance of doubt, Section 2(1)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;
-2. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
-3. You must comply with the conditions in Section 3(1) if You Share all or a substantial portion of the contents of the database.
-
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
-
-### Section 5 – Disclaimer of Warranties and Limitation of Liability.
-
-1. Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
-2. To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
-
-3. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
-
-### Section 6 – Term and Termination.
-
-1. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
-
-2. Where Your right to use the Licensed Material has terminated under Section 6(1), it reinstates:
-    1. automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
-    2. upon express reinstatement by the Licensor.
-For the avoidance of doubt, this Section 6(2) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
-3. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
-4. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
-
-### Section 7 – Other Terms and Conditions.
-
-1. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
-2. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
-
-### Section 8 – Interpretation.
-
-1. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
-2. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
-3. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
-4. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+[Creative Commons Attribution 4.0 International Public License](http://creativecommons.org/licenses/by/4.0/)
 
 ## Preface
 
@@ -137,21 +43,21 @@ A lot of pages have been written on JavaScript and you should probably read some
 
 # The History of JavaScript
 
-The prevailing concepts in a programming language always fit into a certain context. Usually this is about influences on the creators of a programming language, be it former experience with other languages, personal career background or company management directions. A multitude of factors determines design goals of a language and whether those goals are met or not. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms, it is necessary to put a language's development into context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
+The paradigms and concepts of a programming language exist in a certain historical context. Usually this context is a combination of influences on the creators of a programming language. Be it former experience with other languages, personal career background or company management directions, these contextual criteria shape and mold the syntactic, semantic and ideological properties of a language. A multitude of factors determine what the design goals of a language are and whether those goals are met or not can hardly be judged without knowing the historical context. So in order to understand a language, to understand why it does certain things, why it follows certain paradigms, it is necessary to put a language's development into a context. Especially with JavaScript there is a lot of discussion about what the language got right or wrong and what it wanted to be and what not and what it should be and what not. Maybe a bit of the language's history can give you an idea on why it is what it is.
 
-## Prehistoric Events (early 60s to late 80s)
+## Prehistoric Events (late 50s to late 80s)
 
 It's hard to tell, where the story ultimately begins. Maybe we would have to go back to the origins of mathematics thousands of years ago. But in order to limit our retrospective to more direct influences on the JavaScript programming language, we will look at two lines of action that brought significant features to the language.
 
 Norway 1967. At the Norway Computing Center Ole-Johan Dahl and Kristen Nygaard created what was the very first object oriented programming language: *Simula*. Simula greatly influenced the design of Stroustrup's C++ and thus basically every object oriented programming language to this day.
 
 ### The Great-Grandfathers
-But Even older than Simula is another very influencial language. John McCarthy created *Lisp* at MIT in 1958 making it one the first high-level programming languages. It introduced important concepts like higher-order functions and recursion. Lisp is based on the lambda calculus, a turing-complete computational model based on variable binding and substitution. All functional languages and functional features in other languages are strongly influenced by Lisp.
+There is a programming language even older than Simula which also had a great influence on programming languages in general: *Lisp*. John McCarthy created Lisp at MIT in 1958 making it one of the first high-level programming languages. It introduced important concepts like higher-order functions and recursion. Lisp is based on the lambda calculus, a turing-complete computational model based on variable binding and substitution. All functional languages and functional features in other languages are strongly influenced if not even derived by Lisp.
 
 Another one of the great-grandfathers of JavaScript may be Alan Kay. Together with Dan Ingalls he worked at Xerox PARC in the 70s when they created a programming language called *Smalltalk*. The language took the concept of classes and class inheritance from Simula and combined that with an Actor Model implementation. This kind of message passing is today found in web browsers that implement an event firing system for documents. Smalltalk was hugely influencial and was the language in which many object oriented design patterns (like MVC) were implemented for the first time. Smalltalk later also came with a sophisticated development environment that can be seen as the prototype for all modern IDEs. While in JavaScript functions are objects, which is sometimes confusing for newcomers, in Smalltalk basically everything is an object, including code blocks, primitives and even classes.
 
 ### The Grandfathers
-One of the two most important dialects of Lisp is *Scheme*, which was created by Guy Steele and Gerald Sussman in 1973. Scheme incorporates the Actor Model, uses lexical scoping and was syntactically very close to resembling lambda expressions. Scheme may always have been the little, minimalist, academic brother to Common Lisp, but it was used as the example language in SICP, which made it not only known to computer scientists in general but also to the inventor of JavaScript.
+One of the two most important dialects of Lisp is *Scheme*, which was created by Guy Steele and Gerald Sussman in 1973. Scheme incorporates the Actor Model, uses lexical scoping and was syntactically very close to resembling lambda expressions. Scheme may always have been the little, minimalist, academic brother to Common Lisp, but it was used as the example language in the book [Structure and Interpretation of Computer Programs](http://mitpress.mit.edu/sicp/), which made it not only known to computer scientists in general but also to the inventor of JavaScript.
 
 Then there is *Self*. Self was developed by David Ungar and Randall Smith. They also worked at Xerox PARC and as Smalltalk-80 increasingly gained traction in the industry, Ungar and Smith started Self as an experiment to eliminate classes. When applications that were written in Smalltalk grew in size, it became harder and harder to change the most fundamental classes of a program's inheritance hierarchy because that tended to break a lot of subclasses. In Self there are no longer classes, just objects. And these can directly inherit from one another. This approach of cloning one object and modifying it to create a new object is called Prototype-based programming and the inheritance model is called Prototypal Inheritance. This model is also present in JavaScript.
 
@@ -163,7 +69,7 @@ It is rumored that Eich specified the whole language which was originally called
 
 Mocha was quickly renamed to *LiveScript* and was included in Netscape Navigator 2.0 which came out in September 1995. In December of the same year Netscape started a partnership with Sun with the goal that both companies would support one programming language for the web. This language was meant to be Java and probably Sun wanted Netscape to discontinue LiveScript in the long run but the companies agreed on a short term strategy: They began an effort to integrate JavaScript into Java and vice-versa with Java appealing to professional programmers and JavaScript being the lightweight little brother for quickly writing small scripts. Fortunately, things worked out very differently.
 
-The most important long term result of the agreement between Netscape and Sun though was that LiveScript was renamed to *JavaScript*. Though the two languages have little in common, the name JavaScript, now a trademark of Oracle, persists to this day and has caused confusion ever since. Despite the original intention, JavaScript is neither related to Java nor its little brother. 
+The most important long term result of the agreement between Netscape and Sun though was that LiveScript was renamed to *JavaScript*. Though the two languages have little in common, the name JavaScript, now a trademark of Oracle, persists to this day and has caused confusion ever since. Despite management's original intention, JavaScript is not that closely related to Java and certainly not its little brother. 
 
 JavaScript gained traction right from the beginning and was quickly adopted by companies in order to write scripts for the web.
 
@@ -173,38 +79,45 @@ Both Netscape and Microsoft also included support for JavaScript in their server
 
 In order to protect the language from the influence of Microsoft, Netscape tried to standardize JavaScript. After being rejected by W3C and ISO, the language found its home at the European Computer Manufacturers Association (today called *ECMA International*) in November 1996. JavaScript is since specified as ECMAScript under the standard ECMA-262. The first edition of the spec was published in 1997, the second one year later, the third in 1999.
 
-The standardization process was problematic from the beginning. Netscape and Microsoft were both part of the commitee working on ECMAScript and they did not play well with each other. An important goal ever since, was to remove some of the original design flaws from the language, but Microsoft has always critically emphasized backward-compatibility and so a lot of bad stuff stayed in the language because of the fear of breaking existing code by removing language features. An important addition was made in Edition 2, with Arrays finding their way into the language. Sadly, this addition was not thought through and the arrays we have in JavaScript are still basically objects with some special properties. After the release of the third edition, work on the language slowed down and there was no new standard for the next ten years.
+The standardization process was problematic from the beginning. Netscape and Microsoft were both part of the commitee working on ECMAScript and they didn't play too well with each other. An important goal ever since was to remove some of the original design flaws from the language, but Microsoft has always critically emphasized backward-compatibility and so a lot of bad stuff stayed in the language because of the fear of breaking existing code by removing language features. An important addition was made in Edition 2 with Arrays finding their way into the language. Sadly, this addition was not thought through and the arrays we have in JavaScript are still basically objects with some special properties. After the release of the third edition, work on the language slowed down and there was no new standard for the next ten years.
 
 ## The Metamorphosis and the Struggle (2000-2011)
 
+Besides the official standardization efforts, there were at least two other major processes that changeed the course of the language's history.
+.
 ### Ajax
-Besides the official standardization efforts, there was some other major process to change the course of the language's history. Browsers implemented an API to make HTTP requests in JavaScript which was a feature that was underestimated at first. Until in 2005 when Interaction Designer Jesse James Garrett and his company, Adaptive Path, were experimenting on how to improve user experience when browsing a website. In order to improve performance and responsiveness, Garrett came up with the idea, that instead of doing full page replacements, he could use the HTTP interface to only fetch the part of the page that needed to be replaced, when a new page was requested. Because things like navigations and side bars often stay the same across one website it is unnecessary to send those pieces of HTML over the wire everytime a user wants to visit a new page. The new technique resulted in smaller files and thus shorter loading times which accomplished the goal of streamlining user experience. For this new concept, Garrett coined the term *"Asynchronous JavaScript and XML" (AJAX)*.
+Browsers implemented an API to make HTTP requests in JavaScript which was a feature that was underestimated at first. Until 2005 when Interaction Designer Jesse James Garrett and his company, Adaptive Path, were experimenting on how to improve user experience when browsing a website. In order to improve performance and responsiveness, Garrett came up with the idea, that instead of doing full page replacements, he could use the HTTP interface to only fetch the part of the page that needed to be replaced, when a new page was requested. Because things like navigations and side bars often stay the same across one website it is unnecessary to send those pieces of HTML over the wire everytime a user wants to visit a new page. The new technique resulted in smaller files and thus shorter loading times. For this new concept, Garrett coined the term *"Asynchronous JavaScript and XML" (AJAX)*.
 
-Not only made Adaptive Path their clients happy, but they also started a *Metamorphosis of JavaScript*. The language had gained traction over the years because it was the only programming language for the web and if you wanted to build some kind of interaction into your site you would have to use JavaScript or Flash. The later has a higher level of entry for programmers, but JavaScript was easy to use, forgiving and just enough to create animations like dropdown menus and that sort of things. But along with the AJAX revolution, developers started to realize that it is possible to build complex applications with what a lot of people thought was a toy language. Ajax made it possible to load separate parts of an application one by one and only if needed so the user would not have to wait for a lot of application code to be downloaded and initialized. This is what the asynchronous nature of JavaScript is all about: Dynamically reacting to user needs in order to load and run code only if needed.
+Not only made Adaptive Path their clients happy, but they also started a *Metamorphosis of JavaScript*. The language had gained traction over the years because it was the only programming language for the web and if you wanted to build some kind of interaction into your site you would have to use JavaScript or Flash. The later has a higher level of entry for programmers, but JavaScript was easy to use, forgiving and just enough to create animations like dropdown menus and that sort of things. But along with the AJAX revolution, developers started to realize that it was possible to build complex applications in JavaScript. Ajax made it possible to load separate parts of an application one by one and only if needed so the user would not have to wait for a lot of application code to be downloaded and initialized.
 
-One of the important aspects of Ajax is the keyword "Asyncrhonous": Browsers are generally single-threaded and the browser UI runs in the same thread as the JavaScript code. So when a computation in JavaScript takes a long time, the browser UI would not respond to user activity until JavaScript is finished running. Now this means that when an HTTP request would take some time to get a response from the server, the UI would be unresponsive which results in very poor user experience. An "asynchronous" HTTP call circumvents this issue by immediately returning and allowing the JavaScript execution and UI to continue. When the server response is received a callback function is invoked, reacting to the received data. This pattern introduces more complexity to an application but greatly improves user experience.
+One of the important aspects of Ajax is the keyword "asynchronous": Browsers are generally single-threaded and the browser UI runs in the same thread as the JavaScript code. So when a computation in JavaScript takes a long time, the browser UI would not respond to user activity until JavaScript is finished running. Now this means that when an HTTP request would take some time to get a response from the server, the UI would be unresponsive which results in very poor user experience. An "asynchronous" HTTP call circumvents this issue by immediately returning and allowing the JavaScript execution and UI to continue. When the server response is received a callback function is invoked, reacting to the received data. This pattern introduces more complexity to an application but greatly improves user experience.
 
 ### ES4
-Back to the standardization process. While first proposals on the next language edition were made as of 1999, the commitee was torn on how big a change to implement in the new version. There were two factions, one of them promoting concepts with a lot of new syntax and semantics, while the other part of the committee favored small and careful adjustments over the introduction of drastic features. After a successful meeting in Oslo (here we are again in Norway, just where our journey started) in 2008 Brendan Eich declared a *"harmony"* among the commitee which became the working title of the next version of ECMAScript. It was decided to quickly agree on a moderate ES3.1, which carefully made minor adjustments to the language. ES4 should then be a greater step forward incorporating concepts like classes, block scope, constants and destructuring. As a diplomatic measure, ES3.1 was renamed to ES5 and ES4 was renamed to ES6; the problematic fourth edition was left out.
+Back to the standardization process. While first proposals on the next language edition were made as of 1999, the commitee was torn on how big a change to implement in the new version. There were two factions, one of them promoting concepts with a lot of new syntax and semantics, while the other part of the committee favored small and careful adjustments over the introduction of revolving features. After a successful meeting in Oslo in 2008 Brendan Eich declared a *"harmony"* among the commitee which became the working title for the next version of ECMAScript. It was decided to quickly agree on a moderate ES3.1, which carefully made minor adjustments to the language. ES4 should then be a greater step forward incorporating concepts like classes, block scope, constants and destructuring. As a diplomatic measure, ES3.1 was renamed to ES5 and ES4 was renamed to ES6; the problematic fourth edition was left out.
 
 The struggle was overcome and ECMAScript 5th Edition was published in 2009. Some more changes accumulated and were addressed in another minor specification version as ES5.1 in 2011 making this the current version of the language.
 
 ### Strict Mode
 ES5 also includes what is called the *"Strict Mode"*. Strict mode defines a subset of JavaScript that disallows some of the potentially harmful features. If you don't understand the following list, don't be afraid: You probably will, after reading this book. Strict mode adds a handful of `SyntaxError`s that get thrown when you do weird stuff with `eval` and `arguments`. It forbids the use of `arguments.callee` and `arguments.caller`, octal number literals, `with` and it makes the default binding of `this` be `undefined` instead of the global object.
 
-How to enable Strict Mode? You simply have to include a string at the first statement in your file.
+How to enable Strict Mode? You simply have to include a string as the first statement in your function. That makes this function and all functions defined within it be executed in strict mode.
 ```javascript
-'use strict';
+(function () {
+    'use strict';
 
-// ... your application code
+    // ... your application code
+
+}());
 ```
+There is also a file-wide form of strict mode, where `use strict;` is the first statement in your code.
+
 Strict Mode is supported by Firefox 4+, Chrome 13+, Internet Explorer 10+ and Safari 6+. These browsers will recognize the `'use strict';` statement and treat your code as strict code. Environments that do not support Strict Mode will simply ignore the `'use strict';` statement because it is a regular string expression with no effect. There is also a function form for Strict Mode: You include the `'use strict';` statement as the first statement in a function body and then this function will be executed in strict mode. It is generally not possible to toggle browser consoles into Strict Mode.
 
 Future versions of the JavaScript language extend on ES5.1 Strict Mode so I advise you to use Strict Mode whenever possible.
 
 ## Harmony (2012 and Next)
 
-The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are already very likely to be part of the next standard edition. The general goals of the next version of the language are the following:
+The Technical Committee TC39 of ECMA International is working on ECMAScript 6 for some time now and there are some features that are very likely to be part of the next standard edition. The general goals of the next version of the language are the following:
 - Adding features that support building large and complex applications,
 - making the language a better compile target,
 - stripping away troublesome language elements,
@@ -238,25 +151,25 @@ In the examples in the following chapters there are a lot of expressions that do
 ```
 
 ### A JavaScript program
-When you read an introductory book about a programming language it often tells you early on how you can execute a program and what a program in that language consists of anyway. What I don't like about the idea is that it might be difficult for a newcomer to distinguish between a language and the environment that it runs in. But I feel like it is more important to give you the opportunity to try out some code and get your hands dirty, so let's get to it.
+When you read an introductory book about a programming language it often tells you early on how you can execute a program and what a program in that language consists of. What I don't like about the idea is that it might be difficult for a newcomer to distinguish between a language and the environment that it runs in. But I feel like it is more important to give you the opportunity to try out some code and get your hands dirty, so let's get to it.
 
-JavaScript is an interpreted language. That means that JavaScript source code is not compiled to executable code which can be run directly by the operating system. Nor does JavaScript source code compile to bytecode that runs in a VM or something like that. Well, of course, JavaScript code *is* compiled to executable code, but this is done while the code is being executed. As a consequence, JavaScript needs to have a runtime environment where an interpreter compiles the code (using enormously clever techniques) and runs it right away. The most common runtime environment - the one everybody has installed on their computer - is a web browser. JavaScript was meant to be a programming language for the web and shortly after its release, supporting JavaScript execution became obligatory for browser vendors to implement. Whether you use Google Chrome, Mozilla Firefox, Opera, Apple Safari or even Microsoft Internet Explorer - you are using a JavaScript runtime environment every day. Those browsers differ in their implementation of JavaScript in some features of the language they do or do not support, in the speed at which they compile and run JavaScript code and in weird quirks that sometimes make it really hard to write code that runs in all browsers. But you can also run JavaScript on the console using implementations like NodeJS or PhantomJS. NodeJS is the most important "server-side" JavaScript environment and while also coming with a console REPL, it allows you to run any JavaScript code from a file.
+JavaScript is an interpreted language. That means that JavaScript source code is not compiled to executable code which can be run directly by the operating system. Nor does JavaScript source code compile to bytecode that runs in a VM or something like that. Well, of course, JavaScript code *is* compiled to executable code, but this is done while the code is being executed. As a consequence, JavaScript needs to have a runtime environment where an interpreter compiles the code (using enormously clever techniques) and runs it right away. The most common runtime environment - the one everybody has installed on their computer - is a web browser. JavaScript was meant to be a programming language for the web and shortly after its release, supporting JavaScript execution became obligatory for browser vendors to implement. Whether you use [Google Chrome](https://www.google.com/intl/en/chrome/browser/), [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/), [Opera](http://www.opera.com/), [Apple Safari](http://www.apple.com/safari/) or even Microsoft Internet Explorer - you are using a JavaScript runtime environment every day. Those browsers differ in their implementation of JavaScript in some features of the language they do or do not support, in the speed at which they compile and run JavaScript code and in weird quirks that sometimes make it really hard to write code that runs in all browsers. But you can also run JavaScript on the console using implementations like [NodeJS](http://nodejs.org/) or [PhantomJS](http://phantomjs.org/). NodeJS is the most important "server-side" JavaScript environment and while also coming with a console REPL, it allows you to run any JavaScript code from a file.
 
 ### stdout
 One particular function that you should know is the default way in which we output text to the console (independent of whether this console is inside a web browser or not) because the examples make heavy use of that. `console.log` is not part of the JavaScript language but is by convention implemented in nearly all modern JavaScript environments. So for all of our tests and examples we will use `console.log` just like you would use `System.out.println` in Java.
 
 ### "Hello World"
-JavaScript does not rely on any formal construct that you need to include in your program in order to run it; like there is no `main` function or whatsoever. You simply place your code where an interpreter can find it and off you go. In order to write a simple "Hello World"-program we don't need to do anything but to log something to the console like this:
+JavaScript does not rely on any formal construct that you need to include in your program in order to run it; like there is no `main` function or whatsoever. You simply place your code where an interpreter can find it and you're good to go. In order to write a simple "Hello World"-program we don't need to do anything but to log something to the console like this:
 ```javascript
 console.log('Hello Word!');
 ```
 Now where do you need to enter this code in order to run it? Again, I don't want to go into any details about JavaScript environments right now, but I believe it helps your understanding of the language plus it enables you to test out your own code.
 
 ### Browser console
-There are basically two ways you can execute JavaScript code in your browser. The first one is by entering it into the browser console. You can open up the developer tools of your browser by pressing `F12` in Chrome and Internet Explorer and by pressing `Ctrl`+`Shift`+`k` in Firefox. In the panel that will show up, there is generally a "Console" tab. This tab includes a textinput in which you can enter your JavaScript code and execute it by pressing `Return`. If you have never done this before: Try it! Works? Congratulations to your very first bit of JavaScript code!
+There are basically two ways you can execute JavaScript code in your browser. The first one is by entering it into the browser console. You can open up the developer tools of your browser by pressing `F12` in Chrome and Internet Explorer and by pressing `Ctrl`+`Shift`+`k` in Firefox. In the panel that will show up, there is generally a "Console" tab. This tab includes an input field in which you can enter your JavaScript code and execute it by pressing `Return`. If you have never done this before: Try it! Works? Congratulations to your very first bit of JavaScript code!
 
 ### Browser script
-Browsers render webpages from HTML-formatted text. An HTML document can contain a `<script>` tag which tells the browser to execute everything inside that tag as JavaScript code. You can write a simple HTML document containing a `script` element and place your JavaScript code in there. You can then open the document with your browser that will execute the code immediately. Make sure to have the console opened up in order to see the output your are making.
+Browsers render webpages from HTML-formatted text. An HTML document can contain a `<script>` tag which tells the browser to execute everything inside that tag as JavaScript code. You can write a simple HTML document containing a `script` element and place your JavaScript code in there. You can then open the document with your browser that will execute the code immediately. Make sure to have the console opened up in order to see the output from the `console.log` command.
 ```HTML
 <!doctype html>
 <html>
@@ -269,7 +182,7 @@ Browsers render webpages from HTML-formatted text. An HTML document can contain 
 ```
 
 ### Node
-As said before, NodeJS comes with a REPL for you OS console. If you don't like to run examples in your browser, download NodeJS from [their website](http://www.nodejs.org), install it, open up your OS' command prompt and type in `node`. That will enter the node shell where you can enter JavaScript code and execute it with `Return`.
+As said before, NodeJS comes with a REPL for your OS console. If you don't like to run examples in your browser, download NodeJS from [their website](http://www.nodejs.org), install it, open up your OS' command prompt and type in `node`. That will enter the node shell where you can enter JavaScript code and execute it with `Return`.
 
 You can also put your code in a file, say `hello.js`, and execute it by entering `node hello.js` in your command prompt.
 
@@ -279,9 +192,9 @@ Now you should be able to execute your own JavaScript code or at least copy and 
 
 ## Types and Literals
 
-Types are sets of rules that apply to programming constructs such as variables, expressions or return values. They can help prevent bugs because they enable a compiler to perform consistency checks. In languages like C and Java types restrict variables to only contain values of a certain type. While JavaScript as well has types, it is rather lax about it. For instance it does not make any restrictions to variables or function invocations which is why JavaScript is often mistakenly referred to as a type-agnostic language. It is not.
+Types are sets of rules that apply to programming constructs such as variables, expressions or return values. They can help prevent bugs because they enable a compiler to perform consistency checks. In languages like C and Java types restrict variables to only contain values of a certain type. While JavaScript as well has types, it is rather lax about it. For instance it does not make any restrictions to variables or function invocations which is why JavaScript is sometimes mistakenly referred to as a type-agnostic language, which it is not.
 
-When types are not enforced on variables or function parameters, what reason is there to have types after all? Some operations only make sense when applied to operands of a certain type. For example it is obvious to see how to numbers can be added, but what should happen, when to objects are added? When you use a value of the wrong type with a JavaScript operator, the interpreter will automatically convert it to a type for that the operation is defined. JavaScript does a lot of work for you when it comes to types, so it is not surprising that it doesn't always get it right. Talking about types in JavaScript always means talking about the language's quirks.
+When types are not enforced on variables or function parameters, what reason is there to have types after all? Some operations only make sense when applied to operands of a certain type. For example it is obvious to see how two numbers can be added, but what should happen, when two objects are added? When you use a value of the wrong type with a JavaScript operator, the interpreter will automatically convert it to a type for that the operation is defined. JavaScript does a lot of work for you when it comes to types, so it is not surprising that it doesn't always get it right. Talking about types in JavaScript always means talking about the language's quirks.
 
 Below is a brief introduction to the 6 types that are in the language. Throughout this whole chapter we will talk a lot about types in conjunction with operators and how types are converted to one another.
 
@@ -310,9 +223,9 @@ var wrong = false;
 ```
 
 ### String
-A value of the String type is a sequence of zero or more Unicode characters. There is no character type in JavaScript, single characters are simply Strings with a length of 1.
+A value of the String type is a sequence of zero or more Unicode characters. There is no character type in JavaScript, single characters are simply strings with a length of 1.
 
-In order to use string in your code, you can also rely on a literal. Conveniently the string literal is a pair of `"` double quotes or `'` single quotes. These two mean absolutely the same: They create a string value with the contents of the text, enclosed in the quotation marks.
+In order to use a string in your code, you can also rely on a literal. Conveniently the string literal is a pair of `"` double quotes or `'` single quotes. These two mean absolutely the same: They create a string value with the contents of the text, enclosed in the quotation marks.
 ```javascript
 var hi = "Hello";
 var earth = 'World';
@@ -334,7 +247,7 @@ escape sequence     | description
 
 
 ### Number
-In contrast to many other languages, JavaScript only has one type for numbers: Number. This type contains all 64bit values as specified in the IEEE 754 standard, which covers the same precision as "Double" values in other languages. One special value, defined by the IEEE specification is `NaN` which stands for "Not a Number" and is meant to be placed everywhere, where a sane computation would not have any result, like when the conversion of a value to a number fails, or where the result is not a real number, like when calculating the sqare root of -1. The result of a computation involving `NaN` is always `NaN`. Two additional special values for the Number type in JavaScript are `Infinity` and `-Infinity`, representing an over- or underflow of the set of numbers that is covered by 64bit values.
+In contrast to many other languages, JavaScript only has one type for numbers: Number. This type contains all 64bit values as specified in the IEEE 754 standard, which covers the same precision as "Double" values in other languages. One special value, defined by the IEEE specification is `NaN` which stands for "Not a Number" and is meant to be placed everywhere, where a sane computation would not have any result, like when the conversion of a value to a number fails, or when the result of an operation is not a real number, like when calculating the sqare root of -1. The result of a computation involving `NaN` is always `NaN`. Two additional special values for the Number type in JavaScript are `Infinity` and `-Infinity`, representing an over- or underflow of the set of numbers that is covered by 64bit values.
 
 NOTICE: When dividing a number by zero, the result will be `Infinity` or `-Inifinity` based on the number's sign. `NaN` is the result of dividing zero by zero.
 
@@ -447,7 +360,7 @@ An identifier must not be one of the following reserved words:
 - `yield`
 
 ### Variable Declaration
-A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called `definition`. Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
+A variable declaration consists of the `var` keyword, followed by a space, followed by an identifier. The declaration can be immediately followed by an assignment to the new variable, in which case the identifier is followed by the assignment operator `=` and an expression. Declaring and instantly assigning a value is called "variable definition". Multiple declarations and and definitions can be chained together by using the comma operator `,`. A declaration or definition or chain of comma separated declarations or definitions has to be followed by a semicolon. 
 ```javascript
 var x = 3;
 console.log(x); // 3
@@ -456,12 +369,12 @@ console.log(x); // 'a string value'
 
 var y = 'Why not?', z, answer = 42;
 console.log(y); // 'Why not?'
-console.log(u); // undefined
+console.log(z); // undefined
 ```
 The `var` keyword creates a variable in the local scope of the function. Read more about scope in [04.03](#04.03.00)
 
 ### Hoisting
-JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while its definition is not.
+JavaScript uses a concept called "hoisting" that moves every variable declaration to the top of the function, while assignments of values stay where they are.
 ```javascript
 var f = function (d, c) {
     c(d);
@@ -474,7 +387,7 @@ var f = function (d, c) {
     a = c;
 };
 ```
-The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration  not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
+The result of that is that you can use variables before they are defined in your code without getting any errors. But since only the declaration and not the definition is hoisted and declared variables are initialized with the `undefined` value, that may cause trouble.
 ```javascript
 var f = function () {
     console.log(r2);
@@ -490,7 +403,7 @@ f();
 The declaration of `r2` is hoisted to the top of the function and the variable is initialized with `undefined`. In contrast, accessing `c3` will result in an error, since `c3` was not declared at all.
 
 ### Variable Assignment
-It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and always to avoid globals. (Read more on scope in [04.03](#04.03.00)).
+It is possible to assign a value to a variable that has not previously been declared. There is no error and chances are, the program will work fine. The problem is, that such an assignment creates an implicit declaration of a global variable. Since global variables are visible everywhere inside your program, the probability of a name collision has to be taken into account. It is best, to keep variables as private and local as possible and to always avoid globals. (Read more on scope in [04.03](#04.03.00)).
 
 ### Constant Declaration
 Another way to create containers for values is by using constants. The `const` keyword behaves syntacially like the `var` keyword, but creates a variable, that can be assigned a value only once. After its initial definition, a constant is readonly. If you try to change a constant you do not get an error message, but the value of the constant will simply not change.
@@ -506,7 +419,7 @@ const NOVALUE;
 NOVALUE = 'value';
 console.log(NOVALUE); // undefined
 ```
-It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue on the fact that the value cannot be changed.
+It is syntactically not required that constant names are all caps, but convention is to only use all caps names for constants in order to provide a visual clue about the fact that the value cannot be changed.
 
 Constants are currently not part of the official JavaScript language specification, but they are very likely to be in the next version of the language and they are already supported in the most important environments. Irritatingly, in ECMAScript 6 constants are block scoped, but are function scoped in current implementations.
 
@@ -536,15 +449,13 @@ console.log(secret); // ReferenceError: secret is not defined
 ```
 
 ### Call-by-value / Call-by-reference
-The way in which variables are passed as function arguments is really simple. All primitive values are passed by value to function, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.
+The way in which variables are passed as function arguments is really simple: All primitive values are passed by value, all objects (including functions, arrays, regular expressions and all your custom objects) are passed by reference.
 
 ## Statements
 
 Let us look at the building blocks of a JavaScript (or actually any) program: Statements. A JavaScript program consists of zero or more statements. A statement usually involves using a keyword and some special syntax.
 
-This sub-chapter will introduce all the statements in JavaScript and explain them briefly. Some of them are more important than others, some are dangerous and some are weird. Some of them should not be used at all. Finally, there are some of them, which are being introduced to the language in its next version (ES6, more on that in [XX.XX](#XX.XX)).
-
-Following is a description of all statements in JavaScript.
+This sub-chapter will introduce all the statements in JavaScript and explain them briefly. Some of them are more important than others, some are dangerous and some are weird. Some of them should not be used at all. Finally, there are some of them, which are being introduced to the language in its next version.
 
 ### Declarations
 
@@ -574,11 +485,11 @@ Similar to `const` and `var`, `let` declares a variable with optional immediate 
 ```javascript
 let answer = 42;
 ```
-There are some special flavored syntaxes for `let` which will be discussed in subchapter 02.05.
+There are some special flavored syntaxes for `let` which have been discussed in subchapter [02.05]().
 
 ### Structuring statements
 
-While it is possible to write code that consists of a linear series of statements that are executed one-by-one, you usually want to structure your program and use conditional or repeated execution of certain parts. The following statements help you with that. These statements are mostly straightforward and behave just like you would expect them to do (which is kind of a rare thing in JavaScript).
+While it is possible to write code that consists of a linear series of statements that are executed one-by-one and in order, you usually want to structure your program and use conditional or repeated execution of certain parts. The following statements help you with that. These statements are mostly straightforward and behave just like you would expect them to do (which is kind of a rare thing in JavaScript).
 
 #### block
 Just pro forma: A Block is a list of zero or more statements, surrounded by curly braces. Statements inside a block are executed in order unless this execution order is altered by a statement.
@@ -1552,7 +1463,7 @@ Some people use the term "function statement" when they mean "function declarati
 
 Function declarations are hoisted to the top of the enclosing function by the interpreter with the consequence that you can use them before they are defined. (Which shows that function declarations are not statements, since these are always executed in order). Do not take advantage of this behavior, but rather put function declarations on top of the enclosing function for improved readability.
 ```javascript
-console.log(theText); // 'You must use the force!'
+console.log(theText()); // 'You must use the force!'
 function theText () { return 'You must use the force!'; }
 ```
 
@@ -1580,13 +1491,13 @@ The Function constructor approach may be the closest to JavaScript's internal wo
 I want to illustrate the difference between the function expression and the function declaration with an example.
 ```javascript
 function add (x, y) {
-    return x+y;
+    return x + y;
 }
 ```
 This function declaration does basically the same like the following function expression:
 ```javascript
 var add = function (x, y) {
-    return x+y;
+    return x + y;
 };
 ```
 The function statement creates a local variable with its name and assigns it a function. The only difference is, that the function defined with a declaration can be used before its appearance in the source code.
@@ -1594,7 +1505,7 @@ The function statement creates a local variable with its name and assigns it a f
 The following will produce a `SyntaxError`:
 ```javascript
 function (x, y) {
-    return x+y;
+    return x + y;
 }
 ```
 because the interpreter assumes a function declaration, which has to have a name.
@@ -1602,7 +1513,7 @@ because the interpreter assumes a function declaration, which has to have a name
 The following will not produce a `SyntaxError`, but if you try to access `add` afterwards, you will get a `ReferenceError`:
 ```javascript
 (function add (x, y) {
-    return x+y;
+    return x + y;
 })
 ```
 That is because the parentheses make the compiler believe that it is dealing with a function expression. And the name you give a function in a function expression is not automatically used as a variable name for the function.
@@ -1614,7 +1525,6 @@ On a side note, the following pattern should be mentioned:
 ```javascript
 (function () {
     console.log('ready!');
-    // ...or whatsoever
 }());
 ```
 
@@ -1622,16 +1532,14 @@ This is called a immediately invoked function expression, but it is often referr
 
 It is recommended to use the outer parentheses even in places, where the function expression could not be confused with a function declaration, because they make for better readability. So instead of
 ```javascript
-var res = function () { 
+var res = function () {
     console.log('ready!');
-    // ...or whatsoever
 }();
 ```
 use
 ```javascript
 var res = (function () {
     console.log('ready!');
-    // ...or whatsoever
 }());
 ```
 While syntactically and semantically correct, omitting those parentheses easily leads to confusion about the intention of the code. The first one looks more like a function definition, while you quickly get used to recognizing the second as an IIFE.
@@ -1856,7 +1764,7 @@ console.log(window.a); // 'a'
 console.log(window.b); // 'b'
 console.log(c); // 'c'
 ```
-Notice that `window` is the name of the global object in web browsers; in nodejs the global object can be referred to as `root` or `GLOBAL`. Cluttering the global scope is not recommended. Especially when your applications grow larger or your code runs alongside third party code, it is a serious issue that name collisions of variables can occur. There is no error when you accidentally write to a global variable so you have to be cautious all the time.
+Notice that `window` is the name of the global object in web browsers; in nodejs the global object can be referred to as `root`, `GLOBAL` `global`. Cluttering the global scope is not recommended. Especially when your applications grow larger or your code runs alongside third party code, it is a serious issue that name collisions of variables can occur. There is no error when you accidentally write to a global variable so you have to be cautious all the time.
 
 
 Like many other popular languages, JavaScript uses lexical scoping, meaning, that scope inheritance is statically defined. Everything inside a function that is nested inside of another function has access not only the scope of the inner one but also the one of the outer one. 
@@ -1981,12 +1889,9 @@ The values in the `arguments` object are coupled with the function's local param
 This binding does not work for parameters that were not passed to the function call (some older versions of Chrome did create the binding in those cases too, but that was not standard-compliant and got fixed). The coupling is only valid for parameters that were actually passed to the function.
 ```javascript
 (function (a) {
-
     console.log(a);
-
     arguments[0] = 'Batman';
     console.log(a);
-
 }());
 
 // undefined
@@ -2029,23 +1934,21 @@ The current draft of ES6 proposes an alternative to `arguments` for dealing with
 
 // [70, 60]
 ```
-At the time of writing, the above code will only work in Firefox (according to kangax also in IE10+ but that does not seem to work), but as more ES6 features are implemented, rest parameters are likely to find their way into all implementations.
-
-### BONUS: Destructuring
-
+At the time of writing, the above code will only work in Firefox 24+, but as more ES6 features are implemented, rest parameters are likely to find their way into all implementations.
 
 ## Closure
 
-Along with prototypal inheritance, closure is the most one of the most important concepts in JavaScript. It is easy to learn and very powerful. It allows JavaScript to be written in a very expressive way and to utilize it to facilitate a flexible programming approach as well as to build creative patterns.
+Along with prototypal inheritance, closure is the most important concept in JavaScript. It is easy to learn and very powerful. It allows JavaScript to be written in a very expressive way and to utilize it to facilitate a flexible programming approach as well as to build creative patterns.
 
 A major aspect of closures is lexical scoping, which we have already covered in [04.03](#04.03.00). Lexical scoping is the reason, that in the following code
 
-```
+```javascript
 var f0 = function () {
-    var priv = 'my secret';
-    return helper = function () {
-        ...
-    };
+    var priv = 'my secret',
+        helper = function () {
+            console.log(priv);
+        };
+    return helper;
 };
 ```
 
@@ -2054,7 +1957,7 @@ the function `helper` has access to the variable `priv`. But what happens, when 
 Closure means, that, when a function is invoked, it gets a reference to its lexical environment. As a consequence, a function will always have access to all the variables that were accessible in the scope in which the function was declared.
 
 Example:
-```
+```javascript
 var counter = (function () {
     var count = 0;
     return {
@@ -2070,7 +1973,7 @@ var counter = (function () {
 We create an object, that can increment a counter and return the current counter value. The `counter` variable is assigned the result of calling an anonymous function, that declares a local variable `count` and returns an object with two methods. Because of closure, these have (and will always have) access to the `count` variable. While the anonymous function immediately returns, its local variables are not destroyed.
 
 This example leads to the question, whether there is a new `count` variable, everytime that anonymous function would be called, or whether all of the objects returned, share the same `count` variable. In order to investigate, let us rewrite the previous code.
-```
+```javascript
 var makeCounter = function () {
     var count = 0;
     return {
@@ -2093,12 +1996,51 @@ counterB.getCount(); // 0
 ```
 Every time `makeCounter` is called, a new execution context is created and thus a new count variable, which is visible to everything, defined in that same execution context, but nowhere outside of it including different executions of the `makeCounter` function.
 
-SEALER/UNSEALER EXAMPLE
+### Sealer/Unsealer
+Another example for the use of closures is a sealer. You can put values into a vault where nobody can access it, unless they have a key. The key will be an object which makes it unspoofable. The following code describes a function that creates vaults.
+
+```javascript
+var vaultmaker = function () {
+
+    var keys = [],
+        values = [];
+
+    return {
+        seal: function (secret) {
+            var key = {},
+                l = keys.length;
+            keys[l] = key;
+            values[l] = secret;
+            return key;
+        },
+        unseal: function (key) {
+            for (var i = 0; i < keys.length;
+                i = i + 1) {
+                if (keys[i] === key) {
+                    return values[i];
+                }
+            }
+        }
+    };
+};
+```
+Of course the `keys` and `values` arrays are closed over by the `vaultmaker` function and cannot be accessed from the outside. When you seal a secret, you get the key as a return value. This key and only this key can retrieve the value from the vault.
+
+```javascript
+var vault = vaultmaker();
+var key = vault.seal('this is secret information');
+
+console.log(vault); // { seal: [Function], unseal: [Function] }
+
+console.log(vault.unseal({})); // undefined
+
+console.log(vault.unseal(key)); // 'this is secret information'
+```
 
 ### Memoization
 We can use closure, to speed up algorithms significantly. Take the Fibonacci numbers for example. Tradionally you would write an algorithm, computing the Fibonacci number of n, in a recursive fashion.
 
-```
+```javascript
 var fib = function (n) {
     return n < 2 ? 1 : fib(n-1) + fib(n-2);
 };
@@ -2108,7 +2050,7 @@ While being easy to implement, this solution has the drawback of poor performanc
 var memoize = function (fn) {
     var memo = [],
         self = function (x) {
-            if (typeof memo[x] !== 'number')  {
+            if (typeof memo[x] !== 'number') {
                 memo[x] = fn(self, x);
             }
             return memo[x];
@@ -2219,17 +2161,19 @@ In the end you don't have to know about the parts that made up the more complex 
 
 ## Constructors
 
-In order to write powerful patterns for object creation and inheritance, we we can use, what we learned about functions, to build constructors. JavaScript has no classes, but constructors can work similarly while providing more flexibility and expressiveness than the static constructs that classes are in languages like Java.
+We want to be able to write powerful patterns for object creation and to accomplish that, we need constructors. Learning how to write them concludes our chapter on functions, but the real power of constructors comes with inheritance which will be our topic in the next chapter. To prepare ourselves, we will look at constructors and how to use them.
+
+JavaScript has no classes, but constructors can work similarly while providing more flexibility and expressiveness than classes. That is because traditional classes can not be altered after their definition and because objects can only be instances of one class. JavaScript allows you to only work with useful objects and to construct and combine them without too much restrictions.
 
 ### Definition
-First thing to mention is, that there is no type of constructor in JavaScript and basically, every function can be a constructor. We call a function a constructor, when it creates an object in some way or the other, optionally modifies the object and then returns it. Constructors are often used in conjunction with the `new` keyword, in which case the `new` operator takes care of creating an object and returning it. We will look at both ways of defining a constructor. The name capitalization convention applies not to all constructors, but those, that do not handle object creation, which includes all functions, that are meant to be called with `new`. It is possible to write functions, that take a constructor as an argument, create a new object and invoke the constructor with that object. To indicate, whether a constructor function creates its own object or not, those that don't are assigned names with capital first letters. You can call any function as a constructor by using `new` (as previously discussed in [04.02.03](#04.02.03)), but that does not generally makes sense.
+The first thing to mention is, that there is no type of constructor in JavaScript and basically every function can be a constructor. We call a function a constructor, if it creates an object in some way or the other, optionally modifies the object and then returns it. Constructors are often used in conjunction with the `new` keyword, in which case the `new` operator takes care of creating an object and returning it. But we will look also look at constructors that take care of everything themselves. The name capitalization convention does not apply to all constructors, but only those, that do not handle object creation themselves. That includes all functions, that are meant to be called with `new`. It is possible to write functions, that take a constructor as an argument, create a new object and invoke the constructor with that object. To indicate, whether a constructor function creates its own object or not, those that don't are assigned names with capital first letters. You can call any function as a constructor by using `new` (as previously discussed in [04.02.03](#04.02.03)), but that does not generally makes sense.
 
 ```javascript
 var myConstructor = function () {
     return { };
 };
 ```
-Above is a minimal constructor function that just creates a new object using the object literal and then returns that object. Inside the constructor, you build an object to your liking, adding properties and methods to it.
+Above, you can see a minimal constructor function that just creates a new object using the object literal and then returns that object. Inside a constructor, you can build an object to your liking, adding properties and methods to it.
 ```javascript
 var person = function (name) {
     var that = { };
@@ -2240,11 +2184,11 @@ var person = function (name) {
     return that;
 };
 ```
-The use of `that` is necessary, since `this` is a readonly variable and it also does not really matter, what our new object is called inside its constructor.
+Here, we use `that` as our internal name for the new object. Remember that `this` is a readonly variable and cannot be assigned a new value. But it does not really matter, what our new object is called inside its constructor.
 
 ---
 
-In [04.02.03](#04.02.03) I discourage the use of `new`, because it obfuscates JavaScripts internal logic. While you will encouter `new` in books and on the internet, I will replace it with the following function:
+In [04.02.03](#04.02.03) I talked about how I don't like the `new` operator, because it obfuscates JavaScripts internal logic. While you will encouter `new` in books and on the internet, it bugs me to see the `new` operator and so I will replace it with the following function:
 ```javascript
 Function.prototype.create = function () {
     var that = Object.create(this.prototype || { }),
@@ -2256,7 +2200,7 @@ Function.prototype.create = function () {
 Calling the `create` method on a constructor function results in almost the exact same constellation of objects and their connections as if the constructor was invoked with `new`. So, while it technically does not matter, the `create` method makes for a less confusing reading of code. We will come back to the `create` method in a moment.
 
 ### Using Constructors
-Instead of classes, we define functions, that can be used, as constructors:
+Instead of classes, we define functions that can be used as constructors:
 ```javascript
 var Movie = function (title, director) {
     this.title = title;
@@ -2264,44 +2208,43 @@ var Movie = function (title, director) {
 };
 var pulpFiction = Movie.create('Pulp Fiction', 'Quentin Tarantino');
 ```
-The constructor function takes two arguments, that it attaches to `this`. In [04.02.03](#04.02.03) we learned, that using the `new` keyword creates a new object, that is bound to the constructor's `this`, and returns the new object.
+The constructor function takes two arguments that it attaches to `this`. In [04.02.03](#04.02.03) we learned, that using the `new` keyword creates a new object, that is bound to the constructor's `this`, and returns the new object.
 
-Our new object is pretty useless as long as it does not have any methods. But just like we can add string properties to the new object, we can add methods to it:
+To make the objects, we create, more interesting and useful, we can add a method to it. Just like we can add string properties to the new object, we can add function properties (methods) to it:
 ```javascript
-var Movie = function (title, length) {
+var Movie = function (title, runtime) {
     this.title = title;
-    this.length = length;
+    this.runtime = runtime;
     this.isLong = function () {
-        return this.length > 120;
+        return this.runtime > 120;
     };
 };
 var psycho = Movie.create('Psycho', 109);
 psycho.isLong(); // false
 ```
-Adding methods seems easy. But the problem with the above is, that the function expression is evaluated, each time the constructor is executed. That means, that there will be multiple instances of the same function in memory. Because of the late binding of `this`, that would not be necessary. `this` is bound, when the function executes, so we could use the function, without attaching it as a member to the object.
+Adding methods seems easy. But the problem with the above is, that the function expression is evaluated each time the constructor is called. That means, that there will be multiple instances of the same function in memory. Because of the late binding of `this`, that would not be necessary. `this` is bound, when the function executes, so we could use the function, without attaching it as a member to the object.
 ```javascript
 var isLong = function () {
-    return this.length > 120;
+    return this.runtime > 120;
 };
 isLong.call(psycho); // false
 ```
-But is this a better solution? It feels awkward to call a function like this and we also would like the function to have a closer syntactical relationship with the objects it is working with. We will look at two ways of using one function that is available to all `movie` objects.
-
+But is this a better solution? It feels awkward to call a function like this and we would also like the function to have a closer syntactical relationship with the objects it is working with. We will look at two ways of using one function that is available to all `movie` objects.
 
 ### Altering the prototype
 A common pattern is to attach methods to a constructor's prototype.
 ```javascript
-var Movie = function (title, length) {
+var Movie = function (title, runtime) {
     this.title = title;
-    this.length = length;
+    this.runtime = runtime;
 };
 Movie.prototype.isLong = function () {
-    return this.length > 120;
+    return this.runtime > 120;
 };
 var pulpFiction = Movie.create('Pulp Fiction', 154);
 pulpFiction.isLong(); // true
 ```
-A method, defined this way, behaves like a public static method in Java. It is accessible to every instance, created by the `Movie` constructor, and is visible to the outside. The difference is, that static methods in Java have no access to instance variables like `this`, whereas in JavaScript, they have (again, because of the late binding of `this`). This feature is essential to building constructors and objects in JavaScript.
+A method, defined this way, behaves a bit like a public static method in Java. It is accessible to every instance, created by the `Movie` constructor, and is visible to the outside. The difference is, that static methods in Java have no access to instance variables like `this`, whereas in JavaScript, they have (again, because of the late binding of `this`). This feature is essential to building constructors and objects in JavaScript.
 
 Another one of those essential features will help us complement the public static method with a pattern for writing private static methods as well as private instance variables.
 
@@ -2309,10 +2252,10 @@ Another one of those essential features will help us complement the public stati
 The second way of exposing a method to every object with a given constructor, without creating multiple function objects for that method, uses one of the most powerful features of JavaScript: Closure. Using closures with constructors will be our topic for almost every other pattern in this chapter. Since we just created a public static method, we can now create a private static method.
 ```javascript
 var Movie = (function () {
-    var isLong = function () { return this.length > 120; };
-    return function (title, length) {
+    var isLong = function () { return this.runtime > 120; };
+    return function (title, runtime) {
         this.title = title;
-        this.length = length;
+        this.runtime = runtime;
         console.log(this.title + ' is' + (isLong.call(this) ? '' : ' not') + ' a long movie.');
     };
 }());
@@ -2322,14 +2265,14 @@ Again, "static" means, that it is shared by all instances of that "class", but t
 ### Private Variables
 The most important use for closures in constructors is for creating private instance variables.
 ```javascript
-var Movie = function (title, length) {
+var Movie = function (title, runtime) {
     this.title = title;
-    this.isLong = function () { return length > 120; };
+    this.isLong = function () { return runtime > 120; };
 };
 var memento = Movie.create('Memento', 113);
 memento.isLong(); // false
 ```
-The `length` variable is accessible inside the constructor function even when it has returned. But the variable is not added as a member to this or any object and is thus not visible from the outside. The `isLong` function can use the `length` variable because of closure and everytime, you call that method, it gives you the correct result. The scope, in which length exists, lives on, but is unnaccessible from code outside of the constructor. 
+The `runtime` variable is accessible inside the constructor function even when it has returned. But the variable is not added as a member to `this` or any object and is thus not visible from the outside. The `isLong` function can use the `runtime` variable because of closure and everytime, you call that method, it gives you the correct result. The scope, in which `runtime` exists, lives on, but is unnaccessible from code outside of the constructor. 
 
 Some people attach variables they consider private to the object and prefix their name with an underscore to indicate that it is a private variable. It does not really make sense to use privacy by convention when there is also privacy by technology. When you see variables, starting with underscores, in someone else's code, respect their proclamation of privacy for these variables, but do not rely on it in your own code - use closure instead.
 
@@ -2343,7 +2286,7 @@ Function.prototype.create = function () {
     return (typeof theOther === 'object' && theOther) || that;
 };
 ```
-Because I personally dislike the use of `new` for obscuring what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few minor issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
+Because I personally dislike the use of `new` for obscuring what is going on behind the scenes and because building a replacement can teach you a lot, I stick with the `create` method. Sadly, there are a few issues with this function. One of them is, that this function cannot be used to create objects from builtin constructors like `Boolean`, `String` or `Date`. That is because the objects, created by these constructors, are internally being differentiated from standard "Object" objects.
 ```javascript
 var b0 = Boolean.create('true');
 b0.valueOf(); // TypeError: valueOf method called on incompatible Object
@@ -2403,145 +2346,15 @@ As you can see, we use the builtin `TypeError` function with `new`. It generally
 
 Another difference between `new` and `create` is, that `new` does not attach a `constructor` property to the object that is created.
 
-## BONUS: y-Combinator
-
-Let's do something fun: We leverage the power of JavaScript's first class functions to create a well-known programming construct - the y-Combinator.
-
-The following exercise is meant to demonstrate to power of functions and how well JavaScript supports the functional programming paradigm. The practical use of the y-Combinator in JavaScript is questionable, so if you are in a hurry, just skip over this sub-chapter.
-
-In strictly functional programming languages there are no variables that you can use to temporarily save a value. Functions are selft-contained expressions that evaluate to a function value with can then be passed to another function or be returned by another function or be invoked. If you would want to write a self-recursive function with assigning it to a variable, you have a problem: You do not have any name that the function can use to call itself.
-
-Just to be clear, what we are talking about, here is a conventional factorial function that is assigned to a value.
-```javascript
-var fact = function (n) { return n === 0 ? 1 : n * fact(n-1); };
-```
-We want to find a way to make a factorial function that does not know what its own name is. Therefore we will look at some fundamental ways in which functions can be manipulated in functional languages in general and also in JavaScript.
-
-We could wrap the factorial function inside another function that takes the factorial definition as an argument so that it is bound to a local variable of that wrapper function.
-```javascript
-var makeFactorialFunction = function (fact) {
-    return function (n) { return n === 0 ? 1 : n * fact(n-1); };
-};
-```
-But we would then have to call `makeFactorialFunction` with another factorial function as an argument. May we should think about what the `makeFactorialFunction` does or can do. Because it builds on a function that we pass it, it is actually a extension to the factorial.
-```javascript
-var factExtend = function (partial) {
-    return function (n) { return n === 0 ? 1 : n * partial(n-1); };
-};
-```
-Okay, just renaming here, but the point is, that we can use a simple function that calculates the factorial for `0`.
-```javascript
-var fact0 = factExtend();
-fact0(0); // 1
-fact0(1); // TypeError: partial is not a function
-```
-`fact0` worked for the input `0`, but not for `1`. The error message, saying that `partial`, is actually not surprising because we created `fact0` by calling `factExtend` without any arguments. Let's use a more helpful error function to create `fact0`.
-```javascript
-var error = function () { throw "You've gone too far!"; };
-var fact0 = factExtend(error);
-```
-But let's move on by create functions that are capable of calculating the factorial of `1` and `2`.
-```javascript
-var fact1 = factExtend(fact0);
-fact1(0); // 1
-fact1(1); // 1
-fact1(2); // "You've gone too far!"
-
-var fact2 = factExtend(fact1);
-fact2(1); // 1
-fact2(2); // 2
-fact3(2); // "You've gone too far!"
-```
-You could push that further and chain as many calls to `factExtend` together as you wish in order to create a function that can calculate a higher factorial.
-```javascript
-var factX = factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(factExtend(error)))))))))));
-factX(10); // 3628800
-factX(11); // "You've gone too far!"
-```
-But that is silly! In order to get closer to our goal of a way to create a self-recursive factorial function that does not know its own name, we have to rearrange the `factExtend` function a bit.
-```javascript
-var factX = (function (extender) {
-    return extender(extender(error));
-}(
-    function (partial) {
-        return function (n) { return n === 0 ? 1 : n * partial(n-1); };
-    }
-));
-factX(1); // 1
-factX(2); // "You've gone too far!"
-```
-What happened? What was the `factExtend` function is now the argument being passed to another function. This other function calls its argument with itself and with the error function; it finally returns the result of calling the parameter with itself multiple times. The return value of this function is then assigned to `factX` which now is a function, capable of calculating the factorial of `0` and `1`.
-
-What happens, if we get rid of the `error` function?
-```javascript
-var factX = (function (extender) {
-    return extender(extender());
-}(
-    function (partial) {
-        return function (n) { return n === 0 ? 1 : n * partial(n-1); };
-    }
-));
-factX(0); // 1
-factX(1); // 1
-factX(2); // TypeError: partial is not a function
-```
-We can still calculate the factorial of `0`, but `1` gives us `NaN`. Why is that? We did not provide any arguments to the inner most `extender` so this one represents the function with the factorial definition that has not been passed its `partial` argument. Since this function calls `partial` for recursion, it fails when there is no `partial`. 
-
-
-
-
-
-```javascript
-var factorial = function (f) {
-    return function (n) {
-        return n === 0 ? 1 : n * f(n-1);
-    };
-};
-
-var fibonacci = function (f) {
-    return function (n) {
-        return n <= 1 ? 1 : f(n-1) + f(n-2);
-    };
-};
-
-var Y = function (f) {
-    return function (x) {
-        return x(x);
-    }(function (p) {
-        return (f((
-            function (v) { 
-                return p(p)(v); 
-            })
-        ));
-    });
-};
-
-var Ynot = function (f) {
-    return function (x) {
-        return f(
-            function (v) {
-                return x(x)(v);
-            }
-        );
-    }(function (x) {
-        return f(
-            function (v) { 
-                return x(x)(v); 
-            }
-        );
-    });
-};
-```
-
 # 05 Inheritance
 
-In classical languages like C++ or Java, objects are instances of classes. Classes are abstract definition of what each instance of that class should look like and an object follows the class' definition, while containing concrete data. In those languages, classes inherit from classes. In JavaScript there are no classes, which is why a classical inheritance model is not applicable. JavaScript makes use of a different concept: Prototypal inheritance.
+In classical languages like C++ or Java, objects are instances of classes. Classes are abstract definitions of what each instance of that class should look like and an object follows the class' definition, while containing concrete data. In those languages, classes inherit from classes. In JavaScript there are no classes, which is why a classical inheritance model is not applicable. JavaScript makes use of a different concept: Prototypal inheritance.
 
 Most of the time in this chapter, the term "classical" is supposed to mean "class-based", since that describes the inheritance model of languages like C++ and Java. In contrast to those, JavaScript is actually object-based or object-oriented, which makes it stand apart from classical languages.
 
-Along with first-class functions, prototypal inheritance is one of the core concepts of JavaScript. While feeling unfamiliar to most programmers, coming from other (classical) languages, these features make JavaScript extremely flexible, allowing the programmer to choose the paradigms and the style, he prefers.
+Along with first-class functions, prototypal inheritance is one of the core concepts of JavaScript. It may feel unfamiliar to many programmers, coming from other (classical) languages. But these features make JavaScript extremely flexible, allowing the programmer to choose the paradigms and the style, he prefers.
 
-In this chapter, I will explain how inheritance in JavaScript works, and show a handful of ways to create objects and implement inheritance. Some of the patterns, you will learn in this chapter, are extremely powerful, others are of little use. These are presented to illustrate what is possible, using the tools of the language or maybe even to demonstrate you, what you should not be doing. But maybe even more important is, that all the patterns introduced are meant to give you a better understanding of how the language works and to motivate you to come up with more ideas on how to create objects and structure those object's interplay.
+In this chapter, I will explain how inheritance in JavaScript works, and show a handful of ways to create objects and implement inheritance. Some of the patterns, you will learn in this chapter, are extremely powerful, others are of little use. These are presented to illustrate what is possible using the tools of the language or maybe even to show you, what you should not be doing. But maybe even more important is, that all the patterns introduced are meant to give you a better understanding of how the language works and to motivate you to come up with more ideas on how to create objects and structure those object's interaction.
 
 ## Prototype
 
@@ -2597,19 +2410,19 @@ The good thing about this pattern is, that it syntactically mimics the way, inhe
 
 Of course the same principle applies to methods as they are just function values assigned as members to an object. But the important thing is, what happens to `this`, when a method is executed. To investigate, we will extend on our example from above:
 ```javascript
-movie.length = 154;
-anotherMovie.length = 99;
-movie.isLong = function () { return this.length > 120; };
+movie.runtime = 154;
+anotherMovie.runtime = 99;
+movie.isLong = function () { return this.runtime > 120; };
 ```
-Not only can we dynamically add properties to our objects, but changes to an object's prototype are also immediately visible, since an object has a reference (not a copy) to its prototype. That is, why we can now call the `isLong` function on the `anotherMovie` object. But more important is, what it does: The `this` variable is bound when the function is executed. And as we learnt in [04.02.01](#04.02.01), `this` is bound to the object on that the function is called. That makes it possible for all objects, inheriting from `movie` to share the `isLong` function, while it still works perfectly.
+Not only can we dynamically add properties to our objects, but changes to an object's prototype are also immediately visible, since an object has a reference (not a copy) to its prototype. That is the reason, we can now call the `isLong` function on the `anotherMovie` object. But more important is, what it does: The `this` variable is bound when the function is executed. And as we learnt in [04.02.01](#04.02.01), `this` is bound to the object on that the function is called. That makes it possible for all objects, inheriting from `movie` to share the `isLong` function, while it still works perfectly.
 ```javascript
 anotherMovie.isLong(); // false
 ```
-As before, the JavaScript interpreter can't find a `isLong` property on `anotherMovie` and starts to go through the prototype chain in order to find it. When it is called, the specifier `anotherMovie.` makes the function's `this` variable be bound to `anotherMovie` so that `this.length` points to the `length` property of `anotherMovie`.
+As before, the JavaScript interpreter can't find an `isLong` property on `anotherMovie` and starts to go through the prototype chain in order to find it. When it is called, the specifier `anotherMovie.` makes the function's `this` variable be bound to `anotherMovie` so that `this.runtime` points to the `runtime` property of `anotherMovie`.
 
 ## Constructors
 
-In JavaScript, objects inherit directly from other objects. We talked about the hidden reference that every object has to its prototype and we have manipulated it: By using `Object.create`. But we have not explained, how that function does its magic, because that involves constructors. Despite JavaScript's strongly object oriented understanding of inheritance, there is no way of manipulating the prototype chain, without using constructor functions. Hence constructors sit in between the objects and are the ones taking care of inheritance.
+In JavaScript, objects inherit directly from other objects. We talked about the hidden reference that every object has to its prototype and we have manipulated it: By using `Object.create`. But we have not explained, how that function does its magic, because that involves constructors. Despite JavaScript's strongly object oriented understanding of inheritance, there is no way of manipulating the prototype chain, without using constructor functions.
 
 Apart from the hidden link to its prototype, every object in JavaScript has another special property: `constructor`. Actually it is not that special, in that it is not hidden, it is writeable and we will have to set it manually sometimes. An object's `constructor` property is meant to hold a reference to the function that created the object. If we use the `new` operator on a function, it sets the `constructor` property of the new object automatically to the function that was invoked. 
 
@@ -2707,47 +2520,11 @@ var Child = function Child (age) {
 ```
 That does exactly the same, as the definition of `Child` above, but looks a bit more pleasant. Still, this is not a style of code that you want to be writing a lot and we have no possibility of letting our methods work with private instance variables.
 
-### Advancing
-If we come up with more methods to help us creating objects, maybe it would not be ideal to add them all to `Function.prototype` because not every function is supposed to be used as a constructor. So we could create a `makeConstructor` function that helps us with creating constructors and dealing with inheritance. You would always have to use this function to create a new constructor, but then you could be writing things like:
-```javascript
-var Child = makeConstructor(Person, function Child (age) {
-    this.age = age;
-    this.isChild = function () {
-        return this.age < 10;
-    };
-});
-```
-If that feels good to you, you can implement a `makeConstructor` function accordingly to our `inherit` method:
-```javascript
-var makeConstructor = function (Parent, def) {
-    def.prototype = Parent.create();
-    return def;
-};
-```
-This has (just like the `inherit` method) the disadvantage of not being able to pass arguments to the super constructor. Everytime an object is created the super constructor is called in order to create the prototype. And while the child constructor can be aware of its parent via `this.constructor`, the lineage is established outside of the constructor, which makes calling a super function kind of unreliable. Thus it may be a good idea, to pass all of the arguments of a constructor call automatically to its parent's constructor. Implementing this behavior is trivial as long as you are okay with ending up with a slightly different object situation than before. If you want to create the exact same layout things get a bit more complicated:
-```javascript
-var makeConstructor = function makeConstructor (Parent, def) {
-    return function () {
-        var prototype = Parent.create.apply(Parent, arguments),
-            that = Object.create(prototype),
-            theOther;
-        def.prototype = prototype;
-        theOther = def.apply(that, arguments);
-        that.constructor = def;
-        return (typeof theOther === 'object' && theOther) || that;
-    };
-};
-```
-This `makeConstructor` function creates constructors that do not want to be called with `new`/`create`, but it builds the same situation and object lineage as the simple version and hands all of the constructor arguments over to the super constructor. As you can see there are a lot of things going onm here. 
-TODO: EXPLAIN THOSE THINGS
-
-Modifying the `makeConstructor` function again in order to have its return value also be callable with `new`/`create`, is left to the interested reader.
-
 ## Functional
 
 We continue with implementing a feature we have already learnt about in [04.07.05](#04.07.05): Private instance variables. The solution to achieving privacy is based on closure. Closure allows us to create powerful constructors or factories and now we will combine that with inheritance.
 
-The most important difference may be, that we now write functions, that take care of object creation themselves rather than relying on some exterior object implication. That means that the constructors we have written before all used `this` to refer to the object to be created. The actual object was then created by using `new` or `.bind({})` or our own `create` method. The functions below create their own objects. Some people call those functions factories as opposed to constructors. I will not use these terms very precisely.
+The most important difference may be, that we now write functions, that take care of object creation themselves rather than relying on some exterior object injection. That means that the constructors we have written before all used `this` to refer to the object to be created. The actual object was then created by using `new` or `.bind({})` or our own `create` method. The functions below create their own objects. Some people call those functions factories as opposed to constructors. I will not use these terms very precisely.
 
 ### Recipe
 The basic recipe for our constructors consists of the following four steps: Create a new object, declare private variables, add public methods to the object and return the object. Creating an object can be done in several ways: Using an object literal, with `Object.create` (possibly inheriting from another object) or calling another constructor. Private variables are simply declared via `var` and thanks to closure, they will be visible to all the other private as well as privileged methods. These methods are attached to the newly created object, which is finally returned by the constructor function.
@@ -2780,7 +2557,7 @@ timmy.greet(); // 'Hello, I am Timmy!';
 ```
 The object provides all the correct methods, which have access to the private instance variables. But what's very important is, that we created a completely different situation than by using the constructors from [05.04](#05.04.00). The `timmy` object, inherits directly from `Object.prototype` and has a `constructor` property pointing to `Object`. There are no `person.prototype` and `child.prototype` objects. When using the "Functional" approach to factories and inheritance you thus can not longer rely on the `instanceof` operator and writing a replacement would presumably be pretty hard.
 
-When using pseudoclassical we tried to solve the problem of making one constructor inheriting from another constructor by having the child constructor create a new object of the parent constructor and use that as a prototype for its own objects. This approach creates a behavior like you would expect it, if you are thinking in a classical way, but is agnostic of JavaScript's nature. Objects are highly dynamic and there is no reason to expect two objects created by the same constructor to are similarly structured. It is considered "pseudoclassical" because it resembles the lineage of classes by actually tampering with the lineage of objects. That is because in JavaScript there is no other lineage. But that implies, that a classical way of thinking may not be appropriate. It is not discouraged though. The pseudoclassical pattern allows for small constructors and multiple layers of wrapping functions around them. `this` is bound externally which allows separate functions to handle inheritance. The downside is, that you probably have to standardize a specific pattern for a project for consistency.
+When using the pseudoclassical approach, we tried to solve the problem of making one constructor inheriting from another constructor by having the child constructor create a new object of the parent constructor and use that as a prototype for its own objects. This approach behaves like you would expect it, if you are thinking in a classical way, but is agnostic of JavaScript's nature. Objects are highly dynamic and there is no reason to expect two objects created by the same constructor to are similarly structured. It is considered "pseudoclassical" because it resembles the lineage of classes by actually tampering with the lineage of objects. That is because in JavaScript there is no other lineage. But that implies, that a classical way of thinking may not be appropriate. It is not discouraged though. The pseudoclassical pattern allows for small constructors and multiple layers of wrapping functions around them. `this` is bound externally which allows separate functions to handle inheritance. The downside is, that you probably have to standardize a specific pattern for a project for consistency.
 
 The functional approach does not actually create a lineage, but rather deals with one object, being transformed by a cascade of constructors. When a constructor wants to inherit from another constructor, it creates a new object with its parent and then manipulates this object by adding or changing its properties. This results in a less complex situation, where the object has no massive heritage but is an heir of `Object.prototype`. The functional pattern has larger constructors that have to take care of inheritance themselves. That is not required - you could come up with a syntax to pull object creation out of the factory and into a wrapper function - but since there are no complex adjustments of prototype and `constructor` properties to be made there is not really a need for wrapping functions.
 
